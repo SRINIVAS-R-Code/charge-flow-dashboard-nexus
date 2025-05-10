@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -17,7 +16,6 @@ const Sidebar = ({ activePage, setActivePage }: SidebarProps) => {
     { id: "potential-sites", label: "Potential Sites", icon: "🎯" },
     { id: "charging-stations", label: "Charging Stations", icon: "⚡" },
     { id: "analytics", label: "Analytics", icon: "📈" },
-    { id: "settings", label: "Settings", icon: "⚙️" },
   ];
 
   return (

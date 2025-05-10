@@ -7,7 +7,6 @@ import ExistingSites from "@/components/Dashboard/ExistingSites";
 import PotentialSites from "@/components/Dashboard/PotentialSites";
 import ChargingStations from "@/components/Dashboard/ChargingStations";
 import Analytics from "@/components/Dashboard/Analytics";
-import Settings from "@/components/Dashboard/Settings";
 
 const Index = () => {
   const [activePage, setActivePage] = useState("dashboard");
@@ -26,8 +25,6 @@ const Index = () => {
         return <ChargingStations />;
       case "analytics":
         return <Analytics />;
-      case "settings":
-        return <Settings />;
       default:
         return <DashboardHome />;
     }
