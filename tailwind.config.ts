@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -89,7 +90,14 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+      boxShadow: {
+        'dashboard': '0 10px 30px -15px rgba(0, 0, 0, 0.15)',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-dashboard': 'linear-gradient(135deg, #1A2B41 0%, #2C4E6C 100%)',
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
