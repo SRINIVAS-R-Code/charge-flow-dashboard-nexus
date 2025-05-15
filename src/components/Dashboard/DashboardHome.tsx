@@ -1,180 +1,224 @@
+import { Card } from "components/ui/card";
+import React from "react";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid, Legend, PieChart, Pie, Cell } from "recharts";
 
-import { Card } from "@/components/ui/card";
+interface ExistingSitesData {
+  totalSites: number;
+  activeSites: number;
+  averageUtilization: string;
+  networkUptime: string;
+  kwTypesDistribution: { name: string; value: number }[]; // new prop for pie chart
+  publicTruckChargersCount?: number; // new optional prop for public truck chargers count
+  likelyTruckStationsCount?: number; // new optional prop for likely truck stations count
+}
 
-const DashboardHome = () => {
+interface PotentialSitesData {
+  highPriorityCount: number;
+  mediumPriorityCount: number;
+  lowPriorityCount: number;
+}
+
+interface AnalyticsData {
+  networkUptime: string;
+  averageUtilization: string;
+}
+
+interface DashboardHomeProps {
+  existingSitesData: ExistingSitesData;
+  potentialSitesData: PotentialSitesData;
+  analyticsData: AnalyticsData;
+}
+
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const PRIORITY_COLORS = ['#00C49F', '#FFBB28', '#FF0000']; // Green, Orange, Red
+
+const StatCard = ({ title, value, change, trend }: { title: string; value: string; change: string; trend: "up" | "down" }) => {
+  return (
+    <Card className="p-4">
+      <h3 className="text-sm font-medium text-gray-500">{title}</h3>
+      <p className="text-2xl font-semibold">{value}</p>
+      <p className={`text-sm ${trend === "up" ? "text-green-600" : "text-red-600"}`}>{change}</p>
+    </Card>
+  );
+};
+
+const renderLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index, name }: any) => {
+  const RADIAN = Math.PI / 180;
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="black"
+      textAnchor={x > cx ? "start" : "end"}
+      dominantBaseline="central"
+      fontSize={14}
+      fontWeight="bold"
+      style={{ pointerEvents: "none" }}
+    >
+      {name}
+    </text>
+  );
+};
+
+const DashboardHome = ({ existingSitesData, potentialSitesData, analyticsData }: DashboardHomeProps) => {
+  // Prepare data for charts
+  const siteStatusData = [
+    { name: "Total Sites", value: existingSitesData.totalSites },
+    { name: "Active Sites", value: existingSitesData.activeSites },
+  ];
+
+  const priorityData = [
+    { name: "High Priority", value: potentialSitesData.highPriorityCount },
+    { name: "Medium Priority", value: potentialSitesData.mediumPriorityCount },
+    { name: "Low Priority", value: potentialSitesData.lowPriorityCount },
+  ];
+
+  const utilizationData = [
+    { name: "Average Utilization", value: parseFloat(existingSitesData.averageUtilization) },
+    { name: "Network Uptime", value: parseFloat(existingSitesData.networkUptime) },
+  ];
+
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-2">Welcome to E-HDT Dashboard</h1>
-      <p className="text-muted-foreground mb-8">
-        Electric Heavy-Duty Trucks Charging Infrastructure Management
-      </p>
+      <Card className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-md flex flex-col space-y-2">
+        <h1 className="text-3xl font-bold">Welcome to E-HDT Dashboard</h1>
+        <p className="text-muted-foreground">
+          Here you can find key metrics and insights about the charging network.
+        </p>
+      </Card>
 
-      <div className="stats-grid">
+      <div className="stats-grid mb-8">
         <StatCard 
           title="Total Charging Stations" 
-          value="342" 
+          value={existingSitesData.totalSites.toString()} 
           change="+24"
           trend="up" 
         />
         <StatCard 
           title="Active Stations" 
-          value="298" 
+          value={existingSitesData.activeSites.toString()} 
           change="+12"
           trend="up" 
         />
         <StatCard 
           title="Average Utilization" 
-          value="68%" 
+          value={existingSitesData.averageUtilization} 
           change="+5%"
           trend="up" 
         />
         <StatCard 
           title="Network Uptime" 
-          value="99.8%" 
+          value={existingSitesData.networkUptime} 
           change="-0.1%"
           trend="down" 
         />
+        {existingSitesData.publicTruckChargersCount !== undefined && (
+          <StatCard
+            title="Public Truck Chargers"
+            value={existingSitesData.publicTruckChargersCount.toString()}
+            change="+0"
+            trend="up"
+          />
+        )}
+        {existingSitesData.likelyTruckStationsCount !== undefined && (
+          <StatCard
+            title="Likely Truck Stations"
+            value={existingSitesData.likelyTruckStationsCount.toString()}
+            change="+0"
+            trend="up"
+          />
+        )}
       </div>
 
-      <section className="mb-8">
-        <h2 className="section-title">Recent Updates</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <UpdateCard 
-            title="New Charging Stations"
-            description="Added 10 new high-capacity charging stations across the TEN-T network"
-            date="May 5, 2025"
-            icon="➕"
-          />
-          <UpdateCard 
-            title="Route Coverage Update"
-            description="Extended coverage across TEN-T corridors with 5 new strategic locations"
-            date="May 2, 2025" 
-            icon="🧭"
-          />
-          <UpdateCard 
-            title="Data Synchronization"
-            description="Improved real-time data synchronization with all charging stations"
-            date="April 30, 2025"
-            icon="🔄" 
-          />
-        </div>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="section-title">Quick Actions</h2>
-        <div className="flex flex-wrap gap-4">
-          <ActionButton text="View Active Stations" icon="📍" />
-          <ActionButton text="Run Utilization Report" icon="📊" />
-          <ActionButton text="Explore New Sites" icon="🔍" />
-          <ActionButton text="System Diagnostics" icon="🔧" />
-        </div>
-      </section>
-
-      <section>
-        <h2 className="section-title">System Status</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <Card className="p-4">
-          <div className="flex flex-col">
-            <div className="flex items-center justify-between mb-4">
-              <span className="font-medium">System Health</span>
-              <div className="flex items-center">
-                <span className="h-3 w-3 rounded-full bg-green-500 mr-2"></span>
-                <span className="text-sm text-green-600">Operational</span>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <StatusItem name="API Services" status="operational" />
-              <StatusItem name="Database" status="operational" />
-              <StatusItem name="Authentication" status="operational" />
-              <StatusItem name="Mapping Service" status="issues" />
-              <StatusItem name="Payment Processing" status="operational" />
-            </div>
-          </div>
+          <h3 className="text-lg font-semibold mb-2">Site Status</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <BarChart data={siteStatusData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="value" fill="#3b82f6" />
+            </BarChart>
+          </ResponsiveContainer>
         </Card>
-      </section>
-    </div>
-  );
-};
 
-interface StatCardProps {
-  title: string;
-  value: string;
-  change: string;
-  trend: "up" | "down";
-}
+        <Card className="p-4">
+          <h3 className="text-lg font-semibold mb-2">Site Priority</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <BarChart data={priorityData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="value" fill="#10b981" />
+            </BarChart>
+          </ResponsiveContainer>
+        </Card>
 
-const StatCard = ({ title, value, change, trend }: StatCardProps) => {
-  return (
-    <div className="stat-card">
-      <h3 className="text-sm font-medium text-gray-500">{title}</h3>
-      <div className="flex items-end justify-between mt-1">
-        <span className="text-2xl font-bold">{value}</span>
-        <div className={`flex items-center ${trend === 'up' ? 'text-green-500' : 'text-red-500'}`}>
-          <span className="text-sm font-medium mr-1">{change}</span>
-          <span>{trend === 'up' ? '↑' : '↓'}</span>
-        </div>
+        <Card className="p-4">
+          <h3 className="text-lg font-semibold mb-2">Charging Station Type Distribution</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <PieChart>
+              <Pie
+                data={existingSitesData.kwTypesDistribution}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={70}
+                fill="#8884d8"
+                label={renderLabel}
+              >
+                {existingSitesData.kwTypesDistribution.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card className="p-4">
+          <h3 className="text-lg font-semibold mb-2">Utilization & Uptime</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <LineChart data={utilizationData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <CartesianGrid stroke="#f5f5f5" />
+              <Line type="monotone" dataKey="value" stroke="#ef4444" />
+            </LineChart>
+          </ResponsiveContainer>
+        </Card>
+
+        <Card className="p-4">
+          <h3 className="text-lg font-semibold mb-2">eTruck Charger Potential Map</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <PieChart>
+              <Pie
+                data={priorityData}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={70}
+                fill="#8884d8"
+                label={renderLabel}
+              >
+                {priorityData.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={PRIORITY_COLORS[index % PRIORITY_COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        </Card>
       </div>
-    </div>
-  );
-};
-
-interface UpdateCardProps {
-  title: string;
-  description: string;
-  date: string;
-  icon: string;
-}
-
-const UpdateCard = ({ title, description, date, icon }: UpdateCardProps) => {
-  return (
-    <Card className="p-4 hover:shadow-md transition-shadow">
-      <div className="flex gap-3">
-        <div className="h-10 w-10 rounded-full bg-secondary/20 flex items-center justify-center text-xl">
-          {icon}
-        </div>
-        <div>
-          <h3 className="font-medium">{title}</h3>
-          <p className="text-sm text-muted-foreground">{description}</p>
-          <p className="text-xs text-gray-400 mt-2">{date}</p>
-        </div>
-      </div>
-    </Card>
-  );
-};
-
-interface ActionButtonProps {
-  text: string;
-  icon: string;
-}
-
-const ActionButton = ({ text, icon }: ActionButtonProps) => {
-  return (
-    <button className="flex items-center gap-2 px-4 py-2 bg-white border rounded-lg hover:bg-gray-50 transition-colors">
-      <span>{icon}</span>
-      <span>{text}</span>
-    </button>
-  );
-};
-
-interface StatusItemProps {
-  name: string;
-  status: "operational" | "issues" | "outage";
-}
-
-const StatusItem = ({ name, status }: StatusItemProps) => {
-  const getStatusColor = () => {
-    switch (status) {
-      case "operational": return "bg-green-500";
-      case "issues": return "bg-yellow-400";
-      case "outage": return "bg-red-500";
-      default: return "bg-gray-400";
-    }
-  };
-
-  return (
-    <div className="flex items-center justify-between py-1 border-b border-gray-100">
-      <span className="text-sm">{name}</span>
-      <div className={`h-2 w-2 rounded-full ${getStatusColor()}`}></div>
     </div>
   );
 };

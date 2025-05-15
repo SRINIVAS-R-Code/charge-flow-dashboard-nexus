@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c8859e13928e59b221c126c5674859b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c8859e13928e59b221c126c5674859b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c8859e13928e59b221c126c5674859b2 = L.map(
+                "map_c8859e13928e59b221c126c5674859b2",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbf82e45ef9d338068848a1a0b37a311 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cbf82e45ef9d338068848a1a0b37a311.addTo(map_c8859e13928e59b221c126c5674859b2);
+        
+    
+            var marker_cluster_62a84b7f01d6e3ba6117241da7fcc906 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_25e4ac5bfaa749cc7c0b9ac257104138 = L.marker(
+                [43.809603, 13.038974],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_3be67313856213ce6c3c43b5d005c9e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffad1f0c83ff3dc9e20450690244d049 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5684e2366a8d1c4e07e1ac05b534bccb = $(`<div id="html_5684e2366a8d1c4e07e1ac05b534bccb" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 1<br><b>Operator:</b> Ionity<br><b>Power:</b> 350 kW<br><b>Lat:</b> 43.809603, <b>Lon:</b> 13.038974</div>`)[0];
+                popup_ffad1f0c83ff3dc9e20450690244d049.setContent(html_5684e2366a8d1c4e07e1ac05b534bccb);
+            
+        
+
+        marker_25e4ac5bfaa749cc7c0b9ac257104138.bindPopup(popup_ffad1f0c83ff3dc9e20450690244d049)
+        ;
+
+        
+    
+    
+                marker_25e4ac5bfaa749cc7c0b9ac257104138.setIcon(icon_3be67313856213ce6c3c43b5d005c9e0);
+            
+    
+            var marker_88f1618baf99e4e54ec736561a6b062f = L.marker(
+                [42.803614, 10.827988],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_9d58f3bf3b8425894303059b7a63ddae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_482931083b7028bf658fac29f3aa567e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_734e626acbe92d114795f4b306932dc3 = $(`<div id="html_734e626acbe92d114795f4b306932dc3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 6<br><b>Operator:</b> Be Charge<br><b>Power:</b> 350 kW<br><b>Lat:</b> 42.803614, <b>Lon:</b> 10.827988</div>`)[0];
+                popup_482931083b7028bf658fac29f3aa567e.setContent(html_734e626acbe92d114795f4b306932dc3);
+            
+        
+
+        marker_88f1618baf99e4e54ec736561a6b062f.bindPopup(popup_482931083b7028bf658fac29f3aa567e)
+        ;
+
+        
+    
+    
+                marker_88f1618baf99e4e54ec736561a6b062f.setIcon(icon_9d58f3bf3b8425894303059b7a63ddae);
+            
+    
+            var marker_44999d4650fc1e586d1cbb1d5b85ecc9 = L.marker(
+                [38.700298, 16.559344],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_d38ba2e403bc5843bb1d279fa19c7e3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f69de80f98a23c37ef7cc43ef726be1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dfb552182e25d1c19a8d2ed9d28ae3f = $(`<div id="html_3dfb552182e25d1c19a8d2ed9d28ae3f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 17<br><b>Operator:</b> Eni Plenitude<br><b>Power:</b> 350 kW<br><b>Lat:</b> 38.700298, <b>Lon:</b> 16.559344</div>`)[0];
+                popup_2f69de80f98a23c37ef7cc43ef726be1.setContent(html_3dfb552182e25d1c19a8d2ed9d28ae3f);
+            
+        
+
+        marker_44999d4650fc1e586d1cbb1d5b85ecc9.bindPopup(popup_2f69de80f98a23c37ef7cc43ef726be1)
+        ;
+
+        
+    
+    
+                marker_44999d4650fc1e586d1cbb1d5b85ecc9.setIcon(icon_d38ba2e403bc5843bb1d279fa19c7e3c);
+            
+    
+            var marker_ccab6e3820eeeec2075fe3b37e264c06 = L.marker(
+                [43.152761, 14.751527],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_f17d54c0cc40df65b72741f5390c1417 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bf56af54efbf970e377ad23d71854eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a90048232dbde6da976b90e5adb36b8 = $(`<div id="html_1a90048232dbde6da976b90e5adb36b8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 18<br><b>Operator:</b> A2A<br><b>Power:</b> 350 kW<br><b>Lat:</b> 43.152761, <b>Lon:</b> 14.751527</div>`)[0];
+                popup_9bf56af54efbf970e377ad23d71854eb.setContent(html_1a90048232dbde6da976b90e5adb36b8);
+            
+        
+
+        marker_ccab6e3820eeeec2075fe3b37e264c06.bindPopup(popup_9bf56af54efbf970e377ad23d71854eb)
+        ;
+
+        
+    
+    
+                marker_ccab6e3820eeeec2075fe3b37e264c06.setIcon(icon_f17d54c0cc40df65b72741f5390c1417);
+            
+    
+            var marker_0e2f2ee9b17e953169438f769e3dc598 = L.marker(
+                [43.551231, 7.282109],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_f78fcbdff97d8007dd0d2a53a193ca93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4d3c1a39f80319fe333418cb17c0f05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7af8e786ef311a24aad32c06a17f8e40 = $(`<div id="html_7af8e786ef311a24aad32c06a17f8e40" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 25<br><b>Operator:</b> A2A<br><b>Power:</b> 350 kW<br><b>Lat:</b> 43.551231, <b>Lon:</b> 7.282109</div>`)[0];
+                popup_a4d3c1a39f80319fe333418cb17c0f05.setContent(html_7af8e786ef311a24aad32c06a17f8e40);
+            
+        
+
+        marker_0e2f2ee9b17e953169438f769e3dc598.bindPopup(popup_a4d3c1a39f80319fe333418cb17c0f05)
+        ;
+
+        
+    
+    
+                marker_0e2f2ee9b17e953169438f769e3dc598.setIcon(icon_f78fcbdff97d8007dd0d2a53a193ca93);
+            
+    
+            var marker_f2e0fe111c8d68e3f658437f592182ea = L.marker(
+                [42.255753, 9.758773],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_b9a31eb22fb9c231e0f1d5efe549d914 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04e01dd549108f283d43b9a1db6b65a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fae71b2d0828e208b270a07a3157011a = $(`<div id="html_fae71b2d0828e208b270a07a3157011a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 33<br><b>Operator:</b> Ionity<br><b>Power:</b> 350 kW<br><b>Lat:</b> 42.255753, <b>Lon:</b> 9.758773</div>`)[0];
+                popup_04e01dd549108f283d43b9a1db6b65a7.setContent(html_fae71b2d0828e208b270a07a3157011a);
+            
+        
+
+        marker_f2e0fe111c8d68e3f658437f592182ea.bindPopup(popup_04e01dd549108f283d43b9a1db6b65a7)
+        ;
+
+        
+    
+    
+                marker_f2e0fe111c8d68e3f658437f592182ea.setIcon(icon_b9a31eb22fb9c231e0f1d5efe549d914);
+            
+    
+            var marker_e00fcb5009cd45e594376936ec426fc7 = L.marker(
+                [43.443749, 16.610875],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_852a74fd490277ed9e181f3aa2cab338 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52061bdb370d9e9ff482cc0660c2f7fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9702654e494b5f25842081edc04301e9 = $(`<div id="html_9702654e494b5f25842081edc04301e9" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 38<br><b>Operator:</b> Eni Plenitude<br><b>Power:</b> 350 kW<br><b>Lat:</b> 43.443749, <b>Lon:</b> 16.610875</div>`)[0];
+                popup_52061bdb370d9e9ff482cc0660c2f7fc.setContent(html_9702654e494b5f25842081edc04301e9);
+            
+        
+
+        marker_e00fcb5009cd45e594376936ec426fc7.bindPopup(popup_52061bdb370d9e9ff482cc0660c2f7fc)
+        ;
+
+        
+    
+    
+                marker_e00fcb5009cd45e594376936ec426fc7.setIcon(icon_852a74fd490277ed9e181f3aa2cab338);
+            
+    
+            var marker_237f2517a56f2eadf55c33e3a5993ae7 = L.marker(
+                [45.729679, 12.898758],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_0d1f01c2afd1dcb2e6103f9f7f47f79b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8925e697127e8e5a810ad0a64ba707c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f26f52c7b7b2f6bce7d381ab059860f8 = $(`<div id="html_f26f52c7b7b2f6bce7d381ab059860f8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 41<br><b>Operator:</b> Eni Plenitude<br><b>Power:</b> 350 kW<br><b>Lat:</b> 45.729679, <b>Lon:</b> 12.898758</div>`)[0];
+                popup_8925e697127e8e5a810ad0a64ba707c6.setContent(html_f26f52c7b7b2f6bce7d381ab059860f8);
+            
+        
+
+        marker_237f2517a56f2eadf55c33e3a5993ae7.bindPopup(popup_8925e697127e8e5a810ad0a64ba707c6)
+        ;
+
+        
+    
+    
+                marker_237f2517a56f2eadf55c33e3a5993ae7.setIcon(icon_0d1f01c2afd1dcb2e6103f9f7f47f79b);
+            
+    
+            var marker_adad26236c07727d5617599be1328cd2 = L.marker(
+                [42.088642, 12.786187],
+                {
+}
+            ).addTo(marker_cluster_62a84b7f01d6e3ba6117241da7fcc906);
+        
+    
+            var icon_f52e7cca73d7678063ac17cd5756c648 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6498091d5d45ff11a40023b558f52d10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f15995c35f2f197dd82a15b1dfb1fe10 = $(`<div id="html_f15995c35f2f197dd82a15b1dfb1fe10" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Station 49<br><b>Operator:</b> Eni Plenitude<br><b>Power:</b> 350 kW<br><b>Lat:</b> 42.088642, <b>Lon:</b> 12.786187</div>`)[0];
+                popup_6498091d5d45ff11a40023b558f52d10.setContent(html_f15995c35f2f197dd82a15b1dfb1fe10);
+            
+        
+
+        marker_adad26236c07727d5617599be1328cd2.bindPopup(popup_6498091d5d45ff11a40023b558f52d10)
+        ;
+
+        
+    
+    
+                marker_adad26236c07727d5617599be1328cd2.setIcon(icon_f52e7cca73d7678063ac17cd5756c648);
+            
+    
+            marker_cluster_62a84b7f01d6e3ba6117241da7fcc906.addTo(map_c8859e13928e59b221c126c5674859b2);
+        
+    
+            var heat_map_6b34056cff0d3e23e49664823c0b3705 = L.heatLayer(
+                [[43.809603, 13.038974], [42.803614, 10.827988], [38.700298, 16.559344], [43.152761, 14.751527], [43.551231, 7.282109], [42.255753, 9.758773], [43.443749, 16.610875], [45.729679, 12.898758], [42.088642, 12.786187]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 10,
+  "radius": 15,
+  "blur": 10,
+}
+            );
+        
+    
+            heat_map_6b34056cff0d3e23e49664823c0b3705.addTo(map_c8859e13928e59b221c126c5674859b2);
+        
+</script>
+</html>

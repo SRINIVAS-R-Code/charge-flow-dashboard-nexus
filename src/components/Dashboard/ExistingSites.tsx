@@ -1,14 +1,13 @@
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "components/ui/button";
+import { Input } from "components/ui/input";
 import { 
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue 
-} from "@/components/ui/select";
-import ChargingMap from "./ChargingMap";
+} from "components/ui/select";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "components/ui/tabs";
 
 const ExistingSites = () => {
   const sites = [
@@ -58,41 +57,54 @@ const ExistingSites = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-        <ChargingMap height="400px" />
-        
-        <div className="data-table">
-          <div className="table-header grid grid-cols-4">
-            <div className="col-span-2 text-sm font-medium">Site</div>
-            <div className="text-sm font-medium">Type</div>
-            <div className="text-sm font-medium">Status</div>
-          </div>
-          <div className="divide-y">
-            {sites.map((site) => (
-              <div key={site.id} className="table-row grid grid-cols-4 items-center">
-                <div className="col-span-2 pl-4 py-3">
-                  <div className="font-medium">{site.name}</div>
-                  <div className="text-xs text-muted-foreground">{site.address}</div>
-                </div>
-                <div>{site.type}</div>
-                <div>
-                  <span 
-                    className={`px-2 py-1 rounded-full text-xs ${
-                      site.status === "Active" 
-                        ? "bg-green-100 text-green-800" 
-                        : site.status === "Maintenance" 
-                          ? "bg-yellow-100 text-yellow-800" 
-                          : "bg-red-100 text-red-800"
-                    }`}
-                  >
-                    {site.status}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <Tabs defaultValue="maps" className="mb-8">
+        <TabsList className="mb-4">
+          <TabsTrigger value="maps">Maps</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="maps">
+          <Tabs defaultValue="publicTruckChargers" className="mb-4">
+            <TabsList className="mb-4">
+              <TabsTrigger value="publicTruckChargers">Public Truck Chargers</TabsTrigger>
+              <TabsTrigger value="germanyHDT">Germany HDT</TabsTrigger>
+              <TabsTrigger value="italyHDT">Italy HDT Map 2</TabsTrigger>
+              <TabsTrigger value="ocmTruckMap">OCM Truck Map</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="publicTruckChargers">
+              <iframe
+                src="/Public truck chargers (1).html"
+                className="w-full h-[400px] rounded-lg border-0"
+                title="Public Truck Chargers Map"
+              />
+            </TabsContent>
+
+            <TabsContent value="germanyHDT">
+              <iframe
+                src="/germany hdt (1).html"
+                className="w-full h-[400px] rounded-lg border-0"
+                title="Germany HDT Map"
+              />
+            </TabsContent>
+
+            <TabsContent value="italyHDT">
+              <iframe
+                src="/Italy hdt map 2 (1).html"
+                className="w-full h-[400px] rounded-lg border-0"
+                title="Italy HDT Map 2"
+              />
+            </TabsContent>
+
+            <TabsContent value="ocmTruckMap">
+              <iframe
+                src="/ocm_truck_map.html"
+                className="w-full h-[400px] rounded-lg border-0"
+                title="OCM Truck Map"
+              />
+            </TabsContent>
+          </Tabs>
+        </TabsContent>
+      </Tabs>
 
       <Button>View All Sites</Button>
     </div>

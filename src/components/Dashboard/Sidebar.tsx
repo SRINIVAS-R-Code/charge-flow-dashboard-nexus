@@ -4,9 +4,11 @@ import { cn } from "@/lib/utils";
 interface SidebarProps {
   activePage: string;
   setActivePage: (page: string) => void;
+  totalChargingStations?: number;
+  activeChargingStations?: number;
 }
 
-const Sidebar = ({ activePage, setActivePage }: SidebarProps) => {
+const Sidebar = ({ activePage, setActivePage, totalChargingStations, activeChargingStations }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const navItems = [
@@ -28,7 +30,10 @@ const Sidebar = ({ activePage, setActivePage }: SidebarProps) => {
       <div className="p-4 flex items-center justify-between">
         <div className={cn("flex items-center", collapsed && "justify-center w-full")}>
           {!collapsed && (
-            <span className="text-xl font-bold ml-2">E-HDT Dashboard</span>
+            <>
+              <img src="/logo.png" alt="E-HDT Logo" className="h-8 w-8 mr-2" />
+              <span className="text-xl font-bold ml-2">E-HDT Dashboard</span>
+            </>
           )}
         </div>
         <button
@@ -60,6 +65,14 @@ const Sidebar = ({ activePage, setActivePage }: SidebarProps) => {
           ))}
         </ul>
       </nav>
+
+      {!collapsed && (
+        <div className="mt-6 px-4 bg-white/10 rounded-lg p-3 text-sm">
+          <p className="font-medium">Charging Stations Summary</p>
+          <p>Total Stations: {totalChargingStations ?? "N/A"}</p>
+          <p>Active Stations: {activeChargingStations ?? "N/A"}</p>
+        </div>
+      )}
       
       <div className="absolute bottom-4 left-0 right-0 px-4">
         {!collapsed && (

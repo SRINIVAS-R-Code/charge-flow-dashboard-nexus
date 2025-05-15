@@ -1,0 +1,3098 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a89fb4230f8c5a83ea3a323e2f1ee5f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a89fb4230f8c5a83ea3a323e2f1ee5f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a89fb4230f8c5a83ea3a323e2f1ee5f6 = L.map(
+                "map_a89fb4230f8c5a83ea3a323e2f1ee5f6",
+                {
+                    center: [50.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f226e4ddb4655e74451c3cb4a7b54ff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8f226e4ddb4655e74451c3cb4a7b54ff.addTo(map_a89fb4230f8c5a83ea3a323e2f1ee5f6);
+        
+    
+            var marker_cluster_5664db9d84448cee6c82fbab5d209e81 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_5acea113a1590324b03b6634d73178a9 = L.marker(
+                [51.223522, 10.455457],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_bcdf1bea298db1f01eb23264e03212a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8b34f72cab4324754bcd25acffcf36f = $(`<div id="html_a8b34f72cab4324754bcd25acffcf36f" style="width: 100.0%; height: 100.0%;"><strong>Ammersche Landstraße 27-31</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_bcdf1bea298db1f01eb23264e03212a7.setContent(html_a8b34f72cab4324754bcd25acffcf36f);
+            
+        
+
+        marker_5acea113a1590324b03b6634d73178a9.bindPopup(popup_bcdf1bea298db1f01eb23264e03212a7)
+        ;
+
+        
+    
+    
+            var marker_3e0746e713db0df1bfeea7fe11cb4a4c = L.marker(
+                [51.0069417, 10.1809623],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_a993fd48b1376a9beb4a4b7116c9d22e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07df3d9617c8fd18edcfb09126e35c8c = $(`<div id="html_07df3d9617c8fd18edcfb09126e35c8c" style="width: 100.0%; height: 100.0%;"><strong>BAB 4 TuR Werratal-Süd</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 8<br>Vehicle Type: Truck</div>`)[0];
+                popup_a993fd48b1376a9beb4a4b7116c9d22e.setContent(html_07df3d9617c8fd18edcfb09126e35c8c);
+            
+        
+
+        marker_3e0746e713db0df1bfeea7fe11cb4a4c.bindPopup(popup_a993fd48b1376a9beb4a4b7116c9d22e)
+        ;
+
+        
+    
+    
+            var marker_606b548968aa1e54d6f07cda1b82b39f = L.marker(
+                [51.390732726423295, 10.342590571338974],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cf11f89c9249497a61599a35c120c324 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49a539c249a6071ee7f0215834408b64 = $(`<div id="html_49a539c249a6071ee7f0215834408b64" style="width: 100.0%; height: 100.0%;"><strong>Ionity Leinefelde-Worbis</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_cf11f89c9249497a61599a35c120c324.setContent(html_49a539c249a6071ee7f0215834408b64);
+            
+        
+
+        marker_606b548968aa1e54d6f07cda1b82b39f.bindPopup(popup_cf11f89c9249497a61599a35c120c324)
+        ;
+
+        
+    
+    
+            var marker_7f3d67c4ed159b20e0f4dd888c1bd520 = L.marker(
+                [51.446806342558205, 10.572035379250906],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_61e28612aec1fde3848730d1ba727c28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1808bccbc07ce603af39fce7c5a08e5f = $(`<div id="html_1808bccbc07ce603af39fce7c5a08e5f" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_61e28612aec1fde3848730d1ba727c28.setContent(html_1808bccbc07ce603af39fce7c5a08e5f);
+            
+        
+
+        marker_7f3d67c4ed159b20e0f4dd888c1bd520.bindPopup(popup_61e28612aec1fde3848730d1ba727c28)
+        ;
+
+        
+    
+    
+            var marker_77640a209e18b029a86f738f7f127c6e = L.marker(
+                [51.37358640924069, 10.115983770490914],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_4dfdccfa8b9a14b4ac61c08d9fa719ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b1b958dff0be03bf6ca5e60ba6802b9 = $(`<div id="html_2b1b958dff0be03bf6ca5e60ba6802b9" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_4dfdccfa8b9a14b4ac61c08d9fa719ad.setContent(html_2b1b958dff0be03bf6ca5e60ba6802b9);
+            
+        
+
+        marker_77640a209e18b029a86f738f7f127c6e.bindPopup(popup_4dfdccfa8b9a14b4ac61c08d9fa719ad)
+        ;
+
+        
+    
+    
+            var marker_18f16015920d956fade501497697fb31 = L.marker(
+                [51.21748098694593, 10.948001244781125],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e20bf69e430f244f466da2847091fbb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abdcffe8d8971ea1f3a3f893d215d224 = $(`<div id="html_abdcffe8d8971ea1f3a3f893d215d224" style="width: 100.0%; height: 100.0%;"><strong>HPC Hinter der Ziegelhütte</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_e20bf69e430f244f466da2847091fbb2.setContent(html_abdcffe8d8971ea1f3a3f893d215d224);
+            
+        
+
+        marker_18f16015920d956fade501497697fb31.bindPopup(popup_e20bf69e430f244f466da2847091fbb2)
+        ;
+
+        
+    
+    
+            var marker_1aae699300e3f50236c93fc5e2d005cc = L.marker(
+                [50.89836455552612, 10.725624737933686],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_622a54353884504601771b6b58610f94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b993bd2488655aa6bbbe8b15fae30b2c = $(`<div id="html_b993bd2488655aa6bbbe8b15fae30b2c" style="width: 100.0%; height: 100.0%;"><strong>IONITY Schwabhausen</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_622a54353884504601771b6b58610f94.setContent(html_b993bd2488655aa6bbbe8b15fae30b2c);
+            
+        
+
+        marker_1aae699300e3f50236c93fc5e2d005cc.bindPopup(popup_622a54353884504601771b6b58610f94)
+        ;
+
+        
+    
+    
+            var marker_b7a67eff4bf3f6ceaff8a586580555c0 = L.marker(
+                [51.37313, 10.85852],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e7defd2f3a440468b1827345a5ffd280 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2735927789a22cdb2a1b4b1c9cc19a5 = $(`<div id="html_c2735927789a22cdb2a1b4b1c9cc19a5" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_e7defd2f3a440468b1827345a5ffd280.setContent(html_c2735927789a22cdb2a1b4b1c9cc19a5);
+            
+        
+
+        marker_b7a67eff4bf3f6ceaff8a586580555c0.bindPopup(popup_e7defd2f3a440468b1827345a5ffd280)
+        ;
+
+        
+    
+    
+            var marker_65515a0d1666bd7c008f7f34bdd53a15 = L.marker(
+                [51.03460311947831, 11.001802406337616],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_aff489c44423c1be4c3c341ea5501c2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98d6223cebdacc5857bcc94214973ba2 = $(`<div id="html_98d6223cebdacc5857bcc94214973ba2" style="width: 100.0%; height: 100.0%;"><strong>Globus Mittelhausen</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_aff489c44423c1be4c3c341ea5501c2c.setContent(html_98d6223cebdacc5857bcc94214973ba2);
+            
+        
+
+        marker_65515a0d1666bd7c008f7f34bdd53a15.bindPopup(popup_aff489c44423c1be4c3c341ea5501c2c)
+        ;
+
+        
+    
+    
+            var marker_32832ed2db72c0990c33459ea17bdf7c = L.marker(
+                [51.48275, 10.79764],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6933d3775c205249b4c82278d902daa4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69fccd57d71ba194e3eea78080ec9d2c = $(`<div id="html_69fccd57d71ba194e3eea78080ec9d2c" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 100 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_6933d3775c205249b4c82278d902daa4.setContent(html_69fccd57d71ba194e3eea78080ec9d2c);
+            
+        
+
+        marker_32832ed2db72c0990c33459ea17bdf7c.bindPopup(popup_6933d3775c205249b4c82278d902daa4)
+        ;
+
+        
+    
+    
+            var marker_863690eef814d44254f596cab322cdcb = L.marker(
+                [51.00385546099244, 11.01495067418668],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_531bd934919603074e5fa0bab9c5c1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02c00c4e9350664348dcf52e0943a99a = $(`<div id="html_02c00c4e9350664348dcf52e0943a99a" style="width: 100.0%; height: 100.0%;"><strong>HPC Vilniuspassage</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_531bd934919603074e5fa0bab9c5c1b7.setContent(html_02c00c4e9350664348dcf52e0943a99a);
+            
+        
+
+        marker_863690eef814d44254f596cab322cdcb.bindPopup(popup_531bd934919603074e5fa0bab9c5c1b7)
+        ;
+
+        
+    
+    
+            var marker_772c872f6763c0e04d4b7564439f96e0 = L.marker(
+                [51.00072990680869, 11.013107203174712],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_696e23e999067a2828abb10bd69e219d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b47f11e93cca352648fc00daada7bc3 = $(`<div id="html_5b47f11e93cca352648fc00daada7bc3" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 100 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_696e23e999067a2828abb10bd69e219d.setContent(html_5b47f11e93cca352648fc00daada7bc3);
+            
+        
+
+        marker_772c872f6763c0e04d4b7564439f96e0.bindPopup(popup_696e23e999067a2828abb10bd69e219d)
+        ;
+
+        
+    
+    
+            var marker_22c54e666959a53428c10b30d9b9699a = L.marker(
+                [51.012314, 11.039866],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2845d73b517060816ecd1b774634c29f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db78e9ffa1ce0ddf3000aa6a9fb534dc = $(`<div id="html_db78e9ffa1ce0ddf3000aa6a9fb534dc" style="width: 100.0%; height: 100.0%;"><strong>Schwerborner Straße 30</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_2845d73b517060816ecd1b774634c29f.setContent(html_db78e9ffa1ce0ddf3000aa6a9fb534dc);
+            
+        
+
+        marker_22c54e666959a53428c10b30d9b9699a.bindPopup(popup_2845d73b517060816ecd1b774634c29f)
+        ;
+
+        
+    
+    
+            var marker_73e6570ae0fc1032e77243045a0758df = L.marker(
+                [50.888322, 10.935094],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_9dead22ca1cdf487d6d444628a65d194 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b234c52f2f5f30ce6b0ded53c0df1b7 = $(`<div id="html_1b234c52f2f5f30ce6b0ded53c0df1b7" style="width: 100.0%; height: 100.0%;"><strong>Thöreyer Straße 4</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_9dead22ca1cdf487d6d444628a65d194.setContent(html_1b234c52f2f5f30ce6b0ded53c0df1b7);
+            
+        
+
+        marker_73e6570ae0fc1032e77243045a0758df.bindPopup(popup_9dead22ca1cdf487d6d444628a65d194)
+        ;
+
+        
+    
+    
+            var marker_69bc5d7fd3eb412a1eb2c48dca087605 = L.marker(
+                [50.888322, 10.935094],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_44e000e72a64d32119b8ac3049476e79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_142ba5386fa274eb6639f830a75faeac = $(`<div id="html_142ba5386fa274eb6639f830a75faeac" style="width: 100.0%; height: 100.0%;"><strong>Autohof Am Erfurter Kreuz</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 8<br>Vehicle Type: Truck</div>`)[0];
+                popup_44e000e72a64d32119b8ac3049476e79.setContent(html_142ba5386fa274eb6639f830a75faeac);
+            
+        
+
+        marker_69bc5d7fd3eb412a1eb2c48dca087605.bindPopup(popup_44e000e72a64d32119b8ac3049476e79)
+        ;
+
+        
+    
+    
+            var marker_55472c906b943498e58d21d026e3adba = L.marker(
+                [51.16606399944982, 11.112262965982552],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_9d93cf80846bb3c5ce3a3f5b3747b29c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d3fdf922ad970c91ef155bab7b78d31 = $(`<div id="html_1d3fdf922ad970c91ef155bab7b78d31" style="width: 100.0%; height: 100.0%;"><strong>HPC Hagebaumarkt</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_9d93cf80846bb3c5ce3a3f5b3747b29c.setContent(html_1d3fdf922ad970c91ef155bab7b78d31);
+            
+        
+
+        marker_55472c906b943498e58d21d026e3adba.bindPopup(popup_9d93cf80846bb3c5ce3a3f5b3747b29c)
+        ;
+
+        
+    
+    
+            var marker_0ea3889ad04ed8a548f3cf48c1e6bd8e = L.marker(
+                [51.5932417, 10.5582633],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_0f9ea17d8f54a3a030adce28cbc6ab89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a465cbc8b30c34c8468904dbd1adb1b0 = $(`<div id="html_a465cbc8b30c34c8468904dbd1adb1b0" style="width: 100.0%; height: 100.0%;"><strong>Ringstraße</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_0f9ea17d8f54a3a030adce28cbc6ab89.setContent(html_a465cbc8b30c34c8468904dbd1adb1b0);
+            
+        
+
+        marker_0ea3889ad04ed8a548f3cf48c1e6bd8e.bindPopup(popup_0f9ea17d8f54a3a030adce28cbc6ab89)
+        ;
+
+        
+    
+    
+            var marker_86c85e35eefe3956b9042b17f939d15c = L.marker(
+                [51.59327130891586, 10.558293825492685],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e8f818352757bbe73fb1daca4604cf31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f62345e4fecb3d64fc204a11950b2a29 = $(`<div id="html_f62345e4fecb3d64fc204a11950b2a29" style="width: 100.0%; height: 100.0%;"><strong>Aldi car park</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_e8f818352757bbe73fb1daca4604cf31.setContent(html_f62345e4fecb3d64fc204a11950b2a29);
+            
+        
+
+        marker_86c85e35eefe3956b9042b17f939d15c.bindPopup(popup_e8f818352757bbe73fb1daca4604cf31)
+        ;
+
+        
+    
+    
+            var marker_4ea25c4b5ced2812295c2309a49bc709 = L.marker(
+                [50.860485049087, 10.960109692746158],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_97d3b790c32cbd97c84c6b685dfe146b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a67ee880e84a1f2f1f969cccba2b659b = $(`<div id="html_a67ee880e84a1f2f1f969cccba2b659b" style="width: 100.0%; height: 100.0%;"><strong>HPC Burger King</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 5<br>Vehicle Type: Truck</div>`)[0];
+                popup_97d3b790c32cbd97c84c6b685dfe146b.setContent(html_a67ee880e84a1f2f1f969cccba2b659b);
+            
+        
+
+        marker_4ea25c4b5ced2812295c2309a49bc709.bindPopup(popup_97d3b790c32cbd97c84c6b685dfe146b)
+        ;
+
+        
+    
+    
+            var marker_074dcd4cf558e2a84977ccfc165385ea = L.marker(
+                [50.85637133760255, 10.957835061596713],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ddc16d6b77432a7c36f10b0e9cf1f443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8c285d6339e679730547b3369667295 = $(`<div id="html_a8c285d6339e679730547b3369667295" style="width: 100.0%; height: 100.0%;"><strong>HPC McDonald's</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_ddc16d6b77432a7c36f10b0e9cf1f443.setContent(html_a8c285d6339e679730547b3369667295);
+            
+        
+
+        marker_074dcd4cf558e2a84977ccfc165385ea.bindPopup(popup_ddc16d6b77432a7c36f10b0e9cf1f443)
+        ;
+
+        
+    
+    
+            var marker_9e9b03ad7754ddd343a2f32e01eb65b1 = L.marker(
+                [51.1883172, 11.1627122],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_5c2401f4cdfff1cc2c16fb6207d4acc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_313e054e9b2b66504ecd62c6fc4b8e26 = $(`<div id="html_313e054e9b2b66504ecd62c6fc4b8e26" style="width: 100.0%; height: 100.0%;"><strong>BAB71 Raststätte Leubinger Fürstenhügel</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 6<br>Vehicle Type: Truck</div>`)[0];
+                popup_5c2401f4cdfff1cc2c16fb6207d4acc3.setContent(html_313e054e9b2b66504ecd62c6fc4b8e26);
+            
+        
+
+        marker_9e9b03ad7754ddd343a2f32e01eb65b1.bindPopup(popup_5c2401f4cdfff1cc2c16fb6207d4acc3)
+        ;
+
+        
+    
+    
+            var marker_da32828bfd9c6a361cd8fcffa006634d = L.marker(
+                [50.84912015980606, 10.95542283638153],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6d0a53b56cf77497427067a718328ee8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48997ff62d2b8daab35e382488422820 = $(`<div id="html_48997ff62d2b8daab35e382488422820" style="width: 100.0%; height: 100.0%;"><strong>HPC Hellweg</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_6d0a53b56cf77497427067a718328ee8.setContent(html_48997ff62d2b8daab35e382488422820);
+            
+        
+
+        marker_da32828bfd9c6a361cd8fcffa006634d.bindPopup(popup_6d0a53b56cf77497427067a718328ee8)
+        ;
+
+        
+    
+    
+            var marker_9f9d7a71e5fd285e1355cfc2ac4f4d4e = L.marker(
+                [50.84783423294522, 10.95787726635976],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2a95516fdbb028bbde7099b2f441ef1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b89b46254c29d36b863b777f5d2a9bd = $(`<div id="html_3b89b46254c29d36b863b777f5d2a9bd" style="width: 100.0%; height: 100.0%;"><strong>ALDI</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_2a95516fdbb028bbde7099b2f441ef1d.setContent(html_3b89b46254c29d36b863b777f5d2a9bd);
+            
+        
+
+        marker_9f9d7a71e5fd285e1355cfc2ac4f4d4e.bindPopup(popup_2a95516fdbb028bbde7099b2f441ef1d)
+        ;
+
+        
+    
+    
+            var marker_174aff69d6482362cc79e4d8a7a3832c = L.marker(
+                [50.977088, 11.106378],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_3719b4b762ace71451db35fc9581e317 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84f04063ac756bc15501dfebd013edba = $(`<div id="html_84f04063ac756bc15501dfebd013edba" style="width: 100.0%; height: 100.0%;"><strong>Weimarische Straße 117</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 6<br>Vehicle Type: Truck</div>`)[0];
+                popup_3719b4b762ace71451db35fc9581e317.setContent(html_84f04063ac756bc15501dfebd013edba);
+            
+        
+
+        marker_174aff69d6482362cc79e4d8a7a3832c.bindPopup(popup_3719b4b762ace71451db35fc9581e317)
+        ;
+
+        
+    
+    
+            var marker_79ebb96a22b836744fb727fbc2d7e5c3 = L.marker(
+                [50.726454, 10.841634],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_12e4c8fec1b5ab7f8e02a2a2f7a65319 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f85ebb6d6b2be741b0808084dd49d35e = $(`<div id="html_f85ebb6d6b2be741b0808084dd49d35e" style="width: 100.0%; height: 100.0%;"><strong>IONITY Thüringer Wald Nord</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_12e4c8fec1b5ab7f8e02a2a2f7a65319.setContent(html_f85ebb6d6b2be741b0808084dd49d35e);
+            
+        
+
+        marker_79ebb96a22b836744fb727fbc2d7e5c3.bindPopup(popup_12e4c8fec1b5ab7f8e02a2a2f7a65319)
+        ;
+
+        
+    
+    
+            var marker_f7a66b198026f0a0b406e6bb60d660b8 = L.marker(
+                [50.724708, 10.847168],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_67dcec9a6abec1003a910b7a7ed7e927 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c101006e0657e1edcbf8b4a6721fadb8 = $(`<div id="html_c101006e0657e1edcbf8b4a6721fadb8" style="width: 100.0%; height: 100.0%;"><strong>IONITY Thüringer Wald Süd</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_67dcec9a6abec1003a910b7a7ed7e927.setContent(html_c101006e0657e1edcbf8b4a6721fadb8);
+            
+        
+
+        marker_f7a66b198026f0a0b406e6bb60d660b8.bindPopup(popup_67dcec9a6abec1003a910b7a7ed7e927)
+        ;
+
+        
+    
+    
+            var marker_f24332e35025760a036fcb26cc61829a = L.marker(
+                [51.563347744960765, 9.92260555991595],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e0721b2e2e748f5697227576f9b495a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a8f1a2e81e0f30dc87d0a60a5a7c9d4 = $(`<div id="html_6a8f1a2e81e0f30dc87d0a60a5a7c9d4" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 200 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_e0721b2e2e748f5697227576f9b495a3.setContent(html_6a8f1a2e81e0f30dc87d0a60a5a7c9d4);
+            
+        
+
+        marker_f24332e35025760a036fcb26cc61829a.bindPopup(popup_e0721b2e2e748f5697227576f9b495a3)
+        ;
+
+        
+    
+    
+            var marker_71809aec1e82414fdc7f7a9ac60114f8 = L.marker(
+                [50.64422400000052, 10.685195000000135],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1cb3c833335dcb6fb162aa970717f373 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1182fe35ab7398e80f1e1c4450d8403d = $(`<div id="html_1182fe35ab7398e80f1e1c4450d8403d" style="width: 100.0%; height: 100.0%;"><strong>Ionity Zella-Mehlis</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_1cb3c833335dcb6fb162aa970717f373.setContent(html_1182fe35ab7398e80f1e1c4450d8403d);
+            
+        
+
+        marker_71809aec1e82414fdc7f7a9ac60114f8.bindPopup(popup_1cb3c833335dcb6fb162aa970717f373)
+        ;
+
+        
+    
+    
+            var marker_8d421f0e8ced6711dfa561ea1ab3f3a4 = L.marker(
+                [50.643921, 10.684882],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_be7235eae3d2637103e5e0bf6958ed40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a94ab4a1a5a391c334c555a16cd20e02 = $(`<div id="html_a94ab4a1a5a391c334c555a16cd20e02" style="width: 100.0%; height: 100.0%;"><strong>Zella-Mehlis Supercharger</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_be7235eae3d2637103e5e0bf6958ed40.setContent(html_a94ab4a1a5a391c334c555a16cd20e02);
+            
+        
+
+        marker_8d421f0e8ced6711dfa561ea1ab3f3a4.bindPopup(popup_be7235eae3d2637103e5e0bf6958ed40)
+        ;
+
+        
+    
+    
+            var marker_4d4d80c647600f1a67319800fdb47ec0 = L.marker(
+                [50.6437261755741, 10.685098234574925],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_97da4a75813d7951edb8346eb931e40a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a5a3ed08e7cfdc55405bc5941966c6f = $(`<div id="html_6a5a3ed08e7cfdc55405bc5941966c6f" style="width: 100.0%; height: 100.0%;"><strong>McDonald's Zella-Mehlis</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_97da4a75813d7951edb8346eb931e40a.setContent(html_6a5a3ed08e7cfdc55405bc5941966c6f);
+            
+        
+
+        marker_4d4d80c647600f1a67319800fdb47ec0.bindPopup(popup_97da4a75813d7951edb8346eb931e40a)
+        ;
+
+        
+    
+    
+            var marker_e1ba4330eb691d154e8dc51ff54f05ab = L.marker(
+                [50.642146216535366, 10.680640024022551],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2090fb01efad1fe23f5eb92688fd3f40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d64154ef02b035978dcc1fc2fad1545 = $(`<div id="html_1d64154ef02b035978dcc1fc2fad1545" style="width: 100.0%; height: 100.0%;"><strong>Drei-Ähren-Bäckerei</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_2090fb01efad1fe23f5eb92688fd3f40.setContent(html_1d64154ef02b035978dcc1fc2fad1545);
+            
+        
+
+        marker_e1ba4330eb691d154e8dc51ff54f05ab.bindPopup(popup_2090fb01efad1fe23f5eb92688fd3f40)
+        ;
+
+        
+    
+    
+            var marker_b75804603956b5fbc4a47fff76b403a6 = L.marker(
+                [51.370246990985095, 9.633991728698106],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cea0671ef977dedd446aff0a3330bfee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63a8f0a7436bd9b9378ca8d632000f79 = $(`<div id="html_63a8f0a7436bd9b9378ca8d632000f79" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Autohof Lutterberg</strong><br>Operator: Unknown<br>Power: 135 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_cea0671ef977dedd446aff0a3330bfee.setContent(html_63a8f0a7436bd9b9378ca8d632000f79);
+            
+        
+
+        marker_b75804603956b5fbc4a47fff76b403a6.bindPopup(popup_cea0671ef977dedd446aff0a3330bfee)
+        ;
+
+        
+    
+    
+            var marker_69484ecf4d2856e7d7654da3dba3d4eb = L.marker(
+                [51.37050660315356, 9.633734893215433],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1934ccc9cf9d2044c7bcfdecbcae02e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9895e6996f2d600db799fc7b114bd41 = $(`<div id="html_c9895e6996f2d600db799fc7b114bd41" style="width: 100.0%; height: 100.0%;"><strong>IONITY Lutterberg</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_1934ccc9cf9d2044c7bcfdecbcae02e5.setContent(html_c9895e6996f2d600db799fc7b114bd41);
+            
+        
+
+        marker_69484ecf4d2856e7d7654da3dba3d4eb.bindPopup(popup_1934ccc9cf9d2044c7bcfdecbcae02e5)
+        ;
+
+        
+    
+    
+            var marker_a527c21653135f2783a0de1faeba3e4b = L.marker(
+                [51.41274198758654, 9.655957486907738],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_10081ec0cf0c59f2da9ce7ba1bfd2796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e3807be13169d0dfa442b01a4e3a783 = $(`<div id="html_5e3807be13169d0dfa442b01a4e3a783" style="width: 100.0%; height: 100.0%;"><strong>Comfortcharge Ladestation</strong><br>Operator: Unknown<br>Power: 100 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_10081ec0cf0c59f2da9ce7ba1bfd2796.setContent(html_5e3807be13169d0dfa442b01a4e3a783);
+            
+        
+
+        marker_a527c21653135f2783a0de1faeba3e4b.bindPopup(popup_10081ec0cf0c59f2da9ce7ba1bfd2796)
+        ;
+
+        
+    
+    
+            var marker_6f0efa08ae5eeefd0adabed442263692 = L.marker(
+                [46.16760773089257, 1.8853342299157705],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ac4b031152f96b60c85e808e3691fcc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bbf6798fc8ec6054feed19df112fd8f = $(`<div id="html_7bbf6798fc8ec6054feed19df112fd8f" style="width: 100.0%; height: 100.0%;"><strong>Carrefour Energies - Guéret</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_ac4b031152f96b60c85e808e3691fcc6.setContent(html_7bbf6798fc8ec6054feed19df112fd8f);
+            
+        
+
+        marker_6f0efa08ae5eeefd0adabed442263692.bindPopup(popup_ac4b031152f96b60c85e808e3691fcc6)
+        ;
+
+        
+    
+    
+            var marker_24c4dcead53ec284fd5a5b97ddac73ee = L.marker(
+                [46.378453, 2.586523],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_623fa41bca075066f884a4cc452d03fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ea5931b96b05f243a36f4734707a297 = $(`<div id="html_4ea5931b96b05f243a36f4734707a297" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Montluçon - Aire des Vérités</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_623fa41bca075066f884a4cc452d03fe.setContent(html_4ea5931b96b05f243a36f4734707a297);
+            
+        
+
+        marker_24c4dcead53ec284fd5a5b97ddac73ee.bindPopup(popup_623fa41bca075066f884a4cc452d03fe)
+        ;
+
+        
+    
+    
+            var marker_2e1b89ea3d98595482d7e51879895f01 = L.marker(
+                [46.37874069064628, 2.586959287577656],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_5a5fc59ef57c010dd38e8f444657813d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2052e6a588a7804887358823f6bc1693 = $(`<div id="html_2052e6a588a7804887358823f6bc1693" style="width: 100.0%; height: 100.0%;"><strong>Ionity Vérités</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_5a5fc59ef57c010dd38e8f444657813d.setContent(html_2052e6a588a7804887358823f6bc1693);
+            
+        
+
+        marker_2e1b89ea3d98595482d7e51879895f01.bindPopup(popup_5a5fc59ef57c010dd38e8f444657813d)
+        ;
+
+        
+    
+    
+            var marker_ec0be953767bce32d68ae2a156655956 = L.marker(
+                [46.324444248275, 2.968074945871649],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_068bd4a687dec58e35c903ed82a5c7fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa65e19d60f43cb2cce3886a4a549c54 = $(`<div id="html_fa65e19d60f43cb2cce3886a4a549c54" style="width: 100.0%; height: 100.0%;"><strong>Ionity Montmarault</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_068bd4a687dec58e35c903ed82a5c7fc.setContent(html_fa65e19d60f43cb2cce3886a4a549c54);
+            
+        
+
+        marker_ec0be953767bce32d68ae2a156655956.bindPopup(popup_068bd4a687dec58e35c903ed82a5c7fc)
+        ;
+
+        
+    
+    
+            var marker_7e98d38bf2dd5992b9b11f404710a445 = L.marker(
+                [46.330665778408616, 2.975421420133728],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_aea365971028d68db6bd433e39c95a80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b67489c9df28e918baaef2bf1142e3c = $(`<div id="html_7b67489c9df28e918baaef2bf1142e3c" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Montmarault</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_aea365971028d68db6bd433e39c95a80.setContent(html_7b67489c9df28e918baaef2bf1142e3c);
+            
+        
+
+        marker_7e98d38bf2dd5992b9b11f404710a445.bindPopup(popup_aea365971028d68db6bd433e39c95a80)
+        ;
+
+        
+    
+    
+            var marker_da4afa38578f759a8331843323686e0d = L.marker(
+                [46.751623, 2.417606],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_dc14595bf7a5f3217cc9ec2fbb35ca6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e77f2c3277b09bc3f15291a24ec03ea = $(`<div id="html_9e77f2c3277b09bc3f15291a24ec03ea" style="width: 100.0%; height: 100.0%;"><strong>Ionity Centre de la France Sud</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_dc14595bf7a5f3217cc9ec2fbb35ca6e.setContent(html_9e77f2c3277b09bc3f15291a24ec03ea);
+            
+        
+
+        marker_da4afa38578f759a8331843323686e0d.bindPopup(popup_dc14595bf7a5f3217cc9ec2fbb35ca6e)
+        ;
+
+        
+    
+    
+            var marker_09ce2b558cb028688a81fe9a64111b71 = L.marker(
+                [46.751937, 2.417075],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_b90ca1f73e4552d2dd5f25e488ab83a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_633d13f6a34ded81c9764a599498f2c3 = $(`<div id="html_633d13f6a34ded81c9764a599498f2c3" style="width: 100.0%; height: 100.0%;"><strong>Ionity Centre de la France Nord</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_b90ca1f73e4552d2dd5f25e488ab83a5.setContent(html_633d13f6a34ded81c9764a599498f2c3);
+            
+        
+
+        marker_09ce2b558cb028688a81fe9a64111b71.bindPopup(popup_b90ca1f73e4552d2dd5f25e488ab83a5)
+        ;
+
+        
+    
+    
+            var marker_e6cf12b86cbe7262f31da420a1dfb76b = L.marker(
+                [46.3142639116539, 1.41975883759471],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e7aaad3b9990e98c866ae2c3a3be85eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_998f7ff91deed90e190a62c13ba32095 = $(`<div id="html_998f7ff91deed90e190a62c13ba32095" style="width: 100.0%; height: 100.0%;"><strong>Ionity Boismandé Est</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_e7aaad3b9990e98c866ae2c3a3be85eb.setContent(html_998f7ff91deed90e190a62c13ba32095);
+            
+        
+
+        marker_e6cf12b86cbe7262f31da420a1dfb76b.bindPopup(popup_e7aaad3b9990e98c866ae2c3a3be85eb)
+        ;
+
+        
+    
+    
+            var marker_ec64edac812247a28cc1b6b6e5fd273b = L.marker(
+                [46.3132731960827, 1.41686869459204],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_c460159eb4a448ae31ebbcab5caa0378 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8deea96d5127812ed67b88fa780cb924 = $(`<div id="html_8deea96d5127812ed67b88fa780cb924" style="width: 100.0%; height: 100.0%;"><strong>Ionity Boismandé Ouest</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_c460159eb4a448ae31ebbcab5caa0378.setContent(html_8deea96d5127812ed67b88fa780cb924);
+            
+        
+
+        marker_ec64edac812247a28cc1b6b6e5fd273b.bindPopup(popup_c460159eb4a448ae31ebbcab5caa0378)
+        ;
+
+        
+    
+    
+            var marker_faaf46766cbf7623f731368652f178d8 = L.marker(
+                [46.57357076047106, 1.502581063335498],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2d6c8fd01eba22e087a807b109cfd8a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed9f68eeaa1415507502001803b74059 = $(`<div id="html_ed9f68eeaa1415507502001803b74059" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Argenton-sur-Creuse</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_2d6c8fd01eba22e087a807b109cfd8a2.setContent(html_ed9f68eeaa1415507502001803b74059);
+            
+        
+
+        marker_faaf46766cbf7623f731368652f178d8.bindPopup(popup_2d6c8fd01eba22e087a807b109cfd8a2)
+        ;
+
+        
+    
+    
+            var marker_0f1efa349eaa7510608a310bf2199b9d = L.marker(
+                [45.9567376696094, 2.9890874284707536],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_a0c6c7e626a62d176d9f7b938e51294b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_967e6557e96dd0510e1d3793c530ec57 = $(`<div id="html_967e6557e96dd0510e1d3793c530ec57" style="width: 100.0%; height: 100.0%;"><strong>Aire de Manzat</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_a0c6c7e626a62d176d9f7b938e51294b.setContent(html_967e6557e96dd0510e1d3793c530ec57);
+            
+        
+
+        marker_0f1efa349eaa7510608a310bf2199b9d.bindPopup(popup_a0c6c7e626a62d176d9f7b938e51294b)
+        ;
+
+        
+    
+    
+            var marker_5735ad7b3cdc77fd1f9cc3dfdb62b118 = L.marker(
+                [46.05885343979506, 3.1124705152427623],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_40f94269a21d8b5598209ed4255d3583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bffb1386963401edd6a52ccf7bd0ba3 = $(`<div id="html_4bffb1386963401edd6a52ccf7bd0ba3" style="width: 100.0%; height: 100.0%;"><strong>Total - Aire des Volcans d'Auvergne Saint-Agoulin</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_40f94269a21d8b5598209ed4255d3583.setContent(html_4bffb1386963401edd6a52ccf7bd0ba3);
+            
+        
+
+        marker_5735ad7b3cdc77fd1f9cc3dfdb62b118.bindPopup(popup_40f94269a21d8b5598209ed4255d3583)
+        ;
+
+        
+    
+    
+            var marker_a6877b85a078c6eedd7ff3ea643cc507 = L.marker(
+                [46.71626173494696, 1.5935238451470468],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_b6b31fee8017ec86ead1716319fedb0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_944d5e118c7997f40e39a573184791b8 = $(`<div id="html_944d5e118c7997f40e39a573184791b8" style="width: 100.0%; height: 100.0%;"><strong>Total - Relais Mille Etangs</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 6<br>Vehicle Type: Truck</div>`)[0];
+                popup_b6b31fee8017ec86ead1716319fedb0e.setContent(html_944d5e118c7997f40e39a573184791b8);
+            
+        
+
+        marker_a6877b85a078c6eedd7ff3ea643cc507.bindPopup(popup_b6b31fee8017ec86ead1716319fedb0e)
+        ;
+
+        
+    
+    
+            var marker_883c46fa9e2ecf6cb0f3cfce80d111aa = L.marker(
+                [46.67578922857709, 2.897076978931409],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_255c33de0b7dca50a3549a15a5a41c52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9109763fcdefc52d16b9c19f6b628ef9 = $(`<div id="html_9109763fcdefc52d16b9c19f6b628ef9" style="width: 100.0%; height: 100.0%;"><strong>IECharge - Couleuvre</strong><br>Operator: Unknown<br>Power: 320 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_255c33de0b7dca50a3549a15a5a41c52.setContent(html_9109763fcdefc52d16b9c19f6b628ef9);
+            
+        
+
+        marker_883c46fa9e2ecf6cb0f3cfce80d111aa.bindPopup(popup_255c33de0b7dca50a3549a15a5a41c52)
+        ;
+
+        
+    
+    
+            var marker_e7b39e9de794f9ca226c052f36326c88 = L.marker(
+                [46.786760810449294, 1.659294961369369],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_330b2a83b63b62de982c7f0884cfbaac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6789ebb6293cd9b0caeb203c625c2909 = $(`<div id="html_6789ebb6293cd9b0caeb203c625c2909" style="width: 100.0%; height: 100.0%;"><strong>Lidl Saint-Maur</strong><br>Operator: Unknown<br>Power: 160 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_330b2a83b63b62de982c7f0884cfbaac.setContent(html_6789ebb6293cd9b0caeb203c625c2909);
+            
+        
+
+        marker_e7b39e9de794f9ca226c052f36326c88.bindPopup(popup_330b2a83b63b62de982c7f0884cfbaac)
+        ;
+
+        
+    
+    
+            var marker_16c5f43f00b7241f2fa1983c8d879120 = L.marker(
+                [46.80695891911583, 1.6980624576267471],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_bb167f397edaa02f807bb19b18f86486 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62fdb982d7f4b8d3f9d4c7e67b0b232b = $(`<div id="html_62fdb982d7f4b8d3f9d4c7e67b0b232b" style="width: 100.0%; height: 100.0%;"><strong>Carrefour Energies - Châteauroux</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_bb167f397edaa02f807bb19b18f86486.setContent(html_62fdb982d7f4b8d3f9d4c7e67b0b232b);
+            
+        
+
+        marker_16c5f43f00b7241f2fa1983c8d879120.bindPopup(popup_bb167f397edaa02f807bb19b18f86486)
+        ;
+
+        
+    
+    
+            var marker_2f6165c3d51ef688d2ff312a0216c37c = L.marker(
+                [46.57971262485003, 3.0642548322567507],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_7dce7e85ced918343ce57f4d5e92ed69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3170c76661b59f4619fcd7ac6ef1c3d = $(`<div id="html_c3170c76661b59f4619fcd7ac6ef1c3d" style="width: 100.0%; height: 100.0%;"><strong>IECharge </strong><br>Operator: Unknown<br>Power: 320 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_7dce7e85ced918343ce57f4d5e92ed69.setContent(html_c3170c76661b59f4619fcd7ac6ef1c3d);
+            
+        
+
+        marker_2f6165c3d51ef688d2ff312a0216c37c.bindPopup(popup_7dce7e85ced918343ce57f4d5e92ed69)
+        ;
+
+        
+    
+    
+            var marker_012cceeeaabf0ba3733d6ea1606c523c = L.marker(
+                [46.85083722510501, 1.7046538875160877],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d513571603bd9b1e7fbc02f1ef66711f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f656f2b50c162339f66cd6ccca89377 = $(`<div id="html_3f656f2b50c162339f66cd6ccca89377" style="width: 100.0%; height: 100.0%;"><strong>Ionity Chateauroux Nord</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_d513571603bd9b1e7fbc02f1ef66711f.setContent(html_3f656f2b50c162339f66cd6ccca89377);
+            
+        
+
+        marker_012cceeeaabf0ba3733d6ea1606c523c.bindPopup(popup_d513571603bd9b1e7fbc02f1ef66711f)
+        ;
+
+        
+    
+    
+            var marker_1bb6c7af22f1dde5a4d6651a5bfa3ba5 = L.marker(
+                [45.87414886230917, 3.119539109167817],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_92da633402a5c48f56d77804bbc551e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac70ddb7bb7862b0e71d6b82164e6d85 = $(`<div id="html_ac70ddb7bb7862b0e71d6b82164e6d85" style="width: 100.0%; height: 100.0%;"><strong>Allego - Carrefour - Ménétrol</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_92da633402a5c48f56d77804bbc551e8.setContent(html_ac70ddb7bb7862b0e71d6b82164e6d85);
+            
+        
+
+        marker_1bb6c7af22f1dde5a4d6651a5bfa3ba5.bindPopup(popup_92da633402a5c48f56d77804bbc551e8)
+        ;
+
+        
+    
+    
+            var marker_c990fe9e11cb2fa4e29647a8787f87eb = L.marker(
+                [45.89602446032339, 3.137560555205823],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_63252277eaac73c040fdc044ff6663fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea017db3ad58492785e546ff98d9bc69 = $(`<div id="html_ea017db3ad58492785e546ff98d9bc69" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Riom</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_63252277eaac73c040fdc044ff6663fa.setContent(html_ea017db3ad58492785e546ff98d9bc69);
+            
+        
+
+        marker_c990fe9e11cb2fa4e29647a8787f87eb.bindPopup(popup_63252277eaac73c040fdc044ff6663fa)
+        ;
+
+        
+    
+    
+            var marker_d9fb7a9807eab3c9fe305752ef424e4f = L.marker(
+                [46.863058, 1.716048],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_da20b8e9780d9bc13f5db3a46abe863b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_610cab68194711a0b682545ffadb8ea1 = $(`<div id="html_610cab68194711a0b682545ffadb8ea1" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Châteauroux</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_da20b8e9780d9bc13f5db3a46abe863b.setContent(html_610cab68194711a0b682545ffadb8ea1);
+            
+        
+
+        marker_d9fb7a9807eab3c9fe305752ef424e4f.bindPopup(popup_da20b8e9780d9bc13f5db3a46abe863b)
+        ;
+
+        
+    
+    
+            var marker_f3af1f01e1755fb4976d810ed195e94d = L.marker(
+                [45.86769889415041, 1.2711446520757193],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_f016d075b62153ce8a21d7e2094f3bdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca56e4f8ff47bda3ad6c44cc211e7f9f = $(`<div id="html_ca56e4f8ff47bda3ad6c44cc211e7f9f" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Limoges</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_f016d075b62153ce8a21d7e2094f3bdb.setContent(html_ca56e4f8ff47bda3ad6c44cc211e7f9f);
+            
+        
+
+        marker_f3af1f01e1755fb4976d810ed195e94d.bindPopup(popup_f016d075b62153ce8a21d7e2094f3bdb)
+        ;
+
+        
+    
+    
+            var marker_7bcad0408ae9f8db8acb1f5fba035f69 = L.marker(
+                [45.87057850115934, 1.2682295891761726],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e7a733a237fb6bb28acbd943826f2e3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09ba5355a192e5171072a372fe0deacc = $(`<div id="html_09ba5355a192e5171072a372fe0deacc" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Limoges - E. Leclerc</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_e7a733a237fb6bb28acbd943826f2e3e.setContent(html_09ba5355a192e5171072a372fe0deacc);
+            
+        
+
+        marker_7bcad0408ae9f8db8acb1f5fba035f69.bindPopup(popup_e7a733a237fb6bb28acbd943826f2e3e)
+        ;
+
+        
+    
+    
+            var marker_d727e18b45e784724fc383c76b2d20e3 = L.marker(
+                [45.836570076959816, 1.277544703750209],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_c300e071d1b7c63832142cc60eeee271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96c4b14e45d41b4346a3a0db30803e0a = $(`<div id="html_96c4b14e45d41b4346a3a0db30803e0a" style="width: 100.0%; height: 100.0%;"><strong>Allego - Géant Casino Limoges</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 5<br>Vehicle Type: Truck</div>`)[0];
+                popup_c300e071d1b7c63832142cc60eeee271.setContent(html_96c4b14e45d41b4346a3a0db30803e0a);
+            
+        
+
+        marker_d727e18b45e784724fc383c76b2d20e3.bindPopup(popup_c300e071d1b7c63832142cc60eeee271)
+        ;
+
+        
+    
+    
+            var marker_eb58ef814de65953492c2828913632b2 = L.marker(
+                [45.77974474603377, 1.3087362307062165],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_183ded89e89d5adcd3d4a89c0c75e0ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86c2b7e46a670581e65a5f80d7228218 = $(`<div id="html_86c2b7e46a670581e65a5f80d7228218" style="width: 100.0%; height: 100.0%;"><strong>EVZen - Norauto Vigen</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_183ded89e89d5adcd3d4a89c0c75e0ed.setContent(html_86c2b7e46a670581e65a5f80d7228218);
+            
+        
+
+        marker_eb58ef814de65953492c2828913632b2.bindPopup(popup_183ded89e89d5adcd3d4a89c0c75e0ed)
+        ;
+
+        
+    
+    
+            var marker_ce162e7d5ab03e72f4387187e93a1478 = L.marker(
+                [45.785937, 3.141488],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_c51dbd63932067fc1fb7161dad0134c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a4a790c48a8bd4192a208c1751f08fa = $(`<div id="html_6a4a790c48a8bd4192a208c1751f08fa" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Clermont-Ferrand</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_c51dbd63932067fc1fb7161dad0134c5.setContent(html_6a4a790c48a8bd4192a208c1751f08fa);
+            
+        
+
+        marker_ce162e7d5ab03e72f4387187e93a1478.bindPopup(popup_c51dbd63932067fc1fb7161dad0134c5)
+        ;
+
+        
+    
+    
+            var marker_e51d75235882a292b16b88fbccbdc784 = L.marker(
+                [45.75487445309352, 3.129510548924145],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cea0678aa4ab1c0eff71b36cdf8ba314 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37dc984c5f936d03471ce53a9f4d6a7a = $(`<div id="html_37dc984c5f936d03471ce53a9f4d6a7a" style="width: 100.0%; height: 100.0%;"><strong>Total - Relais de Gergovie</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 6<br>Vehicle Type: Truck</div>`)[0];
+                popup_cea0678aa4ab1c0eff71b36cdf8ba314.setContent(html_37dc984c5f936d03471ce53a9f4d6a7a);
+            
+        
+
+        marker_e51d75235882a292b16b88fbccbdc784.bindPopup(popup_cea0678aa4ab1c0eff71b36cdf8ba314)
+        ;
+
+        
+    
+    
+            var marker_3b37751e7a01469a9ba19807086c6a51 = L.marker(
+                [45.779063589649695, 3.1965453314012398],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2388def6ae61cdd1da52e0682aa84c29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c3ca29158f3488c1f5b4429e6c37a36 = $(`<div id="html_3c3ca29158f3488c1f5b4429e6c37a36" style="width: 100.0%; height: 100.0%;"><strong>PowerDot - Cora Lempdes</strong><br>Operator: Unknown<br>Power: 160 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_2388def6ae61cdd1da52e0682aa84c29.setContent(html_3c3ca29158f3488c1f5b4429e6c37a36);
+            
+        
+
+        marker_3b37751e7a01469a9ba19807086c6a51.bindPopup(popup_2388def6ae61cdd1da52e0682aa84c29)
+        ;
+
+        
+    
+    
+            var marker_83db1bc8d16c9eafb19562d379415f6e = L.marker(
+                [45.74437916359966, 3.1776727136150384],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_5c3a40a882d90e99b21e95a50920191f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b891e4c49eb1212c64a22793cdedd7b0 = $(`<div id="html_b891e4c49eb1212c64a22793cdedd7b0" style="width: 100.0%; height: 100.0%;"><strong>Rue des Gardes</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_5c3a40a882d90e99b21e95a50920191f.setContent(html_b891e4c49eb1212c64a22793cdedd7b0);
+            
+        
+
+        marker_83db1bc8d16c9eafb19562d379415f6e.bindPopup(popup_5c3a40a882d90e99b21e95a50920191f)
+        ;
+
+        
+    
+    
+            var marker_06626bfb66939c4ce2dce3ccb1a363f9 = L.marker(
+                [47.049393, 2.344843],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ad89506de19cc131061350acb9017f95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d2a7838a41c052da8e911e60b75014a = $(`<div id="html_9d2a7838a41c052da8e911e60b75014a" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Bourges</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_ad89506de19cc131061350acb9017f95.setContent(html_9d2a7838a41c052da8e911e60b75014a);
+            
+        
+
+        marker_06626bfb66939c4ce2dce3ccb1a363f9.bindPopup(popup_ad89506de19cc131061350acb9017f95)
+        ;
+
+        
+    
+    
+            var marker_1a29822954972b5a6b20bbdb46cfd095 = L.marker(
+                [46.14377439317826, 3.4141851398808285],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2b6026d9d4f42c5ffd64b73b1ea02103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8e156de889d33b6949a6719c2016893 = $(`<div id="html_d8e156de889d33b6949a6719c2016893" style="width: 100.0%; height: 100.0%;"><strong>PowerDot - Cora - Vichy</strong><br>Operator: Unknown<br>Power: 160 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_2b6026d9d4f42c5ffd64b73b1ea02103.setContent(html_d8e156de889d33b6949a6719c2016893);
+            
+        
+
+        marker_1a29822954972b5a6b20bbdb46cfd095.bindPopup(popup_2b6026d9d4f42c5ffd64b73b1ea02103)
+        ;
+
+        
+    
+    
+            var marker_11016a861830e9ceacfe2052101791ba = L.marker(
+                [46.49741445262572, 3.362201283665172],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_807fef479984ddfdf69dea05e062dabc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6e077aea870b4c67beae53f41b3a4b3 = $(`<div id="html_c6e077aea870b4c67beae53f41b3a4b3" style="width: 100.0%; height: 100.0%;"><strong>Ionity Aire du Bourbonnais</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_807fef479984ddfdf69dea05e062dabc.setContent(html_c6e077aea870b4c67beae53f41b3a4b3);
+            
+        
+
+        marker_11016a861830e9ceacfe2052101791ba.bindPopup(popup_807fef479984ddfdf69dea05e062dabc)
+        ;
+
+        
+    
+    
+            var marker_9904358278c2e2fa4114c55a27098a58 = L.marker(
+                [46.4976700681174, 3.362242380625844],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ca63d60e8b1224ff6ea2d3504747a71e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7625e6f6bfd98e30f5766141d5dcc743 = $(`<div id="html_7625e6f6bfd98e30f5766141d5dcc743" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Aire du Bourbonnais</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_ca63d60e8b1224ff6ea2d3504747a71e.setContent(html_7625e6f6bfd98e30f5766141d5dcc743);
+            
+        
+
+        marker_9904358278c2e2fa4114c55a27098a58.bindPopup(popup_ca63d60e8b1224ff6ea2d3504747a71e)
+        ;
+
+        
+    
+    
+            var marker_ca26ae12178f8fca055280c01d2b0f05 = L.marker(
+                [46.79769723536867, 3.1103279743219616],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_66a113cdbaee94014c5952b7e75ab10b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a699b8ba27ff2a3cb0dbd1b76a71e43e = $(`<div id="html_a699b8ba27ff2a3cb0dbd1b76a71e43e" style="width: 100.0%; height: 100.0%;"><strong>IECharge - Saint-Pierre-le-Moûtier</strong><br>Operator: Unknown<br>Power: 320 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_66a113cdbaee94014c5952b7e75ab10b.setContent(html_a699b8ba27ff2a3cb0dbd1b76a71e43e);
+            
+        
+
+        marker_ca26ae12178f8fca055280c01d2b0f05.bindPopup(popup_66a113cdbaee94014c5952b7e75ab10b)
+        ;
+
+        
+    
+    
+            var marker_7d0158e57f42d230ff2182c5a75791f9 = L.marker(
+                [45.7282260532468, 3.187029822458328],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_3a46f5c693dde45b699dba5340cfc5ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f838844697ad24c11754edba084028a = $(`<div id="html_3f838844697ad24c11754edba084028a" style="width: 100.0%; height: 100.0%;"><strong>Route de Clermont</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_3a46f5c693dde45b699dba5340cfc5ee.setContent(html_3f838844697ad24c11754edba084028a);
+            
+        
+
+        marker_7d0158e57f42d230ff2182c5a75791f9.bindPopup(popup_3a46f5c693dde45b699dba5340cfc5ee)
+        ;
+
+        
+    
+    
+            var marker_7e0239c7f312ffb44c638fa7654ba405 = L.marker(
+                [45.5411107232689, 1.5097211830041033],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_0b9ea9a6321e48a3e63da1b2230457b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38201b9e383628c3a3dabdf830b6b769 = $(`<div id="html_38201b9e383628c3a3dabdf830b6b769" style="width: 100.0%; height: 100.0%;"><strong>Total Energies - Aire de la Porte de Corrèze</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_0b9ea9a6321e48a3e63da1b2230457b4.setContent(html_38201b9e383628c3a3dabdf830b6b769);
+            
+        
+
+        marker_7e0239c7f312ffb44c638fa7654ba405.bindPopup(popup_0b9ea9a6321e48a3e63da1b2230457b4)
+        ;
+
+        
+    
+    
+            var marker_5c4adad3e8bc0821db45fcb5b507f9d7 = L.marker(
+                [45.66017599728241, 3.153540640053052],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_428fe1533cea9f2c3b1b04ffa6b5a279 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76ed7f13e2b73f4c8d5ab5a34009b26b = $(`<div id="html_76ed7f13e2b73f4c8d5ab5a34009b26b" style="width: 100.0%; height: 100.0%;"><strong>Ionity Veyre</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_428fe1533cea9f2c3b1b04ffa6b5a279.setContent(html_76ed7f13e2b73f4c8d5ab5a34009b26b);
+            
+        
+
+        marker_5c4adad3e8bc0821db45fcb5b507f9d7.bindPopup(popup_428fe1533cea9f2c3b1b04ffa6b5a279)
+        ;
+
+        
+    
+    
+            var marker_456e2d8145546bced35671529e8ba08a = L.marker(
+                [47.09448494036917, 2.241030499843532],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_c8de9363205cfda51a1737d1ffd6dd2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb9b8109016a6a0a2c49c73d1971efb3 = $(`<div id="html_eb9b8109016a6a0a2c49c73d1971efb3" style="width: 100.0%; height: 100.0%;"><strong>Ionity Bourges-Sainte-Thorette</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_c8de9363205cfda51a1737d1ffd6dd2d.setContent(html_eb9b8109016a6a0a2c49c73d1971efb3);
+            
+        
+
+        marker_456e2d8145546bced35671529e8ba08a.bindPopup(popup_c8de9363205cfda51a1737d1ffd6dd2d)
+        ;
+
+        
+    
+    
+            var marker_1ebfd71a8d1fb85e4c6e137270f44e19 = L.marker(
+                [47.09580635103893, 2.240979548403857],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1f1d3d524743539f3be538c9b34ab636 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f1dceefb9962bd62efeed9c0813046d = $(`<div id="html_5f1dceefb9962bd62efeed9c0813046d" style="width: 100.0%; height: 100.0%;"><strong>Aire de Bourges-Marmagne (Zunder)</strong><br>Operator: Unknown<br>Power: 400 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_1f1d3d524743539f3be538c9b34ab636.setContent(html_5f1dceefb9962bd62efeed9c0813046d);
+            
+        
+
+        marker_1ebfd71a8d1fb85e4c6e137270f44e19.bindPopup(popup_1f1d3d524743539f3be538c9b34ab636)
+        ;
+
+        
+    
+    
+            var marker_c42a36db77fefec20bd6c0b120accda1 = L.marker(
+                [45.86361147761079, 3.3556299830666205],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_01cfea765e292baa07c08613e0eadbb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1d7cd6341bfbd063748333773238007 = $(`<div id="html_c1d7cd6341bfbd063748333773238007" style="width: 100.0%; height: 100.0%;"><strong>Route d'Ornon</strong><br>Operator: Unknown<br>Power: 320 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_01cfea765e292baa07c08613e0eadbb6.setContent(html_c1d7cd6341bfbd063748333773238007);
+            
+        
+
+        marker_c42a36db77fefec20bd6c0b120accda1.bindPopup(popup_01cfea765e292baa07c08613e0eadbb6)
+        ;
+
+        
+    
+    
+            var marker_d02497fbfbdbaf211eacf34266b322c5 = L.marker(
+                [45.51672782010425, 2.943489853224122],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_b8cea3d2f0be4e05678c6b66b14dabc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c748bbcbe76907a871cfe15258f11b0 = $(`<div id="html_2c748bbcbe76907a871cfe15258f11b0" style="width: 100.0%; height: 100.0%;"><strong>Big Mat</strong><br>Operator: Unknown<br>Power: 180 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_b8cea3d2f0be4e05678c6b66b14dabc2.setContent(html_2c748bbcbe76907a871cfe15258f11b0);
+            
+        
+
+        marker_d02497fbfbdbaf211eacf34266b322c5.bindPopup(popup_b8cea3d2f0be4e05678c6b66b14dabc2)
+        ;
+
+        
+    
+    
+            var marker_a45e8886efaad58d63c1b57d7340d37c = L.marker(
+                [47.11032485406645, 2.378286184348383],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_8166df04b528abd91aace6beaf403b5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d7609d3998b1526dd1edb5e4a9d50b6 = $(`<div id="html_5d7609d3998b1526dd1edb5e4a9d50b6" style="width: 100.0%; height: 100.0%;"><strong>EVZen Norauto - Bourges</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_8166df04b528abd91aace6beaf403b5d.setContent(html_5d7609d3998b1526dd1edb5e4a9d50b6);
+            
+        
+
+        marker_a45e8886efaad58d63c1b57d7340d37c.bindPopup(popup_8166df04b528abd91aace6beaf403b5d)
+        ;
+
+        
+    
+    
+            var marker_da60a428ab64c0bb50b681c4284e8916 = L.marker(
+                [45.64218599999603, 3.1841742162442586],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_268b484575b66b4b6c19d28e726814e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1732c1d507ef1fb8b60f397eea5e2423 = $(`<div id="html_1732c1d507ef1fb8b60f397eea5e2423" style="width: 100.0%; height: 100.0%;"><strong>Ionity Authezat</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_268b484575b66b4b6c19d28e726814e1.setContent(html_1732c1d507ef1fb8b60f397eea5e2423);
+            
+        
+
+        marker_da60a428ab64c0bb50b681c4284e8916.bindPopup(popup_268b484575b66b4b6c19d28e726814e1)
+        ;
+
+        
+    
+    
+            var marker_46efe5cdb3cde0b3548994ed91b8a4bb = L.marker(
+                [45.850185423966735, 3.406202992189037],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_29e7d59173de59eab196c48be48ea8e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c94c664c6533dfd39c2e1a2c96d24c51 = $(`<div id="html_c94c664c6533dfd39c2e1a2c96d24c51" style="width: 100.0%; height: 100.0%;"><strong>Aire de limagne Sud</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_29e7d59173de59eab196c48be48ea8e9.setContent(html_c94c664c6533dfd39c2e1a2c96d24c51);
+            
+        
+
+        marker_46efe5cdb3cde0b3548994ed91b8a4bb.bindPopup(popup_29e7d59173de59eab196c48be48ea8e9)
+        ;
+
+        
+    
+    
+            var marker_722d2ef10b55a9349cd9e1b9d94d7a97 = L.marker(
+                [45.897834798680776, 0.9197920986537156],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d53b5b0ae7e49d4afe2e26fd010360a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_494fb1d0d1f0cba3e788bae27b770895 = $(`<div id="html_494fb1d0d1f0cba3e788bae27b770895" style="width: 100.0%; height: 100.0%;"><strong>Ionity Saint Junien </strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_d53b5b0ae7e49d4afe2e26fd010360a4.setContent(html_494fb1d0d1f0cba3e788bae27b770895);
+            
+        
+
+        marker_722d2ef10b55a9349cd9e1b9d94d7a97.bindPopup(popup_d53b5b0ae7e49d4afe2e26fd010360a4)
+        ;
+
+        
+    
+    
+            var marker_a1a1aa0e37115c41d44242f086d27332 = L.marker(
+                [45.43714964061596, 1.3975475107613988],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_454ab1d37e2cb2fecd522a46cdfcbb1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_effbce4e7a20766b2a61ea28c02afbcc = $(`<div id="html_effbce4e7a20766b2a61ea28c02afbcc" style="width: 100.0%; height: 100.0%;"><strong>PowerDot - Super U Lubersac </strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_454ab1d37e2cb2fecd522a46cdfcbb1f.setContent(html_effbce4e7a20766b2a61ea28c02afbcc);
+            
+        
+
+        marker_a1a1aa0e37115c41d44242f086d27332.bindPopup(popup_454ab1d37e2cb2fecd522a46cdfcbb1f)
+        ;
+
+        
+    
+    
+            var marker_cb168f6f44911ef09a31370d0178e59a = L.marker(
+                [46.99730002960303, 3.106853556073247],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_079ba1c57731cb50904e2013b03b9789 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b14f4cf5bff1e580001ec64d12cc715 = $(`<div id="html_8b14f4cf5bff1e580001ec64d12cc715" style="width: 100.0%; height: 100.0%;"><strong>Carrefour Energies - Nevers</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_079ba1c57731cb50904e2013b03b9789.setContent(html_8b14f4cf5bff1e580001ec64d12cc715);
+            
+        
+
+        marker_cb168f6f44911ef09a31370d0178e59a.bindPopup(popup_079ba1c57731cb50904e2013b03b9789)
+        ;
+
+        
+    
+    
+            var marker_f06862d0e0aae01b29c776560c4542bc = L.marker(
+                [45.551367040418654, 3.270282896491153],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ea8a39ce7ba5d140173a7c0d65bdfaa0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6c9dd74e4e0f229e9d985b9685966eb = $(`<div id="html_a6c9dd74e4e0f229e9d985b9685966eb" style="width: 100.0%; height: 100.0%;"><strong>Power Dot - Ibis Budget Issoire</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_ea8a39ce7ba5d140173a7c0d65bdfaa0.setContent(html_a6c9dd74e4e0f229e9d985b9685966eb);
+            
+        
+
+        marker_f06862d0e0aae01b29c776560c4542bc.bindPopup(popup_ea8a39ce7ba5d140173a7c0d65bdfaa0)
+        ;
+
+        
+    
+    
+            var marker_8e47264a20db982064435aa407db4f43 = L.marker(
+                [47.02467789723667, 3.14722111856986],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_71c40d95c0c11b35ac73d2549d01da0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cb11aa6ec84eadf7b08b4943ed65cf7 = $(`<div id="html_9cb11aa6ec84eadf7b08b4943ed65cf7" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Varennes-Vauzelles</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_71c40d95c0c11b35ac73d2549d01da0b.setContent(html_9cb11aa6ec84eadf7b08b4943ed65cf7);
+            
+        
+
+        marker_8e47264a20db982064435aa407db4f43.bindPopup(popup_71c40d95c0c11b35ac73d2549d01da0b)
+        ;
+
+        
+    
+    
+            var marker_bfc693f05f74e0afbe16aab3963870cc = L.marker(
+                [47.245750190736885, 2.068755875549755],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_0604fd16bffe8d18f1bda16aa8ab0641 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b131b116d07d30cebeb7b27db82b0eb2 = $(`<div id="html_b131b116d07d30cebeb7b27db82b0eb2" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Vierzon</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_0604fd16bffe8d18f1bda16aa8ab0641.setContent(html_b131b116d07d30cebeb7b27db82b0eb2);
+            
+        
+
+        marker_bfc693f05f74e0afbe16aab3963870cc.bindPopup(popup_0604fd16bffe8d18f1bda16aa8ab0641)
+        ;
+
+        
+    
+    
+            var marker_6e0361d725fefc9e9109d2a595b07229 = L.marker(
+                [45.3060768173865, 1.5615878844725728],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d14e2a65bba1128e549b2ba27d7eba45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19242aa86513419bd0711c7fb7497a41 = $(`<div id="html_19242aa86513419bd0711c7fb7497a41" style="width: 100.0%; height: 100.0%;"><strong>Tesla Supercharger Saint-Pardoux-l'Ortigier</strong><br>Operator: Unknown<br>Power: 250 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_d14e2a65bba1128e549b2ba27d7eba45.setContent(html_19242aa86513419bd0711c7fb7497a41);
+            
+        
+
+        marker_6e0361d725fefc9e9109d2a595b07229.bindPopup(popup_d14e2a65bba1128e549b2ba27d7eba45)
+        ;
+
+        
+    
+    
+            var marker_46bd53d087d4369f430bfaaa87ba2f38 = L.marker(
+                [47.05436442935033, 1.2130054095258629],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_a2fbe410f0ef731d145b588ecfac4642 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f3f9b47d9214a4faeca91dbae816ab2 = $(`<div id="html_5f3f9b47d9214a4faeca91dbae816ab2" style="width: 100.0%; height: 100.0%;"><strong>IECharge - Loché-sur-Indrois</strong><br>Operator: Unknown<br>Power: 320 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_a2fbe410f0ef731d145b588ecfac4642.setContent(html_5f3f9b47d9214a4faeca91dbae816ab2);
+            
+        
+
+        marker_46bd53d087d4369f430bfaaa87ba2f38.bindPopup(popup_a2fbe410f0ef731d145b588ecfac4642)
+        ;
+
+        
+    
+    
+            var marker_c9ddf70ea1b6f7d65670278a3fdcd9b9 = L.marker(
+                [47.348026459373415, 2.0482480860837318],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6628ff26d963a48ce6fa8024a786057a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36d7eec7f7dfce50acc9ac57c0a3173c = $(`<div id="html_36d7eec7f7dfce50acc9ac57c0a3173c" style="width: 100.0%; height: 100.0%;"><strong>Avia - Aire de Salbris Theillay</strong><br>Operator: Unknown<br>Power: 180 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_6628ff26d963a48ce6fa8024a786057a.setContent(html_36d7eec7f7dfce50acc9ac57c0a3173c);
+            
+        
+
+        marker_c9ddf70ea1b6f7d65670278a3fdcd9b9.bindPopup(popup_6628ff26d963a48ce6fa8024a786057a)
+        ;
+
+        
+    
+    
+            var marker_7ca2ffa0be89cc717cd97765fb9d95ac = L.marker(
+                [47.348742687154754, 2.0503384735380905],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cfcb34286616ff308346af1c9764f979 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_357482c06659e4bf70bce405c8aea22c = $(`<div id="html_357482c06659e4bf70bce405c8aea22c" style="width: 100.0%; height: 100.0%;"><strong>Avia - Aire de Salbris-la-Loge</strong><br>Operator: Unknown<br>Power: 180 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_cfcb34286616ff308346af1c9764f979.setContent(html_357482c06659e4bf70bce405c8aea22c);
+            
+        
+
+        marker_7ca2ffa0be89cc717cd97765fb9d95ac.bindPopup(popup_cfcb34286616ff308346af1c9764f979)
+        ;
+
+        
+    
+    
+            var marker_f7574b84b83a555c6d8b5ca18feb23ef = L.marker(
+                [46.56817, 0.64471],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_674c38c9eb7665cb2315e9e86d4719e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26351485572eff5e1501e038ed3ec122 = $(`<div id="html_26351485572eff5e1501e038ed3ec122" style="width: 100.0%; height: 100.0%;"><strong>B028</strong><br>Operator: Unknown<br>Power: 100 kW<br>Plugs: 6<br>Vehicle Type: Truck</div>`)[0];
+                popup_674c38c9eb7665cb2315e9e86d4719e8.setContent(html_26351485572eff5e1501e038ed3ec122);
+            
+        
+
+        marker_f7574b84b83a555c6d8b5ca18feb23ef.bindPopup(popup_674c38c9eb7665cb2315e9e86d4719e8)
+        ;
+
+        
+    
+    
+            var marker_1d3d61d48378bed57965fe495e97fe60 = L.marker(
+                [52.144022, 5.416976],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_909ecde7ca96aae5931160b8e6f06bc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94ebe5edee136e10a2ca767cb8fdc55a = $(`<div id="html_94ebe5edee136e10a2ca767cb8fdc55a" style="width: 100.0%; height: 100.0%;"><strong>Leusden Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_909ecde7ca96aae5931160b8e6f06bc2.setContent(html_94ebe5edee136e10a2ca767cb8fdc55a);
+            
+        
+
+        marker_1d3d61d48378bed57965fe495e97fe60.bindPopup(popup_909ecde7ca96aae5931160b8e6f06bc2)
+        ;
+
+        
+    
+    
+            var marker_86eb0182555861f9ce67a55481f2be17 = L.marker(
+                [52.061035, 5.205139],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_25e79b74b423d011af476c029d59a9ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e50459cc174035eca8680995109ea5 = $(`<div id="html_67e50459cc174035eca8680995109ea5" style="width: 100.0%; height: 100.0%;"><strong>Bunnik Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_25e79b74b423d011af476c029d59a9ba.setContent(html_67e50459cc174035eca8680995109ea5);
+            
+        
+
+        marker_86eb0182555861f9ce67a55481f2be17.bindPopup(popup_25e79b74b423d011af476c029d59a9ba)
+        ;
+
+        
+    
+    
+            var marker_ff9c55550697190b3530d8ced0b97fec = L.marker(
+                [52.04992463230403, 5.122193865356394],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1312b225bdbb27e3b4e1341de215b3af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71af6aaca21a2dde70dfa1fae1a43b1a = $(`<div id="html_71af6aaca21a2dde70dfa1fae1a43b1a" style="width: 100.0%; height: 100.0%;"><strong>Fastned Ravensewetering</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_1312b225bdbb27e3b4e1341de215b3af.setContent(html_71af6aaca21a2dde70dfa1fae1a43b1a);
+            
+        
+
+        marker_ff9c55550697190b3530d8ced0b97fec.bindPopup(popup_1312b225bdbb27e3b4e1341de215b3af)
+        ;
+
+        
+    
+    
+            var marker_7b98cde257fe13adbdcfc95867cdbb3e = L.marker(
+                [52.049899909363546, 5.461559592664003],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_65c2855afb94a0eea0921765b7ef170d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bc96c8fb5eeb75161551608ac15d60d = $(`<div id="html_9bc96c8fb5eeb75161551608ac15d60d" style="width: 100.0%; height: 100.0%;"><strong>Fastned Bloemheuvel</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_65c2855afb94a0eea0921765b7ef170d.setContent(html_9bc96c8fb5eeb75161551608ac15d60d);
+            
+        
+
+        marker_7b98cde257fe13adbdcfc95867cdbb3e.bindPopup(popup_65c2855afb94a0eea0921765b7ef170d)
+        ;
+
+        
+    
+    
+            var marker_c5a1ec2b29a0f3da7bc43e2566dd5672 = L.marker(
+                [52.0511739167844, 5.46401054788168],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cab4f29d45654ee90e4185c2e06037ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d62e5b2b5ec60b0bfbb6926bce887a8 = $(`<div id="html_9d62e5b2b5ec60b0bfbb6926bce887a8" style="width: 100.0%; height: 100.0%;"><strong>Fastned Oudenhorst</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_cab4f29d45654ee90e4185c2e06037ab.setContent(html_9d62e5b2b5ec60b0bfbb6926bce887a8);
+            
+        
+
+        marker_c5a1ec2b29a0f3da7bc43e2566dd5672.bindPopup(popup_cab4f29d45654ee90e4185c2e06037ab)
+        ;
+
+        
+    
+    
+            var marker_ef8379711e09f082ad349da091d80db2 = L.marker(
+                [50.588397, 4.307388],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_e0b79a0808af720c5093ce960c727294 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed70bb660e67755f5c2d844306a65681 = $(`<div id="html_ed70bb660e67755f5c2d844306a65681" style="width: 100.0%; height: 100.0%;"><strong>Nivelles-Sud Supercharger</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_e0b79a0808af720c5093ce960c727294.setContent(html_ed70bb660e67755f5c2d844306a65681);
+            
+        
+
+        marker_ef8379711e09f082ad349da091d80db2.bindPopup(popup_e0b79a0808af720c5093ce960c727294)
+        ;
+
+        
+    
+    
+            var marker_e09bd0c7c2fed45b5bc6123db6c41ccc = L.marker(
+                [50.61505986144789, 4.301309444104845],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_988e419f3250edcb120b4f872b66c6d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a208d6674337bb75236363b4e7f1d224 = $(`<div id="html_a208d6674337bb75236363b4e7f1d224" style="width: 100.0%; height: 100.0%;"><strong>Nivelles Total Energies</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_988e419f3250edcb120b4f872b66c6d8.setContent(html_a208d6674337bb75236363b4e7f1d224);
+            
+        
+
+        marker_e09bd0c7c2fed45b5bc6123db6c41ccc.bindPopup(popup_988e419f3250edcb120b4f872b66c6d8)
+        ;
+
+        
+    
+    
+            var marker_04f599e75552bd54ddf2224a7a448cf4 = L.marker(
+                [50.61504677840128, 4.300543368727404],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d4571d6a10bb5580118ddfe3d23f923a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6551d335f0d72bf21257577c8e54bd0 = $(`<div id="html_a6551d335f0d72bf21257577c8e54bd0" style="width: 100.0%; height: 100.0%;"><strong>Total Nivelle </strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_d4571d6a10bb5580118ddfe3d23f923a.setContent(html_a6551d335f0d72bf21257577c8e54bd0);
+            
+        
+
+        marker_04f599e75552bd54ddf2224a7a448cf4.bindPopup(popup_d4571d6a10bb5580118ddfe3d23f923a)
+        ;
+
+        
+    
+    
+            var marker_64ac7e6e3441583493a1f5af175b6d7c = L.marker(
+                [50.486021, 4.797235],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ceb81564c300551d9db0d91130943207 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19ff9a97927a93841118b1820c779c4d = $(`<div id="html_19ff9a97927a93841118b1820c779c4d" style="width: 100.0%; height: 100.0%;"><strong>Namur Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_ceb81564c300551d9db0d91130943207.setContent(html_19ff9a97927a93841118b1820c779c4d);
+            
+        
+
+        marker_64ac7e6e3441583493a1f5af175b6d7c.bindPopup(popup_ceb81564c300551d9db0d91130943207)
+        ;
+
+        
+    
+    
+            var marker_2df2f5e707a193864d1e530d9445f07a = L.marker(
+                [50.708041, 4.598293],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_159ebe8450d86d0ca366d3e363dcecab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1175807ae34715bf1d529871b12dde6 = $(`<div id="html_f1175807ae34715bf1d529871b12dde6" style="width: 100.0%; height: 100.0%;"><strong>Wavre Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_159ebe8450d86d0ca366d3e363dcecab.setContent(html_f1175807ae34715bf1d529871b12dde6);
+            
+        
+
+        marker_2df2f5e707a193864d1e530d9445f07a.bindPopup(popup_159ebe8450d86d0ca366d3e363dcecab)
+        ;
+
+        
+    
+    
+            var marker_584acc85a125ef376a83e9a4691c0393 = L.marker(
+                [50.487357, 4.096235],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_719e35fb24711fc5ba1a1fb0dc7d4858 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bfdf342b4cc9a867950a04849a7c2e2 = $(`<div id="html_1bfdf342b4cc9a867950a04849a7c2e2" style="width: 100.0%; height: 100.0%;"><strong>IONITY Le Roeulx / Thieu Sud</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_719e35fb24711fc5ba1a1fb0dc7d4858.setContent(html_1bfdf342b4cc9a867950a04849a7c2e2);
+            
+        
+
+        marker_584acc85a125ef376a83e9a4691c0393.bindPopup(popup_719e35fb24711fc5ba1a1fb0dc7d4858)
+        ;
+
+        
+    
+    
+            var marker_1e3f1bef80afa1bcec96990a36140944 = L.marker(
+                [50.491056, 4.09575],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_df435257a26828595185bfe309f843e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b2e8f184c4c0755894f58ec5e80374f = $(`<div id="html_6b2e8f184c4c0755894f58ec5e80374f" style="width: 100.0%; height: 100.0%;"><strong>IONITY Le Roeulx / Thieu Nord</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_df435257a26828595185bfe309f843e4.setContent(html_6b2e8f184c4c0755894f58ec5e80374f);
+            
+        
+
+        marker_1e3f1bef80afa1bcec96990a36140944.bindPopup(popup_df435257a26828595185bfe309f843e4)
+        ;
+
+        
+    
+    
+            var marker_96c21c310bd49790641955a7ec7c3b0b = L.marker(
+                [50.777952, 4.301594],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_3e0485f8fe33c8edc58d8acbfc38fa62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff6b364d13656f97b6e0a54702b26c76 = $(`<div id="html_ff6b364d13656f97b6e0a54702b26c76" style="width: 100.0%; height: 100.0%;"><strong>Total - Ruisbroek Noordwaarts</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_3e0485f8fe33c8edc58d8acbfc38fa62.setContent(html_ff6b364d13656f97b6e0a54702b26c76);
+            
+        
+
+        marker_96c21c310bd49790641955a7ec7c3b0b.bindPopup(popup_3e0485f8fe33c8edc58d8acbfc38fa62)
+        ;
+
+        
+    
+    
+            var marker_0f03a179fc1b20774467c6377f0605ba = L.marker(
+                [50.778969, 4.299853],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ee997a99fa4fad403f88d9d63ae8aa24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4687e331d6c3a44d231c48d417835fc = $(`<div id="html_e4687e331d6c3a44d231c48d417835fc" style="width: 100.0%; height: 100.0%;"><strong>Total - Ruisbroek Zuidwaarts</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_ee997a99fa4fad403f88d9d63ae8aa24.setContent(html_e4687e331d6c3a44d231c48d417835fc);
+            
+        
+
+        marker_0f03a179fc1b20774467c6377f0605ba.bindPopup(popup_ee997a99fa4fad403f88d9d63ae8aa24)
+        ;
+
+        
+    
+    
+            var marker_d69d420b5939b5c9530843e09dc800aa = L.marker(
+                [50.42687479864057, 4.924705260517953],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1a9b1993506b90bf7cc7adc4a749cc2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d24499181de55bb6612e6a52bdd7f7d = $(`<div id="html_0d24499181de55bb6612e6a52bdd7f7d" style="width: 100.0%; height: 100.0%;"><strong>Rue des Pieds d'Alouette</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_1a9b1993506b90bf7cc7adc4a749cc2b.setContent(html_0d24499181de55bb6612e6a52bdd7f7d);
+            
+        
+
+        marker_d69d420b5939b5c9530843e09dc800aa.bindPopup(popup_1a9b1993506b90bf7cc7adc4a749cc2b)
+        ;
+
+        
+    
+    
+            var marker_916275846ecbddf435fd582cbd133ff0 = L.marker(
+                [50.81809946840181, 4.405055102883807],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_fb5e72fdb4c417baf83939edd866c6db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56846fb886f3dbf42bbfffa316481bd5 = $(`<div id="html_56846fb886f3dbf42bbfffa316481bd5" style="width: 100.0%; height: 100.0%;"><strong>Eneco @ ACB Delta Volvo</strong><br>Operator: Unknown<br>Power: 400 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_fb5e72fdb4c417baf83939edd866c6db.setContent(html_56846fb886f3dbf42bbfffa316481bd5);
+            
+        
+
+        marker_916275846ecbddf435fd582cbd133ff0.bindPopup(popup_fb5e72fdb4c417baf83939edd866c6db)
+        ;
+
+        
+    
+    
+            var marker_5483c0acf7a0d2dfbabbe6ecfe477d05 = L.marker(
+                [50.8531415858545, 4.449164228063012],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_1ee4916d33c22c0bec56be7dec959030 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0221dd1779c35b04042e6abe0f6610f = $(`<div id="html_e0221dd1779c35b04042e6abe0f6610f" style="width: 100.0%; height: 100.0%;"><strong>Tangla Hotel Brussels</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_1ee4916d33c22c0bec56be7dec959030.setContent(html_e0221dd1779c35b04042e6abe0f6610f);
+            
+        
+
+        marker_5483c0acf7a0d2dfbabbe6ecfe477d05.bindPopup(popup_1ee4916d33c22c0bec56be7dec959030)
+        ;
+
+        
+    
+    
+            var marker_63f955a70df4ae12d99006e56467f9dd = L.marker(
+                [50.86169766456234, 4.613705594087151],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_0feba8bb62c382480322ffa605949134 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37f091841d184cef4a3f6f81eaf539ab = $(`<div id="html_37f091841d184cef4a3f6f81eaf539ab" style="width: 100.0%; height: 100.0%;"><strong>Allego Bertem</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 5<br>Vehicle Type: Truck</div>`)[0];
+                popup_0feba8bb62c382480322ffa605949134.setContent(html_37f091841d184cef4a3f6f81eaf539ab);
+            
+        
+
+        marker_63f955a70df4ae12d99006e56467f9dd.bindPopup(popup_0feba8bb62c382480322ffa605949134)
+        ;
+
+        
+    
+    
+            var marker_ac72755bea86952890ed8bf597537c42 = L.marker(
+                [50.84975689568992, 4.7191350782881045],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_71b54adc48a17bef93feae12dae9d236 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5983a6ef62bc8542f295f48a9c11481c = $(`<div id="html_5983a6ef62bc8542f295f48a9c11481c" style="width: 100.0%; height: 100.0%;"><strong>Volvo LACOM Leuven</strong><br>Operator: Unknown<br>Power: 175 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_71b54adc48a17bef93feae12dae9d236.setContent(html_5983a6ef62bc8542f295f48a9c11481c);
+            
+        
+
+        marker_ac72755bea86952890ed8bf597537c42.bindPopup(popup_71b54adc48a17bef93feae12dae9d236)
+        ;
+
+        
+    
+    
+            var marker_5626a3bc3b34a2a543b3557bba4d702f = L.marker(
+                [50.88771, 4.453051],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6acb7ce9cf2575bc4282bea868d307a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1d743fd71c3fcbb140e53c47da60c66 = $(`<div id="html_b1d743fd71c3fcbb140e53c47da60c66" style="width: 100.0%; height: 100.0%;"><strong>Machelen Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_6acb7ce9cf2575bc4282bea868d307a2.setContent(html_b1d743fd71c3fcbb140e53c47da60c66);
+            
+        
+
+        marker_5626a3bc3b34a2a543b3557bba4d702f.bindPopup(popup_6acb7ce9cf2575bc4282bea868d307a2)
+        ;
+
+        
+    
+    
+            var marker_d46108e636710d37b27d5ab453ad2288 = L.marker(
+                [50.870844, 4.274152],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_779da3024e0a37a522302c88767713ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b7a4e7ca2fa5c6b983241efe08d2f72 = $(`<div id="html_7b7a4e7ca2fa5c6b983241efe08d2f72" style="width: 100.0%; height: 100.0%;"><strong>DB Services Groot-Bijgaarden DC</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_779da3024e0a37a522302c88767713ad.setContent(html_7b7a4e7ca2fa5c6b983241efe08d2f72);
+            
+        
+
+        marker_d46108e636710d37b27d5ab453ad2288.bindPopup(popup_779da3024e0a37a522302c88767713ad)
+        ;
+
+        
+    
+    
+            var marker_3ba05439ab5c6a073768b2339f926d63 = L.marker(
+                [50.82537050255482, 4.814610563722908],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6f76e352a2f62584fc5025d544f50b9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a836e130a7921b3029265501b31cf038 = $(`<div id="html_a836e130a7921b3029265501b31cf038" style="width: 100.0%; height: 100.0%;"><strong>Fastned Boutersem </strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_6f76e352a2f62584fc5025d544f50b9b.setContent(html_a836e130a7921b3029265501b31cf038);
+            
+        
+
+        marker_3ba05439ab5c6a073768b2339f926d63.bindPopup(popup_6f76e352a2f62584fc5025d544f50b9b)
+        ;
+
+        
+    
+    
+            var marker_21946c0237ad52e82f29875cbb5ceea4 = L.marker(
+                [50.82472592047753, 4.817373695755919],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_763db09364fd27a3019a02e328bcc94e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1764f6661dd11d72d721222b96a31762 = $(`<div id="html_1764f6661dd11d72d721222b96a31762" style="width: 100.0%; height: 100.0%;"><strong>Dalemstraat</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_763db09364fd27a3019a02e328bcc94e.setContent(html_1764f6661dd11d72d721222b96a31762);
+            
+        
+
+        marker_21946c0237ad52e82f29875cbb5ceea4.bindPopup(popup_763db09364fd27a3019a02e328bcc94e)
+        ;
+
+        
+    
+    
+            var marker_9d57cfc187c799419e542a7327b1960f = L.marker(
+                [50.779973435362905, 4.918990511451284],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_310fd637f1b6c306a76c72a548b2577a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_704431f54f658bd0f2790825538d38de = $(`<div id="html_704431f54f658bd0f2790825538d38de" style="width: 100.0%; height: 100.0%;"><strong>Allego - Hoegaarden - Rommersom</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 5<br>Vehicle Type: Truck</div>`)[0];
+                popup_310fd637f1b6c306a76c72a548b2577a.setContent(html_704431f54f658bd0f2790825538d38de);
+            
+        
+
+        marker_9d57cfc187c799419e542a7327b1960f.bindPopup(popup_310fd637f1b6c306a76c72a548b2577a)
+        ;
+
+        
+    
+    
+            var marker_5c4a7ad95dd29b76e5c839d1d3d86dc4 = L.marker(
+                [50.25762527643329, 4.968385781470545],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_cd0cb54bacd525cfcad3fb404ce482ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac9324a77cd6d29895585f5a377b77b2 = $(`<div id="html_ac9324a77cd6d29895585f5a377b77b2" style="width: 100.0%; height: 100.0%;"><strong>Powerland Universal Supercharger - DC public</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_cd0cb54bacd525cfcad3fb404ce482ab.setContent(html_ac9324a77cd6d29895585f5a377b77b2);
+            
+        
+
+        marker_5c4a7ad95dd29b76e5c839d1d3d86dc4.bindPopup(popup_cd0cb54bacd525cfcad3fb404ce482ab)
+        ;
+
+        
+    
+    
+            var marker_6db5673ffb057a6d87fcf81240b65cf5 = L.marker(
+                [50.90872, 4.38627],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_6854b58e1d3b8c9b8e058fba2b4f7d29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb05a48fe8ba4ff6c6178ca5fc6cb48f = $(`<div id="html_bb05a48fe8ba4ff6c6178ca5fc6cb48f" style="width: 100.0%; height: 100.0%;"><strong>IONITY Living Tomorrow Brussels</strong><br>Operator: Unknown<br>Power: 350 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_6854b58e1d3b8c9b8e058fba2b4f7d29.setContent(html_bb05a48fe8ba4ff6c6178ca5fc6cb48f);
+            
+        
+
+        marker_6db5673ffb057a6d87fcf81240b65cf5.bindPopup(popup_6854b58e1d3b8c9b8e058fba2b4f7d29)
+        ;
+
+        
+    
+    
+            var marker_a1456426134af2e784f89e4cedcb0c0b = L.marker(
+                [50.88910017889077, 4.687138446112272],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_20ad06f3feead904795f72dc369b7e1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38b505f8f7f03cc4ae247ab0420973e7 = $(`<div id="html_38b505f8f7f03cc4ae247ab0420973e7" style="width: 100.0%; height: 100.0%;"><strong>De Wingerd </strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 3<br>Vehicle Type: Truck</div>`)[0];
+                popup_20ad06f3feead904795f72dc369b7e1d.setContent(html_38b505f8f7f03cc4ae247ab0420973e7);
+            
+        
+
+        marker_a1456426134af2e784f89e4cedcb0c0b.bindPopup(popup_20ad06f3feead904795f72dc369b7e1d)
+        ;
+
+        
+    
+    
+            var marker_9c63a406e04baaf14a49a0a00aae0172 = L.marker(
+                [50.93608840847094, 4.475746778508665],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_71996ef662ae08a22e803e1148cc7841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33f3f1cf9a5eed06ca7f568f134945c0 = $(`<div id="html_33f3f1cf9a5eed06ca7f568f134945c0" style="width: 100.0%; height: 100.0%;"><strong>Fastned Peuti Oost</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_71996ef662ae08a22e803e1148cc7841.setContent(html_33f3f1cf9a5eed06ca7f568f134945c0);
+            
+        
+
+        marker_9c63a406e04baaf14a49a0a00aae0172.bindPopup(popup_71996ef662ae08a22e803e1148cc7841)
+        ;
+
+        
+    
+    
+            var marker_88601eda40e77c6185d2ac66663d4e04 = L.marker(
+                [50.63521582330634, 3.78969402596897],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_11647cc23d1663ef09d0c3a83dd04c1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cddb63d3af5ca8994285b9fddc9da7f = $(`<div id="html_0cddb63d3af5ca8994285b9fddc9da7f" style="width: 100.0%; height: 100.0%;"><strong>Delhaize Ath - Electra</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_11647cc23d1663ef09d0c3a83dd04c1b.setContent(html_0cddb63d3af5ca8994285b9fddc9da7f);
+            
+        
+
+        marker_88601eda40e77c6185d2ac66663d4e04.bindPopup(popup_11647cc23d1663ef09d0c3a83dd04c1b)
+        ;
+
+        
+    
+    
+            var marker_7c1f889991f6a508f67427e91bfa57b7 = L.marker(
+                [50.933546248186445, 4.7432882112573225],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d2a3a776f340d1f83400c6196bd04676 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9ec6f223ef6db68509c8887bf1e9c29 = $(`<div id="html_e9ec6f223ef6db68509c8887bf1e9c29" style="width: 100.0%; height: 100.0%;"><strong>Carpool parking Holsbeek</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_d2a3a776f340d1f83400c6196bd04676.setContent(html_e9ec6f223ef6db68509c8887bf1e9c29);
+            
+        
+
+        marker_7c1f889991f6a508f67427e91bfa57b7.bindPopup(popup_d2a3a776f340d1f83400c6196bd04676)
+        ;
+
+        
+    
+    
+            var marker_eab8b22c964f51e661b5e09d65accc85 = L.marker(
+                [50.95044527468568, 4.791855232695525],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_42288bb37a5497e6e69588f89851858b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a77e40a8e3459c9a0044880d7f6f69e4 = $(`<div id="html_a77e40a8e3459c9a0044880d7f6f69e4" style="width: 100.0%; height: 100.0%;"><strong>Esso E314 Direction Lummen</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 4<br>Vehicle Type: Truck</div>`)[0];
+                popup_42288bb37a5497e6e69588f89851858b.setContent(html_a77e40a8e3459c9a0044880d7f6f69e4);
+            
+        
+
+        marker_eab8b22c964f51e661b5e09d65accc85.bindPopup(popup_42288bb37a5497e6e69588f89851858b)
+        ;
+
+        
+    
+    
+            var marker_50f0f812572e2c57aac05a83e3cc282c = L.marker(
+                [50.921483, 4.032789],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_97be3e9cd80d9c35252c7a7fc0871a5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1024a4b60e4b1da67a59577e3f15e831 = $(`<div id="html_1024a4b60e4b1da67a59577e3f15e831" style="width: 100.0%; height: 100.0%;"><strong>Aalst Supercharger</strong><br>Operator: Unknown<br>Power: 120 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_97be3e9cd80d9c35252c7a7fc0871a5b.setContent(html_1024a4b60e4b1da67a59577e3f15e831);
+            
+        
+
+        marker_50f0f812572e2c57aac05a83e3cc282c.bindPopup(popup_97be3e9cd80d9c35252c7a7fc0871a5b)
+        ;
+
+        
+    
+    
+            var marker_62436a33bd8a430dd7bf45bfd0e952e1 = L.marker(
+                [50.92317990845308, 3.9486039968976456],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_2fb11ac5bf1a0ba1b1e116ed6a34f9b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49015f27fc0e62fd7c64393cb0c398cc = $(`<div id="html_49015f27fc0e62fd7c64393cb0c398cc" style="width: 100.0%; height: 100.0%;"><strong>Gabriëls </strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 1<br>Vehicle Type: Truck</div>`)[0];
+                popup_2fb11ac5bf1a0ba1b1e116ed6a34f9b6.setContent(html_49015f27fc0e62fd7c64393cb0c398cc);
+            
+        
+
+        marker_62436a33bd8a430dd7bf45bfd0e952e1.bindPopup(popup_2fb11ac5bf1a0ba1b1e116ed6a34f9b6)
+        ;
+
+        
+    
+    
+            var marker_1082267d9b2fbe9167e5e152fe9be249 = L.marker(
+                [50.92804801816973, 3.9580484186810736],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_d0cdedd4d9a3cb3a953d6e6b5a8d9d44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3346cc0cebdbb306c3dbdbf0482cf15 = $(`<div id="html_f3346cc0cebdbb306c3dbdbf0482cf15" style="width: 100.0%; height: 100.0%;"><strong>Fastned</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_d0cdedd4d9a3cb3a953d6e6b5a8d9d44.setContent(html_f3346cc0cebdbb306c3dbdbf0482cf15);
+            
+        
+
+        marker_1082267d9b2fbe9167e5e152fe9be249.bindPopup(popup_d0cdedd4d9a3cb3a953d6e6b5a8d9d44)
+        ;
+
+        
+    
+    
+            var marker_99292dc612f3076d5ccffe5a4b334387 = L.marker(
+                [50.95214495831581, 4.998071261375259],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_ba3553db871892c7a8900e79ffb43f1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3944c0c8f2095bd25d38b5c64301c4bd = $(`<div id="html_3944c0c8f2095bd25d38b5c64301c4bd" style="width: 100.0%; height: 100.0%;"><strong>Fastned Bekkevoort</strong><br>Operator: Unknown<br>Power: 300 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_ba3553db871892c7a8900e79ffb43f1d.setContent(html_3944c0c8f2095bd25d38b5c64301c4bd);
+            
+        
+
+        marker_99292dc612f3076d5ccffe5a4b334387.bindPopup(popup_ba3553db871892c7a8900e79ffb43f1d)
+        ;
+
+        
+    
+    
+            var marker_aa100c276bf0ae9517d3712d3ab590dd = L.marker(
+                [50.4529162528826, 3.590878663743865],
+                {
+}
+            ).addTo(marker_cluster_5664db9d84448cee6c82fbab5d209e81);
+        
+    
+        var popup_7ed8a8745d4f8ffb1e8d4abe71d83da2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eac7c63d57462c02e349a7ecb732449 = $(`<div id="html_2eac7c63d57462c02e349a7ecb732449" style="width: 100.0%; height: 100.0%;"><strong>Carrefour Energies - Condé-sur-l'Escaut</strong><br>Operator: Unknown<br>Power: 150 kW<br>Plugs: 2<br>Vehicle Type: Truck</div>`)[0];
+                popup_7ed8a8745d4f8ffb1e8d4abe71d83da2.setContent(html_2eac7c63d57462c02e349a7ecb732449);
+            
+        
+
+        marker_aa100c276bf0ae9517d3712d3ab590dd.bindPopup(popup_7ed8a8745d4f8ffb1e8d4abe71d83da2)
+        ;
+
+        
+    
+    
+            marker_cluster_5664db9d84448cee6c82fbab5d209e81.addTo(map_a89fb4230f8c5a83ea3a323e2f1ee5f6);
+        
+</script>
+</html>

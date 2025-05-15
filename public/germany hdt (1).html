@@ -1,0 +1,4392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ad77285b4203a7695a7bbf9b11a7328 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ad77285b4203a7695a7bbf9b11a7328" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ad77285b4203a7695a7bbf9b11a7328 = L.map(
+                "map_5ad77285b4203a7695a7bbf9b11a7328",
+                {
+                    center: [52.1, 5.1],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a98e198c2cf88d0f72218458e87d9bd8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a98e198c2cf88d0f72218458e87d9bd8.addTo(map_5ad77285b4203a7695a7bbf9b11a7328);
+        
+    
+            var marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_df476b6fa292a0adf0a29bc2edd0ab75 = L.marker(
+                [52.51357828483542, 13.398740416225609],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4d82c99c62f9e26d5656c39670ee4ab1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94775699d9232873e21ead1ff5988268 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7816f8a2c73c1cc6bdb123c2f2fc6b31 = $(`<div id="html_7816f8a2c73c1cc6bdb123c2f2fc6b31" style="width: 100.0%; height: 100.0%;">                 <b>Berlin E-HDT Station 2</b><br>                 City: Berlin<br>                 Address: Highway A59, Exit 19<br>                 Power: 193 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_94775699d9232873e21ead1ff5988268.setContent(html_7816f8a2c73c1cc6bdb123c2f2fc6b31);
+            
+        
+
+        marker_df476b6fa292a0adf0a29bc2edd0ab75.bindPopup(popup_94775699d9232873e21ead1ff5988268)
+        ;
+
+        
+    
+    
+                marker_df476b6fa292a0adf0a29bc2edd0ab75.setIcon(icon_4d82c99c62f9e26d5656c39670ee4ab1);
+            
+    
+            var marker_6fda899ba3d7416d8251d56d2d076eac = L.marker(
+                [48.140835431340264, 11.59036138215073],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_7cef77c0496f3b1bcbb64608239a198d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ff50c4070a6d39ec1959254347f8c51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5618b4c8fe67c7711f52eaedac6ac79 = $(`<div id="html_a5618b4c8fe67c7711f52eaedac6ac79" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 5</b><br>                 City: Munich<br>                 Address: Highway A8, Exit 19<br>                 Power: 309 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_3ff50c4070a6d39ec1959254347f8c51.setContent(html_a5618b4c8fe67c7711f52eaedac6ac79);
+            
+        
+
+        marker_6fda899ba3d7416d8251d56d2d076eac.bindPopup(popup_3ff50c4070a6d39ec1959254347f8c51)
+        ;
+
+        
+    
+    
+                marker_6fda899ba3d7416d8251d56d2d076eac.setIcon(icon_7cef77c0496f3b1bcbb64608239a198d);
+            
+    
+            var marker_c10718e86d37ec4d84e9957a403b3bc8 = L.marker(
+                [48.140835431340264, 11.59036138215073],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_254b13f28ed86f0ee0f2861636ca4f02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85bbaaf5807b1d6e9b33a9065e3410c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27de24a2a96c7864afed061a2f1a2f58 = $(`<div id="html_27de24a2a96c7864afed061a2f1a2f58" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 5</b><br>                 City: Munich<br>                 Address: Highway A8, Exit 19<br>                 Power: 323 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_85bbaaf5807b1d6e9b33a9065e3410c5.setContent(html_27de24a2a96c7864afed061a2f1a2f58);
+            
+        
+
+        marker_c10718e86d37ec4d84e9957a403b3bc8.bindPopup(popup_85bbaaf5807b1d6e9b33a9065e3410c5)
+        ;
+
+        
+    
+    
+                marker_c10718e86d37ec4d84e9957a403b3bc8.setIcon(icon_254b13f28ed86f0ee0f2861636ca4f02);
+            
+    
+            var marker_b2af91164d374394a8efc15f5b6c8611 = L.marker(
+                [48.140835431340264, 11.59036138215073],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c21847a7426366631297f3eb7f436e0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a84a3aa04ef7e3b54b8336d9d4195c06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c536182c54629b8c0572556ae18afad5 = $(`<div id="html_c536182c54629b8c0572556ae18afad5" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 5</b><br>                 City: Munich<br>                 Address: Highway A8, Exit 19<br>                 Power: 162 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_a84a3aa04ef7e3b54b8336d9d4195c06.setContent(html_c536182c54629b8c0572556ae18afad5);
+            
+        
+
+        marker_b2af91164d374394a8efc15f5b6c8611.bindPopup(popup_a84a3aa04ef7e3b54b8336d9d4195c06)
+        ;
+
+        
+    
+    
+                marker_b2af91164d374394a8efc15f5b6c8611.setIcon(icon_c21847a7426366631297f3eb7f436e0d);
+            
+    
+            var marker_d861629df403c22d7304bfcde4fcdbfd = L.marker(
+                [48.127307874322234, 11.588018102567741],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4ee6217d37b47c0204e75223079ee098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6e6ae149439550782d415ffb0250c14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99193fa91afb3a66b5573c76be62edc7 = $(`<div id="html_99193fa91afb3a66b5573c76be62edc7" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 4</b><br>                 City: Munich<br>                 Address: Highway A15, Exit 7<br>                 Power: 246 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_a6e6ae149439550782d415ffb0250c14.setContent(html_99193fa91afb3a66b5573c76be62edc7);
+            
+        
+
+        marker_d861629df403c22d7304bfcde4fcdbfd.bindPopup(popup_a6e6ae149439550782d415ffb0250c14)
+        ;
+
+        
+    
+    
+                marker_d861629df403c22d7304bfcde4fcdbfd.setIcon(icon_4ee6217d37b47c0204e75223079ee098);
+            
+    
+            var marker_5a5a7e8b0b775ef2c3f0262c70a176a4 = L.marker(
+                [48.127307874322234, 11.588018102567741],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_73a390e7634fe9f97c3bc5b562572b23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a883b652ebfc1ebccf6c1eb080aa18c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5761f52336469bb1edd0ae173134ab5b = $(`<div id="html_5761f52336469bb1edd0ae173134ab5b" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 4</b><br>                 City: Munich<br>                 Address: Highway A15, Exit 7<br>                 Power: 344 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_a883b652ebfc1ebccf6c1eb080aa18c2.setContent(html_5761f52336469bb1edd0ae173134ab5b);
+            
+        
+
+        marker_5a5a7e8b0b775ef2c3f0262c70a176a4.bindPopup(popup_a883b652ebfc1ebccf6c1eb080aa18c2)
+        ;
+
+        
+    
+    
+                marker_5a5a7e8b0b775ef2c3f0262c70a176a4.setIcon(icon_73a390e7634fe9f97c3bc5b562572b23);
+            
+    
+            var marker_b4e8c0e767cac9de4a5fa7893ffd4e8a = L.marker(
+                [48.13900483413537, 11.585720408947594],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_d7616004030cfbd2bd0e7d7eceecb54d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0aafe9beeb0c24efded5d10e48bd4d39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87667813b53fd8a55bd525a7640b251e = $(`<div id="html_87667813b53fd8a55bd525a7640b251e" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 2</b><br>                 City: Munich<br>                 Address: Highway A35, Exit 30<br>                 Power: 278 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_0aafe9beeb0c24efded5d10e48bd4d39.setContent(html_87667813b53fd8a55bd525a7640b251e);
+            
+        
+
+        marker_b4e8c0e767cac9de4a5fa7893ffd4e8a.bindPopup(popup_0aafe9beeb0c24efded5d10e48bd4d39)
+        ;
+
+        
+    
+    
+                marker_b4e8c0e767cac9de4a5fa7893ffd4e8a.setIcon(icon_d7616004030cfbd2bd0e7d7eceecb54d);
+            
+    
+            var marker_97755e1e215fa5acad4639c5515801b5 = L.marker(
+                [48.13900483413537, 11.585720408947594],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_07b1fd625151e454ceb7efccef530b69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_325983e5b1121d2e6cef722611116726 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_658c6400eb5bedc347d7505ca3774e74 = $(`<div id="html_658c6400eb5bedc347d7505ca3774e74" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 2</b><br>                 City: Munich<br>                 Address: Highway A35, Exit 30<br>                 Power: 184 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_325983e5b1121d2e6cef722611116726.setContent(html_658c6400eb5bedc347d7505ca3774e74);
+            
+        
+
+        marker_97755e1e215fa5acad4639c5515801b5.bindPopup(popup_325983e5b1121d2e6cef722611116726)
+        ;
+
+        
+    
+    
+                marker_97755e1e215fa5acad4639c5515801b5.setIcon(icon_07b1fd625151e454ceb7efccef530b69);
+            
+    
+            var marker_1a200956c99fce50f9b8de71da4c931c = L.marker(
+                [48.13900483413537, 11.585720408947594],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_2cdcc6b3dfae46976ce54e2f3cdaf958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfdbb3fccb255b92797a097fba90331a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4435ad721ac1e8a2f0b22c4b40f9d3c8 = $(`<div id="html_4435ad721ac1e8a2f0b22c4b40f9d3c8" style="width: 100.0%; height: 100.0%;">                 <b>Munich E-HDT Station 2</b><br>                 City: Munich<br>                 Address: Highway A35, Exit 30<br>                 Power: 306 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_bfdbb3fccb255b92797a097fba90331a.setContent(html_4435ad721ac1e8a2f0b22c4b40f9d3c8);
+            
+        
+
+        marker_1a200956c99fce50f9b8de71da4c931c.bindPopup(popup_bfdbb3fccb255b92797a097fba90331a)
+        ;
+
+        
+    
+    
+                marker_1a200956c99fce50f9b8de71da4c931c.setIcon(icon_2cdcc6b3dfae46976ce54e2f3cdaf958);
+            
+    
+            var marker_d6dc9501ea8bf1c3e309017993778de1 = L.marker(
+                [53.547717724938195, 9.988235137761121],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_5545f0dea37176de6d3489a4d8a83a20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb687f856d1a3d076dd44e378b8853f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7c22d39998fb10b3d098dc6f43ea1b3 = $(`<div id="html_a7c22d39998fb10b3d098dc6f43ea1b3" style="width: 100.0%; height: 100.0%;">                 <b>Hamburg E-HDT Station 5</b><br>                 City: Hamburg<br>                 Address: Highway A83, Exit 11<br>                 Power: 247 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_bb687f856d1a3d076dd44e378b8853f1.setContent(html_a7c22d39998fb10b3d098dc6f43ea1b3);
+            
+        
+
+        marker_d6dc9501ea8bf1c3e309017993778de1.bindPopup(popup_bb687f856d1a3d076dd44e378b8853f1)
+        ;
+
+        
+    
+    
+                marker_d6dc9501ea8bf1c3e309017993778de1.setIcon(icon_5545f0dea37176de6d3489a4d8a83a20);
+            
+    
+            var marker_4fabe888d79eaf9ec108ab6f2435d1f5 = L.marker(
+                [53.547717724938195, 9.988235137761121],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c01b575d9cabbc306c9cfb3ccf616ba0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1d05e3c156d7c525e2d7b6607b1dc4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29a6771652547316227ed17f21603e2a = $(`<div id="html_29a6771652547316227ed17f21603e2a" style="width: 100.0%; height: 100.0%;">                 <b>Hamburg E-HDT Station 5</b><br>                 City: Hamburg<br>                 Address: Highway A83, Exit 11<br>                 Power: 289 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_b1d05e3c156d7c525e2d7b6607b1dc4b.setContent(html_29a6771652547316227ed17f21603e2a);
+            
+        
+
+        marker_4fabe888d79eaf9ec108ab6f2435d1f5.bindPopup(popup_b1d05e3c156d7c525e2d7b6607b1dc4b)
+        ;
+
+        
+    
+    
+                marker_4fabe888d79eaf9ec108ab6f2435d1f5.setIcon(icon_c01b575d9cabbc306c9cfb3ccf616ba0);
+            
+    
+            var marker_d77f7cee579edc18149b465ce9ee0cc7 = L.marker(
+                [50.109565568691536, 8.685375149599851],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_108ff20f203dada29974dcbbe0d5ae96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e96cd313b66c8670e266fb242090a49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2193feeda6bfeef640f42bc03c5fcc46 = $(`<div id="html_2193feeda6bfeef640f42bc03c5fcc46" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 4</b><br>                 City: Frankfurt<br>                 Address: Highway A76, Exit 1<br>                 Power: 326 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_2e96cd313b66c8670e266fb242090a49.setContent(html_2193feeda6bfeef640f42bc03c5fcc46);
+            
+        
+
+        marker_d77f7cee579edc18149b465ce9ee0cc7.bindPopup(popup_2e96cd313b66c8670e266fb242090a49)
+        ;
+
+        
+    
+    
+                marker_d77f7cee579edc18149b465ce9ee0cc7.setIcon(icon_108ff20f203dada29974dcbbe0d5ae96);
+            
+    
+            var marker_bcbb18440eb9f0da027a401a757d995c = L.marker(
+                [50.109565568691536, 8.685375149599851],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_14ab90e48bc30893cf4fa9801259a802 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f562c9f1f623a16057f6d8016566efe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b75c40d4ff8b32766cbc306baed74cd3 = $(`<div id="html_b75c40d4ff8b32766cbc306baed74cd3" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 4</b><br>                 City: Frankfurt<br>                 Address: Highway A76, Exit 1<br>                 Power: 258 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_f562c9f1f623a16057f6d8016566efe0.setContent(html_b75c40d4ff8b32766cbc306baed74cd3);
+            
+        
+
+        marker_bcbb18440eb9f0da027a401a757d995c.bindPopup(popup_f562c9f1f623a16057f6d8016566efe0)
+        ;
+
+        
+    
+    
+                marker_bcbb18440eb9f0da027a401a757d995c.setIcon(icon_14ab90e48bc30893cf4fa9801259a802);
+            
+    
+            var marker_3ac617c1fde686a1bd3827efa783cc89 = L.marker(
+                [50.11667436166477, 8.682364037139042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_6f0f536df465b538cad569efc0e6c8c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cce739d3750bcd56cd0707e4ffe1d21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1f99a91c6e42bf3981abc2a6f43155d = $(`<div id="html_c1f99a91c6e42bf3981abc2a6f43155d" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 3</b><br>                 City: Frankfurt<br>                 Address: Highway A87, Exit 29<br>                 Power: 181 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_1cce739d3750bcd56cd0707e4ffe1d21.setContent(html_c1f99a91c6e42bf3981abc2a6f43155d);
+            
+        
+
+        marker_3ac617c1fde686a1bd3827efa783cc89.bindPopup(popup_1cce739d3750bcd56cd0707e4ffe1d21)
+        ;
+
+        
+    
+    
+                marker_3ac617c1fde686a1bd3827efa783cc89.setIcon(icon_6f0f536df465b538cad569efc0e6c8c0);
+            
+    
+            var marker_fdb621308b9bbd81df5b67348a11c259 = L.marker(
+                [50.11667436166477, 8.682364037139042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_b8db2902cf51904a644bc3b3524a8854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb91c4e43292cdc6a58dbad3ab12450c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14e52116e4678f7dccbd0ca401b164c6 = $(`<div id="html_14e52116e4678f7dccbd0ca401b164c6" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 3</b><br>                 City: Frankfurt<br>                 Address: Highway A87, Exit 29<br>                 Power: 221 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_fb91c4e43292cdc6a58dbad3ab12450c.setContent(html_14e52116e4678f7dccbd0ca401b164c6);
+            
+        
+
+        marker_fdb621308b9bbd81df5b67348a11c259.bindPopup(popup_fb91c4e43292cdc6a58dbad3ab12450c)
+        ;
+
+        
+    
+    
+                marker_fdb621308b9bbd81df5b67348a11c259.setIcon(icon_b8db2902cf51904a644bc3b3524a8854);
+            
+    
+            var marker_f1cb62381878ff6ec7c4ca84466e4fc1 = L.marker(
+                [50.11667436166477, 8.682364037139042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_9ceb813f4d16bcf8f9a933018ea57d78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f0863949b9daf4e55cf66c36599a6d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa3d78c71561ab855e274d158c2da8c5 = $(`<div id="html_fa3d78c71561ab855e274d158c2da8c5" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 3</b><br>                 City: Frankfurt<br>                 Address: Highway A87, Exit 29<br>                 Power: 324 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_3f0863949b9daf4e55cf66c36599a6d5.setContent(html_fa3d78c71561ab855e274d158c2da8c5);
+            
+        
+
+        marker_f1cb62381878ff6ec7c4ca84466e4fc1.bindPopup(popup_3f0863949b9daf4e55cf66c36599a6d5)
+        ;
+
+        
+    
+    
+                marker_f1cb62381878ff6ec7c4ca84466e4fc1.setIcon(icon_9ceb813f4d16bcf8f9a933018ea57d78);
+            
+    
+            var marker_4ebcbf2b40256b097054952ee8babf8b = L.marker(
+                [50.11667436166477, 8.682364037139042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_27ef678ff033efffedb595e434c3132e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbc02f3f400bdd745c44b91e1c3ba08b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_feac2205c0b7eccbba310b90ccb7434e = $(`<div id="html_feac2205c0b7eccbba310b90ccb7434e" style="width: 100.0%; height: 100.0%;">                 <b>Frankfurt E-HDT Station 3</b><br>                 City: Frankfurt<br>                 Address: Highway A87, Exit 29<br>                 Power: 325 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_cbc02f3f400bdd745c44b91e1c3ba08b.setContent(html_feac2205c0b7eccbba310b90ccb7434e);
+            
+        
+
+        marker_4ebcbf2b40256b097054952ee8babf8b.bindPopup(popup_cbc02f3f400bdd745c44b91e1c3ba08b)
+        ;
+
+        
+    
+    
+                marker_4ebcbf2b40256b097054952ee8babf8b.setIcon(icon_27ef678ff033efffedb595e434c3132e);
+            
+    
+            var marker_3f5296a61337344b6a505d12b216fc69 = L.marker(
+                [50.93287592436802, 6.958745238179317],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_e6a07b7cef703b5009aa16eadf32d97e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a999d8cb3f7b1cb241aa8765104d58fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22b3190d7092e59e6872330b4446a900 = $(`<div id="html_22b3190d7092e59e6872330b4446a900" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 2</b><br>                 City: Cologne<br>                 Address: Highway A52, Exit 18<br>                 Power: 161 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_a999d8cb3f7b1cb241aa8765104d58fc.setContent(html_22b3190d7092e59e6872330b4446a900);
+            
+        
+
+        marker_3f5296a61337344b6a505d12b216fc69.bindPopup(popup_a999d8cb3f7b1cb241aa8765104d58fc)
+        ;
+
+        
+    
+    
+                marker_3f5296a61337344b6a505d12b216fc69.setIcon(icon_e6a07b7cef703b5009aa16eadf32d97e);
+            
+    
+            var marker_2aa1a17c0be076729dc78ef2135d7b2e = L.marker(
+                [50.940617255680685, 6.953877421086656],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_06eeb7d03292914257fc33bfa34b6525 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65278e39cd86d805273eac1d6529d471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e9a081a1f3c59557c36bcedc38d77f2 = $(`<div id="html_2e9a081a1f3c59557c36bcedc38d77f2" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A29, Exit 29<br>                 Power: 155 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_65278e39cd86d805273eac1d6529d471.setContent(html_2e9a081a1f3c59557c36bcedc38d77f2);
+            
+        
+
+        marker_2aa1a17c0be076729dc78ef2135d7b2e.bindPopup(popup_65278e39cd86d805273eac1d6529d471)
+        ;
+
+        
+    
+    
+                marker_2aa1a17c0be076729dc78ef2135d7b2e.setIcon(icon_06eeb7d03292914257fc33bfa34b6525);
+            
+    
+            var marker_85ebdc204bbac76f63c077270aa430c5 = L.marker(
+                [50.940617255680685, 6.953877421086656],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_92f1ac95cb96f1c8eac6f5c7919a0f73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39f286c375c8a9f9478ea48de7affd12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad89800ca3c9755ad15084088f9914f3 = $(`<div id="html_ad89800ca3c9755ad15084088f9914f3" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A29, Exit 29<br>                 Power: 229 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_39f286c375c8a9f9478ea48de7affd12.setContent(html_ad89800ca3c9755ad15084088f9914f3);
+            
+        
+
+        marker_85ebdc204bbac76f63c077270aa430c5.bindPopup(popup_39f286c375c8a9f9478ea48de7affd12)
+        ;
+
+        
+    
+    
+                marker_85ebdc204bbac76f63c077270aa430c5.setIcon(icon_92f1ac95cb96f1c8eac6f5c7919a0f73);
+            
+    
+            var marker_0f610ff6f1aa4754abc96d08d6f6da1f = L.marker(
+                [50.940617255680685, 6.953877421086656],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_36c9106f0de27d2a3ebfe2ddf9c5abc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c643cca420096157a4bb475e4f68822e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c7b94057a33927eef344747675e1885 = $(`<div id="html_2c7b94057a33927eef344747675e1885" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A29, Exit 29<br>                 Power: 292 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_c643cca420096157a4bb475e4f68822e.setContent(html_2c7b94057a33927eef344747675e1885);
+            
+        
+
+        marker_0f610ff6f1aa4754abc96d08d6f6da1f.bindPopup(popup_c643cca420096157a4bb475e4f68822e)
+        ;
+
+        
+    
+    
+                marker_0f610ff6f1aa4754abc96d08d6f6da1f.setIcon(icon_36c9106f0de27d2a3ebfe2ddf9c5abc4);
+            
+    
+            var marker_cf0f00d0ece7b727e60df112f293c982 = L.marker(
+                [50.940617255680685, 6.953877421086656],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_00a7e269ab45c4874b773c0d7e43c49e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_111a088248f9df696bd86a95e63b3d5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f33904f7e15befef3b1469ccafd5cc00 = $(`<div id="html_f33904f7e15befef3b1469ccafd5cc00" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A29, Exit 29<br>                 Power: 151 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_111a088248f9df696bd86a95e63b3d5e.setContent(html_f33904f7e15befef3b1469ccafd5cc00);
+            
+        
+
+        marker_cf0f00d0ece7b727e60df112f293c982.bindPopup(popup_111a088248f9df696bd86a95e63b3d5e)
+        ;
+
+        
+    
+    
+                marker_cf0f00d0ece7b727e60df112f293c982.setIcon(icon_00a7e269ab45c4874b773c0d7e43c49e);
+            
+    
+            var marker_406a6e310ba827672fb79059a294f0ce = L.marker(
+                [50.935222075965186, 6.950969336745445],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c169583377ac77919e01c469f815294c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_392684c47f95b4b446dffe6523a8595a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22743611aacc185dbc18308d8336c93d = $(`<div id="html_22743611aacc185dbc18308d8336c93d" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A10, Exit 20<br>                 Power: 300 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_392684c47f95b4b446dffe6523a8595a.setContent(html_22743611aacc185dbc18308d8336c93d);
+            
+        
+
+        marker_406a6e310ba827672fb79059a294f0ce.bindPopup(popup_392684c47f95b4b446dffe6523a8595a)
+        ;
+
+        
+    
+    
+                marker_406a6e310ba827672fb79059a294f0ce.setIcon(icon_c169583377ac77919e01c469f815294c);
+            
+    
+            var marker_4a89d44ebc961824d016357e04501646 = L.marker(
+                [50.935222075965186, 6.950969336745445],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_6307b573d4ac52d73ace0cc82b9498ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff7d888cdaced7bbb64cbe8dee450e5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91e6fb05d5d499979d9ee92b9697e9eb = $(`<div id="html_91e6fb05d5d499979d9ee92b9697e9eb" style="width: 100.0%; height: 100.0%;">                 <b>Cologne E-HDT Station 4</b><br>                 City: Cologne<br>                 Address: Highway A10, Exit 20<br>                 Power: 314 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_ff7d888cdaced7bbb64cbe8dee450e5a.setContent(html_91e6fb05d5d499979d9ee92b9697e9eb);
+            
+        
+
+        marker_4a89d44ebc961824d016357e04501646.bindPopup(popup_ff7d888cdaced7bbb64cbe8dee450e5a)
+        ;
+
+        
+    
+    
+                marker_4a89d44ebc961824d016357e04501646.setIcon(icon_6307b573d4ac52d73ace0cc82b9498ac);
+            
+    
+            var marker_7152ebb3753bfcc4ab021b7aa8a679a8 = L.marker(
+                [48.766241581274016, 9.180044270942357],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_0aebc88a06ea7eed2cd794fa313fb063 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cf0ff4fc12a8abf0e5adf659dac62c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8c0fe959c8f3167305e05ad5cd70f3f = $(`<div id="html_d8c0fe959c8f3167305e05ad5cd70f3f" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 1</b><br>                 City: Stuttgart<br>                 Address: Highway A29, Exit 1<br>                 Power: 342 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_3cf0ff4fc12a8abf0e5adf659dac62c4.setContent(html_d8c0fe959c8f3167305e05ad5cd70f3f);
+            
+        
+
+        marker_7152ebb3753bfcc4ab021b7aa8a679a8.bindPopup(popup_3cf0ff4fc12a8abf0e5adf659dac62c4)
+        ;
+
+        
+    
+    
+                marker_7152ebb3753bfcc4ab021b7aa8a679a8.setIcon(icon_0aebc88a06ea7eed2cd794fa313fb063);
+            
+    
+            var marker_769c42fa5717c0809802321f31fee4a1 = L.marker(
+                [48.766241581274016, 9.180044270942357],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_faa0a0c4e495d60f2804c233634fa7d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_304ebfa735ad2153c2c89381bc3eba98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c3cf7f306522122fa80d0385d5d4e3c = $(`<div id="html_8c3cf7f306522122fa80d0385d5d4e3c" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 1</b><br>                 City: Stuttgart<br>                 Address: Highway A29, Exit 1<br>                 Power: 309 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_304ebfa735ad2153c2c89381bc3eba98.setContent(html_8c3cf7f306522122fa80d0385d5d4e3c);
+            
+        
+
+        marker_769c42fa5717c0809802321f31fee4a1.bindPopup(popup_304ebfa735ad2153c2c89381bc3eba98)
+        ;
+
+        
+    
+    
+                marker_769c42fa5717c0809802321f31fee4a1.setIcon(icon_faa0a0c4e495d60f2804c233634fa7d0);
+            
+    
+            var marker_b54f6a5b7e3435d5114bd4d8f96c9992 = L.marker(
+                [48.78305385749407, 9.178692358156042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_634170c8cf892a6e28b560eaf654cbc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29009b5052a1a90ad4c50fa4041be94a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55f3bb17b51814a1ae280319b7ffcf29 = $(`<div id="html_55f3bb17b51814a1ae280319b7ffcf29" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 5</b><br>                 City: Stuttgart<br>                 Address: Highway A24, Exit 16<br>                 Power: 342 kW<br>                 Type: CCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_29009b5052a1a90ad4c50fa4041be94a.setContent(html_55f3bb17b51814a1ae280319b7ffcf29);
+            
+        
+
+        marker_b54f6a5b7e3435d5114bd4d8f96c9992.bindPopup(popup_29009b5052a1a90ad4c50fa4041be94a)
+        ;
+
+        
+    
+    
+                marker_b54f6a5b7e3435d5114bd4d8f96c9992.setIcon(icon_634170c8cf892a6e28b560eaf654cbc0);
+            
+    
+            var marker_646177c96f0bd417076f40c3a2d29aca = L.marker(
+                [48.78305385749407, 9.178692358156042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_1acf801f5ca0908bcb71f25f6670eb16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a535ae8280faab00bc635401776b7c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d174fe6f8e7ff5d85e0f337f8e271e4 = $(`<div id="html_3d174fe6f8e7ff5d85e0f337f8e271e4" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 5</b><br>                 City: Stuttgart<br>                 Address: Highway A24, Exit 16<br>                 Power: 275 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_0a535ae8280faab00bc635401776b7c0.setContent(html_3d174fe6f8e7ff5d85e0f337f8e271e4);
+            
+        
+
+        marker_646177c96f0bd417076f40c3a2d29aca.bindPopup(popup_0a535ae8280faab00bc635401776b7c0)
+        ;
+
+        
+    
+    
+                marker_646177c96f0bd417076f40c3a2d29aca.setIcon(icon_1acf801f5ca0908bcb71f25f6670eb16);
+            
+    
+            var marker_0dbeedc4724f175c725fcd5ef35c76bf = L.marker(
+                [48.78305385749407, 9.178692358156042],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_5648f546c427bc8c629b8e0c0ccf0e05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e84a0344d9a5d635d014c5e3ae200a34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d194f861dcb99b85f0e200d719345a00 = $(`<div id="html_d194f861dcb99b85f0e200d719345a00" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 5</b><br>                 City: Stuttgart<br>                 Address: Highway A24, Exit 16<br>                 Power: 180 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_e84a0344d9a5d635d014c5e3ae200a34.setContent(html_d194f861dcb99b85f0e200d719345a00);
+            
+        
+
+        marker_0dbeedc4724f175c725fcd5ef35c76bf.bindPopup(popup_e84a0344d9a5d635d014c5e3ae200a34)
+        ;
+
+        
+    
+    
+                marker_0dbeedc4724f175c725fcd5ef35c76bf.setIcon(icon_5648f546c427bc8c629b8e0c0ccf0e05);
+            
+    
+            var marker_e2fcd75f28c1c3841ca5870132353e7a = L.marker(
+                [48.77569557186197, 9.182269598534024],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c97598d8824f3e83e398aa3fb554e410 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b39091a03d6ddfea5fa67bdd7832443 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92d8ece8619b2eb0dd972248687b3125 = $(`<div id="html_92d8ece8619b2eb0dd972248687b3125" style="width: 100.0%; height: 100.0%;">                 <b>Stuttgart E-HDT Station 3</b><br>                 City: Stuttgart<br>                 Address: Highway A51, Exit 9<br>                 Power: 200 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_7b39091a03d6ddfea5fa67bdd7832443.setContent(html_92d8ece8619b2eb0dd972248687b3125);
+            
+        
+
+        marker_e2fcd75f28c1c3841ca5870132353e7a.bindPopup(popup_7b39091a03d6ddfea5fa67bdd7832443)
+        ;
+
+        
+    
+    
+                marker_e2fcd75f28c1c3841ca5870132353e7a.setIcon(icon_c97598d8824f3e83e398aa3fb554e410);
+            
+    
+            var marker_36698bfae8673c5eb67fb1b7f238c6de = L.marker(
+                [51.23336462658308, 6.7814546944972935],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_24ca07080a0279ff574f9473031b9162 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45f38d0c4f9d42207f8517319b0f2e6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed9ac1e7f774d39f26dfb9049d408282 = $(`<div id="html_ed9ac1e7f774d39f26dfb9049d408282" style="width: 100.0%; height: 100.0%;">                 <b>Düsseldorf E-HDT Station 2</b><br>                 City: Düsseldorf<br>                 Address: Highway A30, Exit 8<br>                 Power: 175 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_45f38d0c4f9d42207f8517319b0f2e6d.setContent(html_ed9ac1e7f774d39f26dfb9049d408282);
+            
+        
+
+        marker_36698bfae8673c5eb67fb1b7f238c6de.bindPopup(popup_45f38d0c4f9d42207f8517319b0f2e6d)
+        ;
+
+        
+    
+    
+                marker_36698bfae8673c5eb67fb1b7f238c6de.setIcon(icon_24ca07080a0279ff574f9473031b9162);
+            
+    
+            var marker_feb73cc044b0563213e7bead928a7f51 = L.marker(
+                [51.23336462658308, 6.7814546944972935],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_70395fdb14ddc62f769c1fca7647bdc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5947f008a5264628fc3ea5202b88c1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fab434dfce371f28d456251f489e1b1 = $(`<div id="html_4fab434dfce371f28d456251f489e1b1" style="width: 100.0%; height: 100.0%;">                 <b>Düsseldorf E-HDT Station 2</b><br>                 City: Düsseldorf<br>                 Address: Highway A30, Exit 8<br>                 Power: 289 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a5947f008a5264628fc3ea5202b88c1a.setContent(html_4fab434dfce371f28d456251f489e1b1);
+            
+        
+
+        marker_feb73cc044b0563213e7bead928a7f51.bindPopup(popup_a5947f008a5264628fc3ea5202b88c1a)
+        ;
+
+        
+    
+    
+                marker_feb73cc044b0563213e7bead928a7f51.setIcon(icon_70395fdb14ddc62f769c1fca7647bdc7);
+            
+    
+            var marker_7b0913ead123b13e160bb8f53d12d4e8 = L.marker(
+                [51.23336462658308, 6.7814546944972935],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_5af581de5fb2df710831c13388d3babe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c51af716ab84edcfb590b4c8f38432b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bc3b2784d59834b1e30abeb354cf143 = $(`<div id="html_8bc3b2784d59834b1e30abeb354cf143" style="width: 100.0%; height: 100.0%;">                 <b>Düsseldorf E-HDT Station 2</b><br>                 City: Düsseldorf<br>                 Address: Highway A30, Exit 8<br>                 Power: 159 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_c51af716ab84edcfb590b4c8f38432b1.setContent(html_8bc3b2784d59834b1e30abeb354cf143);
+            
+        
+
+        marker_7b0913ead123b13e160bb8f53d12d4e8.bindPopup(popup_c51af716ab84edcfb590b4c8f38432b1)
+        ;
+
+        
+    
+    
+                marker_7b0913ead123b13e160bb8f53d12d4e8.setIcon(icon_5af581de5fb2df710831c13388d3babe);
+            
+    
+            var marker_3dbfc8be3fdb4aac6be7e92d016def5c = L.marker(
+                [51.23336462658308, 6.7814546944972935],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_2466c3e3deef8359118b22c18b9bdabb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_592e442e177409a736189fdb03f56001 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c45ad3900b4cba384b126a193fdd162 = $(`<div id="html_9c45ad3900b4cba384b126a193fdd162" style="width: 100.0%; height: 100.0%;">                 <b>Düsseldorf E-HDT Station 2</b><br>                 City: Düsseldorf<br>                 Address: Highway A30, Exit 8<br>                 Power: 255 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_592e442e177409a736189fdb03f56001.setContent(html_9c45ad3900b4cba384b126a193fdd162);
+            
+        
+
+        marker_3dbfc8be3fdb4aac6be7e92d016def5c.bindPopup(popup_592e442e177409a736189fdb03f56001)
+        ;
+
+        
+    
+    
+                marker_3dbfc8be3fdb4aac6be7e92d016def5c.setIcon(icon_2466c3e3deef8359118b22c18b9bdabb);
+            
+    
+            var marker_7834e99c02a04645b6df366bd348bb81 = L.marker(
+                [51.330864839096016, 12.377464051207088],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_e52734c826a9bc34d21b9ea99247f396 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf478fbf0fa236db02f55417f947ee4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e386b1b95c49bfd6b36480899e78bf0 = $(`<div id="html_0e386b1b95c49bfd6b36480899e78bf0" style="width: 100.0%; height: 100.0%;">                 <b>Leipzig E-HDT Station 3</b><br>                 City: Leipzig<br>                 Address: Highway A86, Exit 12<br>                 Power: 201 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_bf478fbf0fa236db02f55417f947ee4a.setContent(html_0e386b1b95c49bfd6b36480899e78bf0);
+            
+        
+
+        marker_7834e99c02a04645b6df366bd348bb81.bindPopup(popup_bf478fbf0fa236db02f55417f947ee4a)
+        ;
+
+        
+    
+    
+                marker_7834e99c02a04645b6df366bd348bb81.setIcon(icon_e52734c826a9bc34d21b9ea99247f396);
+            
+    
+            var marker_0bdf17ba479e296a42e58e3633726699 = L.marker(
+                [51.330864839096016, 12.377464051207088],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_d97d6b912bfaeb12f433e30d4a68bb3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91249ea80690be17d1579869bbff7b08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b37417b7abc812928ffa118d11e24485 = $(`<div id="html_b37417b7abc812928ffa118d11e24485" style="width: 100.0%; height: 100.0%;">                 <b>Leipzig E-HDT Station 3</b><br>                 City: Leipzig<br>                 Address: Highway A86, Exit 12<br>                 Power: 167 kW<br>                 Type: CCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_91249ea80690be17d1579869bbff7b08.setContent(html_b37417b7abc812928ffa118d11e24485);
+            
+        
+
+        marker_0bdf17ba479e296a42e58e3633726699.bindPopup(popup_91249ea80690be17d1579869bbff7b08)
+        ;
+
+        
+    
+    
+                marker_0bdf17ba479e296a42e58e3633726699.setIcon(icon_d97d6b912bfaeb12f433e30d4a68bb3e);
+            
+    
+            var marker_6490d7d3a29ebd733abf279a4c8c724b = L.marker(
+                [51.330864839096016, 12.377464051207088],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_0209a4e0309a48c3d94358238bdbd707 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e9b5aefff3d6cc455ce226640ef7549 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55f5eac28d98fa2a0f9d44e8cd15ac1f = $(`<div id="html_55f5eac28d98fa2a0f9d44e8cd15ac1f" style="width: 100.0%; height: 100.0%;">                 <b>Leipzig E-HDT Station 3</b><br>                 City: Leipzig<br>                 Address: Highway A86, Exit 12<br>                 Power: 322 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_5e9b5aefff3d6cc455ce226640ef7549.setContent(html_55f5eac28d98fa2a0f9d44e8cd15ac1f);
+            
+        
+
+        marker_6490d7d3a29ebd733abf279a4c8c724b.bindPopup(popup_5e9b5aefff3d6cc455ce226640ef7549)
+        ;
+
+        
+    
+    
+                marker_6490d7d3a29ebd733abf279a4c8c724b.setIcon(icon_0209a4e0309a48c3d94358238bdbd707);
+            
+    
+            var marker_cc7e8526472c9ed72311349785800792 = L.marker(
+                [51.344130301109466, 12.379620982858894],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_48864344661de740c64b2c22d52b46e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38a0c821b6a263d0605554215f0bac06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d19a263a53a4645866d203e93dbba86e = $(`<div id="html_d19a263a53a4645866d203e93dbba86e" style="width: 100.0%; height: 100.0%;">                 <b>Leipzig E-HDT Station 3</b><br>                 City: Leipzig<br>                 Address: Highway A41, Exit 24<br>                 Power: 330 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_38a0c821b6a263d0605554215f0bac06.setContent(html_d19a263a53a4645866d203e93dbba86e);
+            
+        
+
+        marker_cc7e8526472c9ed72311349785800792.bindPopup(popup_38a0c821b6a263d0605554215f0bac06)
+        ;
+
+        
+    
+    
+                marker_cc7e8526472c9ed72311349785800792.setIcon(icon_48864344661de740c64b2c22d52b46e0);
+            
+    
+            var marker_246308de055e4786fbde828fc34dcd39 = L.marker(
+                [51.5081816294519, 7.463592704539117],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_bc39fda23267f0d412af3badb28e36b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3235e9e877ce0c9e68b302543a5f38fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d96877db96e0eafb26daba6b4ff130d9 = $(`<div id="html_d96877db96e0eafb26daba6b4ff130d9" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 5</b><br>                 City: Dortmund<br>                 Address: Highway A32, Exit 1<br>                 Power: 327 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_3235e9e877ce0c9e68b302543a5f38fa.setContent(html_d96877db96e0eafb26daba6b4ff130d9);
+            
+        
+
+        marker_246308de055e4786fbde828fc34dcd39.bindPopup(popup_3235e9e877ce0c9e68b302543a5f38fa)
+        ;
+
+        
+    
+    
+                marker_246308de055e4786fbde828fc34dcd39.setIcon(icon_bc39fda23267f0d412af3badb28e36b2);
+            
+    
+            var marker_c63203e8d009e8569896c00898217517 = L.marker(
+                [51.5081816294519, 7.463592704539117],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_a918ec97a1fb2eaf5a7599b918b9e032 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64908e6010367e689a60f606ccf6cfbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec56e21d100bb801fa7b12dd970416ef = $(`<div id="html_ec56e21d100bb801fa7b12dd970416ef" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 5</b><br>                 City: Dortmund<br>                 Address: Highway A32, Exit 1<br>                 Power: 324 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_64908e6010367e689a60f606ccf6cfbc.setContent(html_ec56e21d100bb801fa7b12dd970416ef);
+            
+        
+
+        marker_c63203e8d009e8569896c00898217517.bindPopup(popup_64908e6010367e689a60f606ccf6cfbc)
+        ;
+
+        
+    
+    
+                marker_c63203e8d009e8569896c00898217517.setIcon(icon_a918ec97a1fb2eaf5a7599b918b9e032);
+            
+    
+            var marker_4c8840bea67cd1ea4d5069ea251c3a29 = L.marker(
+                [51.5081816294519, 7.463592704539117],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_3d39d16c3924300cf803aa9c7b47f9d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00da061d06b3c4deceb3ac518ba69ab1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89e7c1f8cb968841c87827998f70d9d2 = $(`<div id="html_89e7c1f8cb968841c87827998f70d9d2" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 5</b><br>                 City: Dortmund<br>                 Address: Highway A32, Exit 1<br>                 Power: 182 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_00da061d06b3c4deceb3ac518ba69ab1.setContent(html_89e7c1f8cb968841c87827998f70d9d2);
+            
+        
+
+        marker_4c8840bea67cd1ea4d5069ea251c3a29.bindPopup(popup_00da061d06b3c4deceb3ac518ba69ab1)
+        ;
+
+        
+    
+    
+                marker_4c8840bea67cd1ea4d5069ea251c3a29.setIcon(icon_3d39d16c3924300cf803aa9c7b47f9d1);
+            
+    
+            var marker_7f14fd60f68c9b651b023a54eb2331ef = L.marker(
+                [51.51061088547011, 7.474383574782575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_0a4cff10ccda9b96e5188fb4deb1d42d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cda280e524cb7467db25be895782300d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd60c338199e6506eb206235f8f46d93 = $(`<div id="html_fd60c338199e6506eb206235f8f46d93" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 4</b><br>                 City: Dortmund<br>                 Address: Highway A76, Exit 20<br>                 Power: 311 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_cda280e524cb7467db25be895782300d.setContent(html_fd60c338199e6506eb206235f8f46d93);
+            
+        
+
+        marker_7f14fd60f68c9b651b023a54eb2331ef.bindPopup(popup_cda280e524cb7467db25be895782300d)
+        ;
+
+        
+    
+    
+                marker_7f14fd60f68c9b651b023a54eb2331ef.setIcon(icon_0a4cff10ccda9b96e5188fb4deb1d42d);
+            
+    
+            var marker_18875d02735fcf5bbfce70a06a9b68b9 = L.marker(
+                [51.51061088547011, 7.474383574782575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_185f1186f5b24873c99439bb5a650129 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0d527143b7b9c65d8afbec9ec405788 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_870f1819669009db1b71b71e40e791e5 = $(`<div id="html_870f1819669009db1b71b71e40e791e5" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 4</b><br>                 City: Dortmund<br>                 Address: Highway A76, Exit 20<br>                 Power: 301 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a0d527143b7b9c65d8afbec9ec405788.setContent(html_870f1819669009db1b71b71e40e791e5);
+            
+        
+
+        marker_18875d02735fcf5bbfce70a06a9b68b9.bindPopup(popup_a0d527143b7b9c65d8afbec9ec405788)
+        ;
+
+        
+    
+    
+                marker_18875d02735fcf5bbfce70a06a9b68b9.setIcon(icon_185f1186f5b24873c99439bb5a650129);
+            
+    
+            var marker_41366baa7acf2bb4d9a0bac7f39ab761 = L.marker(
+                [51.51061088547011, 7.474383574782575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_7d12caf83b6027c7530d64c4ed85c232 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54bbfcf0d20fb18cf96859cc6b1beb2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80268881e88f470998bbf3aca98dd197 = $(`<div id="html_80268881e88f470998bbf3aca98dd197" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 4</b><br>                 City: Dortmund<br>                 Address: Highway A76, Exit 20<br>                 Power: 306 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_54bbfcf0d20fb18cf96859cc6b1beb2d.setContent(html_80268881e88f470998bbf3aca98dd197);
+            
+        
+
+        marker_41366baa7acf2bb4d9a0bac7f39ab761.bindPopup(popup_54bbfcf0d20fb18cf96859cc6b1beb2d)
+        ;
+
+        
+    
+    
+                marker_41366baa7acf2bb4d9a0bac7f39ab761.setIcon(icon_7d12caf83b6027c7530d64c4ed85c232);
+            
+    
+            var marker_cb0ce93641ea77ef946e79d806fce245 = L.marker(
+                [51.51061088547011, 7.474383574782575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_2025ab5d627802bf2ed040391a0edc7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b0274f4fc1f71e0a10ddc53afeb8f52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eaa683097203624927ee7c7b6ed7b4a2 = $(`<div id="html_eaa683097203624927ee7c7b6ed7b4a2" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 4</b><br>                 City: Dortmund<br>                 Address: Highway A76, Exit 20<br>                 Power: 172 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_7b0274f4fc1f71e0a10ddc53afeb8f52.setContent(html_eaa683097203624927ee7c7b6ed7b4a2);
+            
+        
+
+        marker_cb0ce93641ea77ef946e79d806fce245.bindPopup(popup_7b0274f4fc1f71e0a10ddc53afeb8f52)
+        ;
+
+        
+    
+    
+                marker_cb0ce93641ea77ef946e79d806fce245.setIcon(icon_2025ab5d627802bf2ed040391a0edc7f);
+            
+    
+            var marker_f9b984ee44f921cba6eb923d558a5816 = L.marker(
+                [51.52303207432737, 7.4569646022181555],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_38cea9edfe19468c319de9098a402b44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c18b00c9039ddbe655c4632982ab5d4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c677067b8952de3874e0e3dba672fd5 = $(`<div id="html_4c677067b8952de3874e0e3dba672fd5" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 1</b><br>                 City: Dortmund<br>                 Address: Highway A28, Exit 28<br>                 Power: 320 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_c18b00c9039ddbe655c4632982ab5d4a.setContent(html_4c677067b8952de3874e0e3dba672fd5);
+            
+        
+
+        marker_f9b984ee44f921cba6eb923d558a5816.bindPopup(popup_c18b00c9039ddbe655c4632982ab5d4a)
+        ;
+
+        
+    
+    
+                marker_f9b984ee44f921cba6eb923d558a5816.setIcon(icon_38cea9edfe19468c319de9098a402b44);
+            
+    
+            var marker_61c62a19cc25455544049215ec099205 = L.marker(
+                [51.52303207432737, 7.4569646022181555],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_f941a4d1ed1326f0bdbe74e1cabc51fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_072a56f75758183397b0de55ce677f3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c826c2d0cb40df61d55b96443191c5e7 = $(`<div id="html_c826c2d0cb40df61d55b96443191c5e7" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 1</b><br>                 City: Dortmund<br>                 Address: Highway A28, Exit 28<br>                 Power: 232 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_072a56f75758183397b0de55ce677f3b.setContent(html_c826c2d0cb40df61d55b96443191c5e7);
+            
+        
+
+        marker_61c62a19cc25455544049215ec099205.bindPopup(popup_072a56f75758183397b0de55ce677f3b)
+        ;
+
+        
+    
+    
+                marker_61c62a19cc25455544049215ec099205.setIcon(icon_f941a4d1ed1326f0bdbe74e1cabc51fd);
+            
+    
+            var marker_8329fa49930ccd166b16571a6ad87f0e = L.marker(
+                [51.52303207432737, 7.4569646022181555],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_9654a920777b2179e9c13208b0388ece = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0958a68df280f50878e3fbe8f734019 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_570074e3ed4375aa0b0cc70b829c404b = $(`<div id="html_570074e3ed4375aa0b0cc70b829c404b" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 1</b><br>                 City: Dortmund<br>                 Address: Highway A28, Exit 28<br>                 Power: 271 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_e0958a68df280f50878e3fbe8f734019.setContent(html_570074e3ed4375aa0b0cc70b829c404b);
+            
+        
+
+        marker_8329fa49930ccd166b16571a6ad87f0e.bindPopup(popup_e0958a68df280f50878e3fbe8f734019)
+        ;
+
+        
+    
+    
+                marker_8329fa49930ccd166b16571a6ad87f0e.setIcon(icon_9654a920777b2179e9c13208b0388ece);
+            
+    
+            var marker_4e0a0d94ff3f0c9ea21a6044c8afe256 = L.marker(
+                [51.52303207432737, 7.4569646022181555],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_f2b2d5b098669d3c3b620f97e606af53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6b75cb117d1e214b764d4e357e25b7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcf4b922a1786eedac1b5661161f9ee1 = $(`<div id="html_bcf4b922a1786eedac1b5661161f9ee1" style="width: 100.0%; height: 100.0%;">                 <b>Dortmund E-HDT Station 1</b><br>                 City: Dortmund<br>                 Address: Highway A28, Exit 28<br>                 Power: 320 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_d6b75cb117d1e214b764d4e357e25b7d.setContent(html_bcf4b922a1786eedac1b5661161f9ee1);
+            
+        
+
+        marker_4e0a0d94ff3f0c9ea21a6044c8afe256.bindPopup(popup_d6b75cb117d1e214b764d4e357e25b7d)
+        ;
+
+        
+    
+    
+                marker_4e0a0d94ff3f0c9ea21a6044c8afe256.setIcon(icon_f2b2d5b098669d3c3b620f97e606af53);
+            
+    
+            var marker_3848a2ad82e93954f8f3fdd3ed1a8a16 = L.marker(
+                [51.45531376947507, 7.009581580989797],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_f81df6ca16a497c97f092a02cc2a91f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d65d2e60dc24257f138c2333cf78382 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d924bfb25dbc34037c2c712604291f14 = $(`<div id="html_d924bfb25dbc34037c2c712604291f14" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 2</b><br>                 City: Essen<br>                 Address: Highway A24, Exit 28<br>                 Power: 316 kW<br>                 Type: CCS2<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_4d65d2e60dc24257f138c2333cf78382.setContent(html_d924bfb25dbc34037c2c712604291f14);
+            
+        
+
+        marker_3848a2ad82e93954f8f3fdd3ed1a8a16.bindPopup(popup_4d65d2e60dc24257f138c2333cf78382)
+        ;
+
+        
+    
+    
+                marker_3848a2ad82e93954f8f3fdd3ed1a8a16.setIcon(icon_f81df6ca16a497c97f092a02cc2a91f7);
+            
+    
+            var marker_71d1fd2a7e04af00e57404dd516d7c25 = L.marker(
+                [51.45299726903924, 7.016620591804586],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4063b6986c2e35c1bbea4cebfc027a1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d78b04f6adca2575cc7d2bc707d669a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_359e60135cef0473e49bcf8038113237 = $(`<div id="html_359e60135cef0473e49bcf8038113237" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 3</b><br>                 City: Essen<br>                 Address: Highway A57, Exit 25<br>                 Power: 171 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_d78b04f6adca2575cc7d2bc707d669a3.setContent(html_359e60135cef0473e49bcf8038113237);
+            
+        
+
+        marker_71d1fd2a7e04af00e57404dd516d7c25.bindPopup(popup_d78b04f6adca2575cc7d2bc707d669a3)
+        ;
+
+        
+    
+    
+                marker_71d1fd2a7e04af00e57404dd516d7c25.setIcon(icon_4063b6986c2e35c1bbea4cebfc027a1f);
+            
+    
+            var marker_079c1d91d7431f7f9d05a5336cb3d8d4 = L.marker(
+                [51.45299726903924, 7.016620591804586],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_f5981b24e67cde280280d09c32616b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c43e4192833bda54cacf3dbbccc5266 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42f46d93899ba828653477326a9fe15a = $(`<div id="html_42f46d93899ba828653477326a9fe15a" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 3</b><br>                 City: Essen<br>                 Address: Highway A57, Exit 25<br>                 Power: 176 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_2c43e4192833bda54cacf3dbbccc5266.setContent(html_42f46d93899ba828653477326a9fe15a);
+            
+        
+
+        marker_079c1d91d7431f7f9d05a5336cb3d8d4.bindPopup(popup_2c43e4192833bda54cacf3dbbccc5266)
+        ;
+
+        
+    
+    
+                marker_079c1d91d7431f7f9d05a5336cb3d8d4.setIcon(icon_f5981b24e67cde280280d09c32616b4e);
+            
+    
+            var marker_c15df6a5f732cd5422e296236ede9f4e = L.marker(
+                [51.45299726903924, 7.016620591804586],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_1638f0265d9ff7668ca98d8f4a52a14a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_addc67325ba4cba2b75dae0e7a6508a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cb81e00feffce41b4af90735954ccd6 = $(`<div id="html_7cb81e00feffce41b4af90735954ccd6" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 3</b><br>                 City: Essen<br>                 Address: Highway A57, Exit 25<br>                 Power: 288 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_addc67325ba4cba2b75dae0e7a6508a7.setContent(html_7cb81e00feffce41b4af90735954ccd6);
+            
+        
+
+        marker_c15df6a5f732cd5422e296236ede9f4e.bindPopup(popup_addc67325ba4cba2b75dae0e7a6508a7)
+        ;
+
+        
+    
+    
+                marker_c15df6a5f732cd5422e296236ede9f4e.setIcon(icon_1638f0265d9ff7668ca98d8f4a52a14a);
+            
+    
+            var marker_f75a263b83a6b80201f821d3bfdb285d = L.marker(
+                [51.45299726903924, 7.016620591804586],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_b8483c05b4185eeb6c674c7adcf14795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b3604186782e605c3cacf7b5014b4c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a43333d3b08879c6ca53c7a859120cda = $(`<div id="html_a43333d3b08879c6ca53c7a859120cda" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 3</b><br>                 City: Essen<br>                 Address: Highway A57, Exit 25<br>                 Power: 160 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_4b3604186782e605c3cacf7b5014b4c7.setContent(html_a43333d3b08879c6ca53c7a859120cda);
+            
+        
+
+        marker_f75a263b83a6b80201f821d3bfdb285d.bindPopup(popup_4b3604186782e605c3cacf7b5014b4c7)
+        ;
+
+        
+    
+    
+                marker_f75a263b83a6b80201f821d3bfdb285d.setIcon(icon_b8483c05b4185eeb6c674c7adcf14795);
+            
+    
+            var marker_6690a085795a75ff42432d43aaf700f9 = L.marker(
+                [51.44661209191727, 7.017840954925067],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_72c7865dd97a561299c1782434006018 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a32c930ab73541f343bda1ccc892ecc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3d25e04089254b1650169e1b309e846 = $(`<div id="html_f3d25e04089254b1650169e1b309e846" style="width: 100.0%; height: 100.0%;">                 <b>Essen E-HDT Station 3</b><br>                 City: Essen<br>                 Address: Highway A45, Exit 23<br>                 Power: 245 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_6a32c930ab73541f343bda1ccc892ecc.setContent(html_f3d25e04089254b1650169e1b309e846);
+            
+        
+
+        marker_6690a085795a75ff42432d43aaf700f9.bindPopup(popup_6a32c930ab73541f343bda1ccc892ecc)
+        ;
+
+        
+    
+    
+                marker_6690a085795a75ff42432d43aaf700f9.setIcon(icon_72c7865dd97a561299c1782434006018);
+            
+    
+            var marker_e2bc4d3290ac12662010b410097af02b = L.marker(
+                [52.38980204789449, 9.730845508271875],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_7cdf74a909f6506ca7f322a843ecc344 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1f8d828487da72de747766be03747d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ceaf3beecc87c71dbc766738b9b3f4e = $(`<div id="html_2ceaf3beecc87c71dbc766738b9b3f4e" style="width: 100.0%; height: 100.0%;">                 <b>A2 - Hannover E-HDT Station 2</b><br>                 City: A2 - Hannover<br>                 Address: Highway A21, Exit 8<br>                 Power: 332 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a1f8d828487da72de747766be03747d4.setContent(html_2ceaf3beecc87c71dbc766738b9b3f4e);
+            
+        
+
+        marker_e2bc4d3290ac12662010b410097af02b.bindPopup(popup_a1f8d828487da72de747766be03747d4)
+        ;
+
+        
+    
+    
+                marker_e2bc4d3290ac12662010b410097af02b.setIcon(icon_7cdf74a909f6506ca7f322a843ecc344);
+            
+    
+            var marker_80426b307d3180f3e52c8c7d5926a1ff = L.marker(
+                [50.95287115981131, 6.952414370183831],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_ac1a46599bacd8717a42c3bec47e8c68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c61b532af16919204eb1593d528cb86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dc52e30328b92e3c7e6e356cdce1824 = $(`<div id="html_1dc52e30328b92e3c7e6e356cdce1824" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A74, Exit 21<br>                 Power: 303 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_7c61b532af16919204eb1593d528cb86.setContent(html_1dc52e30328b92e3c7e6e356cdce1824);
+            
+        
+
+        marker_80426b307d3180f3e52c8c7d5926a1ff.bindPopup(popup_7c61b532af16919204eb1593d528cb86)
+        ;
+
+        
+    
+    
+                marker_80426b307d3180f3e52c8c7d5926a1ff.setIcon(icon_ac1a46599bacd8717a42c3bec47e8c68);
+            
+    
+            var marker_eedce2f815528d13a9349ef476f3ca4d = L.marker(
+                [50.94949798708669, 6.942687171357307],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_b289ab85ac338f7f8e020b7a6748199e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4629a28596f9268d60e2a690e128fa2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6945dd9c229b46e4f71d7ac8f5f5f246 = $(`<div id="html_6945dd9c229b46e4f71d7ac8f5f5f246" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A36, Exit 19<br>                 Power: 182 kW<br>                 Type: CCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_4629a28596f9268d60e2a690e128fa2e.setContent(html_6945dd9c229b46e4f71d7ac8f5f5f246);
+            
+        
+
+        marker_eedce2f815528d13a9349ef476f3ca4d.bindPopup(popup_4629a28596f9268d60e2a690e128fa2e)
+        ;
+
+        
+    
+    
+                marker_eedce2f815528d13a9349ef476f3ca4d.setIcon(icon_b289ab85ac338f7f8e020b7a6748199e);
+            
+    
+            var marker_f6e510480c561645ac8f618ad89ad6ce = L.marker(
+                [50.94949798708669, 6.942687171357307],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_20c41e8ea1af54caea4acb3a206a712a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc7ecfb0c89ee082688ba67d416fe2dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9939f2a0c4e33af6b634708fa840710d = $(`<div id="html_9939f2a0c4e33af6b634708fa840710d" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A36, Exit 19<br>                 Power: 350 kW<br>                 Type: CCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_cc7ecfb0c89ee082688ba67d416fe2dc.setContent(html_9939f2a0c4e33af6b634708fa840710d);
+            
+        
+
+        marker_f6e510480c561645ac8f618ad89ad6ce.bindPopup(popup_cc7ecfb0c89ee082688ba67d416fe2dc)
+        ;
+
+        
+    
+    
+                marker_f6e510480c561645ac8f618ad89ad6ce.setIcon(icon_20c41e8ea1af54caea4acb3a206a712a);
+            
+    
+            var marker_50b2be3f5a6bdce2ae522f628fa4dcee = L.marker(
+                [50.94949798708669, 6.942687171357307],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_ebc77bcf58a6784f63c239d4356b729e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51a434e88da43413557cbfb5e6200e28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8435a5c057f83f6af5c4453f648a1fae = $(`<div id="html_8435a5c057f83f6af5c4453f648a1fae" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A36, Exit 19<br>                 Power: 302 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_51a434e88da43413557cbfb5e6200e28.setContent(html_8435a5c057f83f6af5c4453f648a1fae);
+            
+        
+
+        marker_50b2be3f5a6bdce2ae522f628fa4dcee.bindPopup(popup_51a434e88da43413557cbfb5e6200e28)
+        ;
+
+        
+    
+    
+                marker_50b2be3f5a6bdce2ae522f628fa4dcee.setIcon(icon_ebc77bcf58a6784f63c239d4356b729e);
+            
+    
+            var marker_e8b9bee5f5e29941f17fb97b20b28d59 = L.marker(
+                [50.9656003715054, 6.9436998194340065],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_86fce2cb626d571cf3588d81fc19ad5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79728650129b83e299533f5df49a4caf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9188a3dec944567dc2d44f4dbecca86 = $(`<div id="html_e9188a3dec944567dc2d44f4dbecca86" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A90, Exit 4<br>                 Power: 254 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_79728650129b83e299533f5df49a4caf.setContent(html_e9188a3dec944567dc2d44f4dbecca86);
+            
+        
+
+        marker_e8b9bee5f5e29941f17fb97b20b28d59.bindPopup(popup_79728650129b83e299533f5df49a4caf)
+        ;
+
+        
+    
+    
+                marker_e8b9bee5f5e29941f17fb97b20b28d59.setIcon(icon_86fce2cb626d571cf3588d81fc19ad5b);
+            
+    
+            var marker_5fd504ef70bc70bdeabf6cfee4579d53 = L.marker(
+                [50.9656003715054, 6.9436998194340065],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c87baedc5fad9f66340647d5803fcdd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_585dcec192f5bfc4d662afb9fc85e851 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fad39bcdce95fee803e16af9f2ff176 = $(`<div id="html_8fad39bcdce95fee803e16af9f2ff176" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A90, Exit 4<br>                 Power: 168 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_585dcec192f5bfc4d662afb9fc85e851.setContent(html_8fad39bcdce95fee803e16af9f2ff176);
+            
+        
+
+        marker_5fd504ef70bc70bdeabf6cfee4579d53.bindPopup(popup_585dcec192f5bfc4d662afb9fc85e851)
+        ;
+
+        
+    
+    
+                marker_5fd504ef70bc70bdeabf6cfee4579d53.setIcon(icon_c87baedc5fad9f66340647d5803fcdd4);
+            
+    
+            var marker_5893816806d132d14365c4c0a007c7a2 = L.marker(
+                [50.9656003715054, 6.9436998194340065],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4372c3ae883e2663ca67ccbb92c44280 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_674dd6f3f4a793cfde51755661504da1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3dce4a72f5384856455acce0347ce1ad = $(`<div id="html_3dce4a72f5384856455acce0347ce1ad" style="width: 100.0%; height: 100.0%;">                 <b>A4 - Cologne E-HDT Station 1</b><br>                 City: A4 - Cologne<br>                 Address: Highway A90, Exit 4<br>                 Power: 187 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_674dd6f3f4a793cfde51755661504da1.setContent(html_3dce4a72f5384856455acce0347ce1ad);
+            
+        
+
+        marker_5893816806d132d14365c4c0a007c7a2.bindPopup(popup_674dd6f3f4a793cfde51755661504da1)
+        ;
+
+        
+    
+    
+                marker_5893816806d132d14365c4c0a007c7a2.setIcon(icon_4372c3ae883e2663ca67ccbb92c44280);
+            
+    
+            var marker_b87f8e32084d1e7602c10b9220efd98f = L.marker(
+                [50.081709759253975, 8.574867113988972],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_933b9689a72c03932e881d96a2debe10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f970b5a3b2b2cb77c2d62203e9f239f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21f1b3d46583ac319da89615d0627393 = $(`<div id="html_21f1b3d46583ac319da89615d0627393" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 3</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A90, Exit 16<br>                 Power: 209 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_1f970b5a3b2b2cb77c2d62203e9f239f.setContent(html_21f1b3d46583ac319da89615d0627393);
+            
+        
+
+        marker_b87f8e32084d1e7602c10b9220efd98f.bindPopup(popup_1f970b5a3b2b2cb77c2d62203e9f239f)
+        ;
+
+        
+    
+    
+                marker_b87f8e32084d1e7602c10b9220efd98f.setIcon(icon_933b9689a72c03932e881d96a2debe10);
+            
+    
+            var marker_cfd0e37fe493ea09c183f1e014a9c46b = L.marker(
+                [50.081709759253975, 8.574867113988972],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_5b416171e609be9640723d0ec5b3d55a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a49b7dce97ae39a5adf68417042c57c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b3284f95ba2c546d212b9f811c238ed = $(`<div id="html_2b3284f95ba2c546d212b9f811c238ed" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 3</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A90, Exit 16<br>                 Power: 341 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a49b7dce97ae39a5adf68417042c57c4.setContent(html_2b3284f95ba2c546d212b9f811c238ed);
+            
+        
+
+        marker_cfd0e37fe493ea09c183f1e014a9c46b.bindPopup(popup_a49b7dce97ae39a5adf68417042c57c4)
+        ;
+
+        
+    
+    
+                marker_cfd0e37fe493ea09c183f1e014a9c46b.setIcon(icon_5b416171e609be9640723d0ec5b3d55a);
+            
+    
+            var marker_1d41cb523f9824e4a67337d36c80f1b5 = L.marker(
+                [50.081709759253975, 8.574867113988972],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_520109be2a51d551529b4deb1fc2010c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d74ba8a3529a7c42fa8124b1ceb27aa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0978fd0f27e9f6a922d1f3665f1fcbd9 = $(`<div id="html_0978fd0f27e9f6a922d1f3665f1fcbd9" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 3</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A90, Exit 16<br>                 Power: 330 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_d74ba8a3529a7c42fa8124b1ceb27aa6.setContent(html_0978fd0f27e9f6a922d1f3665f1fcbd9);
+            
+        
+
+        marker_1d41cb523f9824e4a67337d36c80f1b5.bindPopup(popup_d74ba8a3529a7c42fa8124b1ceb27aa6)
+        ;
+
+        
+    
+    
+                marker_1d41cb523f9824e4a67337d36c80f1b5.setIcon(icon_520109be2a51d551529b4deb1fc2010c);
+            
+    
+            var marker_34eb0948db1878dd878f18b73b168496 = L.marker(
+                [50.0823066170528, 8.586288675858025],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c72c6706517cd2262cf235cd8f8c1fb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e71b118b28d79eb39e216d49b357e758 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e1ce061d9f1370ddcb22b3c2f19d384 = $(`<div id="html_3e1ce061d9f1370ddcb22b3c2f19d384" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 3</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A56, Exit 30<br>                 Power: 348 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_e71b118b28d79eb39e216d49b357e758.setContent(html_3e1ce061d9f1370ddcb22b3c2f19d384);
+            
+        
+
+        marker_34eb0948db1878dd878f18b73b168496.bindPopup(popup_e71b118b28d79eb39e216d49b357e758)
+        ;
+
+        
+    
+    
+                marker_34eb0948db1878dd878f18b73b168496.setIcon(icon_c72c6706517cd2262cf235cd8f8c1fb9);
+            
+    
+            var marker_eb4ce6418b196c82d3aab1aaff782836 = L.marker(
+                [50.0823066170528, 8.586288675858025],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_ebc6cffe71a96cd59c7e00806af438d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d837a55e0f31c3093b52329b844b5c7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5336ea33f8c79c7eb3e4c68895f3b7a3 = $(`<div id="html_5336ea33f8c79c7eb3e4c68895f3b7a3" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 3</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A56, Exit 30<br>                 Power: 159 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_d837a55e0f31c3093b52329b844b5c7f.setContent(html_5336ea33f8c79c7eb3e4c68895f3b7a3);
+            
+        
+
+        marker_eb4ce6418b196c82d3aab1aaff782836.bindPopup(popup_d837a55e0f31c3093b52329b844b5c7f)
+        ;
+
+        
+    
+    
+                marker_eb4ce6418b196c82d3aab1aaff782836.setIcon(icon_ebc6cffe71a96cd59c7e00806af438d4);
+            
+    
+            var marker_4550fbe9f90da34c3e71d203880fa2e1 = L.marker(
+                [50.09836959569139, 8.574503908844871],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_893b990bf815bbcc7724d95ef1cadac3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b07b4510d91e9d9e3b686c74f3410147 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a37614422e1873f5ad84a14d99776e6d = $(`<div id="html_a37614422e1873f5ad84a14d99776e6d" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 5</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A35, Exit 29<br>                 Power: 342 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_b07b4510d91e9d9e3b686c74f3410147.setContent(html_a37614422e1873f5ad84a14d99776e6d);
+            
+        
+
+        marker_4550fbe9f90da34c3e71d203880fa2e1.bindPopup(popup_b07b4510d91e9d9e3b686c74f3410147)
+        ;
+
+        
+    
+    
+                marker_4550fbe9f90da34c3e71d203880fa2e1.setIcon(icon_893b990bf815bbcc7724d95ef1cadac3);
+            
+    
+            var marker_cacd6f31c6a21896ebb41509b6ed304e = L.marker(
+                [50.09836959569139, 8.574503908844871],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_3eaf3441ed124748cc0cf3ff3b42e267 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e53cd85848172765296d993cc62d5895 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_326599c42f23fe79f8778d005f962b04 = $(`<div id="html_326599c42f23fe79f8778d005f962b04" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 5</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A35, Exit 29<br>                 Power: 308 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_e53cd85848172765296d993cc62d5895.setContent(html_326599c42f23fe79f8778d005f962b04);
+            
+        
+
+        marker_cacd6f31c6a21896ebb41509b6ed304e.bindPopup(popup_e53cd85848172765296d993cc62d5895)
+        ;
+
+        
+    
+    
+                marker_cacd6f31c6a21896ebb41509b6ed304e.setIcon(icon_3eaf3441ed124748cc0cf3ff3b42e267);
+            
+    
+            var marker_9b4f2508cb8ddb590be78237c0c05bec = L.marker(
+                [50.09836959569139, 8.574503908844871],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_b9e6dfa4d2662688d3c3e9c7e0d99469 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3046b573fc705b38a5e48b3c1aaae86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_687a370960dcd613c50553036fc4fb55 = $(`<div id="html_687a370960dcd613c50553036fc4fb55" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 5</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A35, Exit 29<br>                 Power: 187 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_a3046b573fc705b38a5e48b3c1aaae86.setContent(html_687a370960dcd613c50553036fc4fb55);
+            
+        
+
+        marker_9b4f2508cb8ddb590be78237c0c05bec.bindPopup(popup_a3046b573fc705b38a5e48b3c1aaae86)
+        ;
+
+        
+    
+    
+                marker_9b4f2508cb8ddb590be78237c0c05bec.setIcon(icon_b9e6dfa4d2662688d3c3e9c7e0d99469);
+            
+    
+            var marker_d74d230acd4bfd33eb5e588eaf65bf8b = L.marker(
+                [50.09836959569139, 8.574503908844871],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_ee98ec38fb235517a4440d820b953c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b0ed0ac94ed594fe0f88d2c49192751 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8345623f048dd15e76f1d7740187c589 = $(`<div id="html_8345623f048dd15e76f1d7740187c589" style="width: 100.0%; height: 100.0%;">                 <b>A5 - Frankfurt E-HDT Station 5</b><br>                 City: A5 - Frankfurt<br>                 Address: Highway A35, Exit 29<br>                 Power: 161 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_1b0ed0ac94ed594fe0f88d2c49192751.setContent(html_8345623f048dd15e76f1d7740187c589);
+            
+        
+
+        marker_d74d230acd4bfd33eb5e588eaf65bf8b.bindPopup(popup_1b0ed0ac94ed594fe0f88d2c49192751)
+        ;
+
+        
+    
+    
+                marker_d74d230acd4bfd33eb5e588eaf65bf8b.setIcon(icon_ee98ec38fb235517a4440d820b953c95);
+            
+    
+            var marker_3aaa909e2952efe89f7f479c1471ef79 = L.marker(
+                [49.79069111751423, 9.956970556086505],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_0a1e666d2733bc2e89dd14f76af04455 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3355aad5b54d869335f29bee46f7389d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84e470fb13e33380f0962586f3631402 = $(`<div id="html_84e470fb13e33380f0962586f3631402" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A42, Exit 26<br>                 Power: 337 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_3355aad5b54d869335f29bee46f7389d.setContent(html_84e470fb13e33380f0962586f3631402);
+            
+        
+
+        marker_3aaa909e2952efe89f7f479c1471ef79.bindPopup(popup_3355aad5b54d869335f29bee46f7389d)
+        ;
+
+        
+    
+    
+                marker_3aaa909e2952efe89f7f479c1471ef79.setIcon(icon_0a1e666d2733bc2e89dd14f76af04455);
+            
+    
+            var marker_8c67637433f9c759658952e24a05021d = L.marker(
+                [49.79069111751423, 9.956970556086505],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_b2ab75f5cfb3febed33c321c3c5d9066 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a28f4e88ed699bfce4b9bb7342f81615 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b721df4860d2ada1e7589dc961b74b00 = $(`<div id="html_b721df4860d2ada1e7589dc961b74b00" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A42, Exit 26<br>                 Power: 263 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a28f4e88ed699bfce4b9bb7342f81615.setContent(html_b721df4860d2ada1e7589dc961b74b00);
+            
+        
+
+        marker_8c67637433f9c759658952e24a05021d.bindPopup(popup_a28f4e88ed699bfce4b9bb7342f81615)
+        ;
+
+        
+    
+    
+                marker_8c67637433f9c759658952e24a05021d.setIcon(icon_b2ab75f5cfb3febed33c321c3c5d9066);
+            
+    
+            var marker_37a980607e9a13f051b4580e99b5fd76 = L.marker(
+                [49.79069111751423, 9.956970556086505],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_765415e7a3209a0d65d82ca7c8534de1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f7e2e9a280a7433557953e3b45df1b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e1b6ed0da85a00c97e1a92dc8ff14ed = $(`<div id="html_8e1b6ed0da85a00c97e1a92dc8ff14ed" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A42, Exit 26<br>                 Power: 216 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_0f7e2e9a280a7433557953e3b45df1b3.setContent(html_8e1b6ed0da85a00c97e1a92dc8ff14ed);
+            
+        
+
+        marker_37a980607e9a13f051b4580e99b5fd76.bindPopup(popup_0f7e2e9a280a7433557953e3b45df1b3)
+        ;
+
+        
+    
+    
+                marker_37a980607e9a13f051b4580e99b5fd76.setIcon(icon_765415e7a3209a0d65d82ca7c8534de1);
+            
+    
+            var marker_b0eb0fadf6fbb4b4f42c23ebe822c46e = L.marker(
+                [49.78575119858475, 9.957909748821221],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_454701b99831822fb3ae7692a23fb7c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6954c18fc8e645b21ffd66d1fe3142c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48f097e5002143ab28a06c9c35f63d8f = $(`<div id="html_48f097e5002143ab28a06c9c35f63d8f" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A48, Exit 11<br>                 Power: 252 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_6954c18fc8e645b21ffd66d1fe3142c4.setContent(html_48f097e5002143ab28a06c9c35f63d8f);
+            
+        
+
+        marker_b0eb0fadf6fbb4b4f42c23ebe822c46e.bindPopup(popup_6954c18fc8e645b21ffd66d1fe3142c4)
+        ;
+
+        
+    
+    
+                marker_b0eb0fadf6fbb4b4f42c23ebe822c46e.setIcon(icon_454701b99831822fb3ae7692a23fb7c8);
+            
+    
+            var marker_dc0771a520c5766a28c65c258a05d397 = L.marker(
+                [49.78575119858475, 9.957909748821221],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_1693084c8d8ea6c51f5f2b21ff1e2774 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb9c34bd936677879d099fcff8d6d54e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d21c92eff5bd1f841a675acae2bba44e = $(`<div id="html_d21c92eff5bd1f841a675acae2bba44e" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A48, Exit 11<br>                 Power: 279 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_eb9c34bd936677879d099fcff8d6d54e.setContent(html_d21c92eff5bd1f841a675acae2bba44e);
+            
+        
+
+        marker_dc0771a520c5766a28c65c258a05d397.bindPopup(popup_eb9c34bd936677879d099fcff8d6d54e)
+        ;
+
+        
+    
+    
+                marker_dc0771a520c5766a28c65c258a05d397.setIcon(icon_1693084c8d8ea6c51f5f2b21ff1e2774);
+            
+    
+            var marker_05a4cc21305b7c9cffa691a3459c74d8 = L.marker(
+                [49.78575119858475, 9.957909748821221],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_79d3853793e2604467714d4124350fe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_031e72e58e1f3224a300e59611316e94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cfd412301049958e12084bfa8dbe427 = $(`<div id="html_8cfd412301049958e12084bfa8dbe427" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A48, Exit 11<br>                 Power: 340 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_031e72e58e1f3224a300e59611316e94.setContent(html_8cfd412301049958e12084bfa8dbe427);
+            
+        
+
+        marker_05a4cc21305b7c9cffa691a3459c74d8.bindPopup(popup_031e72e58e1f3224a300e59611316e94)
+        ;
+
+        
+    
+    
+                marker_05a4cc21305b7c9cffa691a3459c74d8.setIcon(icon_79d3853793e2604467714d4124350fe6);
+            
+    
+            var marker_bb99daaa6b93a2be21a95c3bbe64bcbd = L.marker(
+                [49.78575119858475, 9.957909748821221],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_32d483755fb0b750ad21dd29bc5db488 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2bf1898fd32df976225bb6130a701bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fb8a7e9339e3d67cc1efdd36139def8 = $(`<div id="html_6fb8a7e9339e3d67cc1efdd36139def8" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 4</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A48, Exit 11<br>                 Power: 330 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_f2bf1898fd32df976225bb6130a701bd.setContent(html_6fb8a7e9339e3d67cc1efdd36139def8);
+            
+        
+
+        marker_bb99daaa6b93a2be21a95c3bbe64bcbd.bindPopup(popup_f2bf1898fd32df976225bb6130a701bd)
+        ;
+
+        
+    
+    
+                marker_bb99daaa6b93a2be21a95c3bbe64bcbd.setIcon(icon_32d483755fb0b750ad21dd29bc5db488);
+            
+    
+            var marker_8c9beb493cb0f76f9682226d44519df6 = L.marker(
+                [49.78452275474657, 9.944751731792],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_bb8a9fcbfd06363b8469f59ca3b7b56e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dafcfbace9a7c176de595ce85d4f61cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39c2bc921c4e7be7070e338571086a84 = $(`<div id="html_39c2bc921c4e7be7070e338571086a84" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 1</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A18, Exit 9<br>                 Power: 318 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_dafcfbace9a7c176de595ce85d4f61cc.setContent(html_39c2bc921c4e7be7070e338571086a84);
+            
+        
+
+        marker_8c9beb493cb0f76f9682226d44519df6.bindPopup(popup_dafcfbace9a7c176de595ce85d4f61cc)
+        ;
+
+        
+    
+    
+                marker_8c9beb493cb0f76f9682226d44519df6.setIcon(icon_bb8a9fcbfd06363b8469f59ca3b7b56e);
+            
+    
+            var marker_9ba098c9d4f847ae22603cfe05d119a6 = L.marker(
+                [49.78452275474657, 9.944751731792],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4dc8c9a802c22098fce86d73101e85d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_552da4907e05279df3f599fdb965f9f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a904c6fcfb1ed9111561f7d1198cbf7 = $(`<div id="html_7a904c6fcfb1ed9111561f7d1198cbf7" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 1</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A18, Exit 9<br>                 Power: 324 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_552da4907e05279df3f599fdb965f9f3.setContent(html_7a904c6fcfb1ed9111561f7d1198cbf7);
+            
+        
+
+        marker_9ba098c9d4f847ae22603cfe05d119a6.bindPopup(popup_552da4907e05279df3f599fdb965f9f3)
+        ;
+
+        
+    
+    
+                marker_9ba098c9d4f847ae22603cfe05d119a6.setIcon(icon_4dc8c9a802c22098fce86d73101e85d0);
+            
+    
+            var marker_95f827c6fa6750f0e47d201666b025ca = L.marker(
+                [49.78452275474657, 9.944751731792],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_5c839b900a2a3b36fe6d19d927b612b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d674fe4f3d2b803f87108c3a71d36fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0e51c16a4092cb3911a8c24fbf48e7e = $(`<div id="html_f0e51c16a4092cb3911a8c24fbf48e7e" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 1</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A18, Exit 9<br>                 Power: 210 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_9d674fe4f3d2b803f87108c3a71d36fe.setContent(html_f0e51c16a4092cb3911a8c24fbf48e7e);
+            
+        
+
+        marker_95f827c6fa6750f0e47d201666b025ca.bindPopup(popup_9d674fe4f3d2b803f87108c3a71d36fe)
+        ;
+
+        
+    
+    
+                marker_95f827c6fa6750f0e47d201666b025ca.setIcon(icon_5c839b900a2a3b36fe6d19d927b612b4);
+            
+    
+            var marker_521c6a3aa9eef401f8c164321f633cb6 = L.marker(
+                [49.78452275474657, 9.944751731792],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_4e3d406df41c94134cd5f778503f246c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fea0ca05eb975e5232388596c7f670dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88000c09ed0d52d6325a2b4c23746e5a = $(`<div id="html_88000c09ed0d52d6325a2b4c23746e5a" style="width: 100.0%; height: 100.0%;">                 <b>A7 - Würzburg E-HDT Station 1</b><br>                 City: A7 - Würzburg<br>                 Address: Highway A18, Exit 9<br>                 Power: 219 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_fea0ca05eb975e5232388596c7f670dd.setContent(html_88000c09ed0d52d6325a2b4c23746e5a);
+            
+        
+
+        marker_521c6a3aa9eef401f8c164321f633cb6.bindPopup(popup_fea0ca05eb975e5232388596c7f670dd)
+        ;
+
+        
+    
+    
+                marker_521c6a3aa9eef401f8c164321f633cb6.setIcon(icon_4e3d406df41c94134cd5f778503f246c);
+            
+    
+            var marker_7afabb5fab5d5d0a2ae2e43554759c59 = L.marker(
+                [49.44368959067023, 11.08081382264611],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_d0cfa426eb09746fb5d43af45a3a58d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68685a940b3f48abbba463e711747b18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad714dbb69d1f03fd68f6fdbbe2e5604 = $(`<div id="html_ad714dbb69d1f03fd68f6fdbbe2e5604" style="width: 100.0%; height: 100.0%;">                 <b>A9 - Nuremberg E-HDT Station 5</b><br>                 City: A9 - Nuremberg<br>                 Address: Highway A77, Exit 17<br>                 Power: 285 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_68685a940b3f48abbba463e711747b18.setContent(html_ad714dbb69d1f03fd68f6fdbbe2e5604);
+            
+        
+
+        marker_7afabb5fab5d5d0a2ae2e43554759c59.bindPopup(popup_68685a940b3f48abbba463e711747b18)
+        ;
+
+        
+    
+    
+                marker_7afabb5fab5d5d0a2ae2e43554759c59.setIcon(icon_d0cfa426eb09746fb5d43af45a3a58d1);
+            
+    
+            var marker_62a483e1c5dd3ef55c0e228e01d683e3 = L.marker(
+                [49.44623439645755, 11.07351476462013],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c8123a0e3e9438fe7317e0fce80de38f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b043295c39800b6b9b4124ebde25ba7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4705b3369f5046c7ac6a3b781ab1a5c9 = $(`<div id="html_4705b3369f5046c7ac6a3b781ab1a5c9" style="width: 100.0%; height: 100.0%;">                 <b>A9 - Nuremberg E-HDT Station 2</b><br>                 City: A9 - Nuremberg<br>                 Address: Highway A70, Exit 28<br>                 Power: 247 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_1b043295c39800b6b9b4124ebde25ba7.setContent(html_4705b3369f5046c7ac6a3b781ab1a5c9);
+            
+        
+
+        marker_62a483e1c5dd3ef55c0e228e01d683e3.bindPopup(popup_1b043295c39800b6b9b4124ebde25ba7)
+        ;
+
+        
+    
+    
+                marker_62a483e1c5dd3ef55c0e228e01d683e3.setIcon(icon_c8123a0e3e9438fe7317e0fce80de38f);
+            
+    
+            var marker_9958d8f8a3b4d65f0619e5feb795dd26 = L.marker(
+                [49.44623439645755, 11.07351476462013],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_72a09cc55c36172097b99b459aa4cac7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d017c04b75c9884e3c714357e7d5192 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_accc465d25167570011faa814be19cd0 = $(`<div id="html_accc465d25167570011faa814be19cd0" style="width: 100.0%; height: 100.0%;">                 <b>A9 - Nuremberg E-HDT Station 2</b><br>                 City: A9 - Nuremberg<br>                 Address: Highway A70, Exit 28<br>                 Power: 306 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_3d017c04b75c9884e3c714357e7d5192.setContent(html_accc465d25167570011faa814be19cd0);
+            
+        
+
+        marker_9958d8f8a3b4d65f0619e5feb795dd26.bindPopup(popup_3d017c04b75c9884e3c714357e7d5192)
+        ;
+
+        
+    
+    
+                marker_9958d8f8a3b4d65f0619e5feb795dd26.setIcon(icon_72a09cc55c36172097b99b459aa4cac7);
+            
+    
+            var marker_3fc6301fedaf10ce84da7c5ea532d1ee = L.marker(
+                [49.44623439645755, 11.07351476462013],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_2f43f29254839e4ddf975719d4b5d1a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a12a2cc464e64e4f8657e3ce2cf2129e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c439be857ea06d80db8635d0748f6e53 = $(`<div id="html_c439be857ea06d80db8635d0748f6e53" style="width: 100.0%; height: 100.0%;">                 <b>A9 - Nuremberg E-HDT Station 2</b><br>                 City: A9 - Nuremberg<br>                 Address: Highway A70, Exit 28<br>                 Power: 240 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_a12a2cc464e64e4f8657e3ce2cf2129e.setContent(html_c439be857ea06d80db8635d0748f6e53);
+            
+        
+
+        marker_3fc6301fedaf10ce84da7c5ea532d1ee.bindPopup(popup_a12a2cc464e64e4f8657e3ce2cf2129e)
+        ;
+
+        
+    
+    
+                marker_3fc6301fedaf10ce84da7c5ea532d1ee.setIcon(icon_2f43f29254839e4ddf975719d4b5d1a6);
+            
+    
+            var marker_728c7c6b42332e54b0240017a1eb9193 = L.marker(
+                [49.44623439645755, 11.07351476462013],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_3ba2c6f0fff52792af133c14872bccf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9309d31cfa9da88c28e9153356173797 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ad35c684d6b09664818d823e2e976a3 = $(`<div id="html_5ad35c684d6b09664818d823e2e976a3" style="width: 100.0%; height: 100.0%;">                 <b>A9 - Nuremberg E-HDT Station 2</b><br>                 City: A9 - Nuremberg<br>                 Address: Highway A70, Exit 28<br>                 Power: 226 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_9309d31cfa9da88c28e9153356173797.setContent(html_5ad35c684d6b09664818d823e2e976a3);
+            
+        
+
+        marker_728c7c6b42332e54b0240017a1eb9193.bindPopup(popup_9309d31cfa9da88c28e9153356173797)
+        ;
+
+        
+    
+    
+                marker_728c7c6b42332e54b0240017a1eb9193.setIcon(icon_3ba2c6f0fff52792af133c14872bccf3);
+            
+    
+            var marker_f81a70efa84ab12a3f7121c52a9e96b1 = L.marker(
+                [49.02265186846397, 12.090636328909262],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_99d92a50353728eff072034bb182e165 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf3d7e0a41c3358dc9335561147c09e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09af0b072e1a28f47002d745c3cd9415 = $(`<div id="html_09af0b072e1a28f47002d745c3cd9415" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 3</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A36, Exit 1<br>                 Power: 342 kW<br>                 Type: CCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_cf3d7e0a41c3358dc9335561147c09e5.setContent(html_09af0b072e1a28f47002d745c3cd9415);
+            
+        
+
+        marker_f81a70efa84ab12a3f7121c52a9e96b1.bindPopup(popup_cf3d7e0a41c3358dc9335561147c09e5)
+        ;
+
+        
+    
+    
+                marker_f81a70efa84ab12a3f7121c52a9e96b1.setIcon(icon_99d92a50353728eff072034bb182e165);
+            
+    
+            var marker_db66bc2c8905f25c0c16490a98f65355 = L.marker(
+                [49.02265186846397, 12.090636328909262],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_0f53a6c04c1cc5a761dd6d91c872c374 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d9a958189bfa0cf58002ae8792b679b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0590d6433ce4f5a07ef2e0b93d8a2ab = $(`<div id="html_a0590d6433ce4f5a07ef2e0b93d8a2ab" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 3</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A36, Exit 1<br>                 Power: 243 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_1d9a958189bfa0cf58002ae8792b679b.setContent(html_a0590d6433ce4f5a07ef2e0b93d8a2ab);
+            
+        
+
+        marker_db66bc2c8905f25c0c16490a98f65355.bindPopup(popup_1d9a958189bfa0cf58002ae8792b679b)
+        ;
+
+        
+    
+    
+                marker_db66bc2c8905f25c0c16490a98f65355.setIcon(icon_0f53a6c04c1cc5a761dd6d91c872c374);
+            
+    
+            var marker_e3ec32b07753356782196728f29b3699 = L.marker(
+                [49.02265186846397, 12.090636328909262],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_238d940b840ea0a3ff4f5bfae27fdd74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92d48148715f76631f6ec0af54cc063a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ee2f74bb1d6aa772af883502cd8cc17 = $(`<div id="html_2ee2f74bb1d6aa772af883502cd8cc17" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 3</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A36, Exit 1<br>                 Power: 317 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_92d48148715f76631f6ec0af54cc063a.setContent(html_2ee2f74bb1d6aa772af883502cd8cc17);
+            
+        
+
+        marker_e3ec32b07753356782196728f29b3699.bindPopup(popup_92d48148715f76631f6ec0af54cc063a)
+        ;
+
+        
+    
+    
+                marker_e3ec32b07753356782196728f29b3699.setIcon(icon_238d940b840ea0a3ff4f5bfae27fdd74);
+            
+    
+            var marker_30035269ed11fd7115b8e05ae9d8a82e = L.marker(
+                [49.02265186846397, 12.090636328909262],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_f757e1f41e6f3c84857016069ad9ce98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5277696ec680ba1905a58ae34c7700f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b58e340ca4a95c3f8a861770c1b911b = $(`<div id="html_3b58e340ca4a95c3f8a861770c1b911b" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 3</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A36, Exit 1<br>                 Power: 171 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_5277696ec680ba1905a58ae34c7700f8.setContent(html_3b58e340ca4a95c3f8a861770c1b911b);
+            
+        
+
+        marker_30035269ed11fd7115b8e05ae9d8a82e.bindPopup(popup_5277696ec680ba1905a58ae34c7700f8)
+        ;
+
+        
+    
+    
+                marker_30035269ed11fd7115b8e05ae9d8a82e.setIcon(icon_f757e1f41e6f3c84857016069ad9ce98);
+            
+    
+            var marker_3c738c097fd016d33e97971bd10e0814 = L.marker(
+                [49.01066155367834, 12.095803646075103],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_8cee0aa5bcc5291fc8a3b61943aa5d5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cc991b672bd6784751a22dcfdabfe0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13cd6f0fa05a2078dcabb5236d611473 = $(`<div id="html_13cd6f0fa05a2078dcabb5236d611473" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 5</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A63, Exit 6<br>                 Power: 268 kW<br>                 Type: CCS2<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_3cc991b672bd6784751a22dcfdabfe0a.setContent(html_13cd6f0fa05a2078dcabb5236d611473);
+            
+        
+
+        marker_3c738c097fd016d33e97971bd10e0814.bindPopup(popup_3cc991b672bd6784751a22dcfdabfe0a)
+        ;
+
+        
+    
+    
+                marker_3c738c097fd016d33e97971bd10e0814.setIcon(icon_8cee0aa5bcc5291fc8a3b61943aa5d5b);
+            
+    
+            var marker_e1b2b1d619e12c531c0acac2fd07b253 = L.marker(
+                [49.01066155367834, 12.095803646075103],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_830181ab713298fcb0085547077f4bbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97403a88d3896f035da50cc36cb47ca5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d76f64a6a5641501cf5ecf37ac45bbfd = $(`<div id="html_d76f64a6a5641501cf5ecf37ac45bbfd" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 5</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A63, Exit 6<br>                 Power: 348 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_97403a88d3896f035da50cc36cb47ca5.setContent(html_d76f64a6a5641501cf5ecf37ac45bbfd);
+            
+        
+
+        marker_e1b2b1d619e12c531c0acac2fd07b253.bindPopup(popup_97403a88d3896f035da50cc36cb47ca5)
+        ;
+
+        
+    
+    
+                marker_e1b2b1d619e12c531c0acac2fd07b253.setIcon(icon_830181ab713298fcb0085547077f4bbe);
+            
+    
+            var marker_9c1d65b80e9d709e37e65b573c1566d1 = L.marker(
+                [49.01066155367834, 12.095803646075103],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_c4616172c2d7ca5fdafbeb86c76ccd79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bef26c15cfd3de82579c0891a4d74247 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c7dbc27786e89970446d91f05d7a099 = $(`<div id="html_4c7dbc27786e89970446d91f05d7a099" style="width: 100.0%; height: 100.0%;">                 <b>A93 - Regensburg E-HDT Station 5</b><br>                 City: A93 - Regensburg<br>                 Address: Highway A63, Exit 6<br>                 Power: 349 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_bef26c15cfd3de82579c0891a4d74247.setContent(html_4c7dbc27786e89970446d91f05d7a099);
+            
+        
+
+        marker_9c1d65b80e9d709e37e65b573c1566d1.bindPopup(popup_bef26c15cfd3de82579c0891a4d74247)
+        ;
+
+        
+    
+    
+                marker_9c1d65b80e9d709e37e65b573c1566d1.setIcon(icon_c4616172c2d7ca5fdafbeb86c76ccd79);
+            
+    
+            var marker_226c4e9941718b490031fc2056563b8b = L.marker(
+                [52.64076634031252, 13.012684893525162],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_cf83938398175cc99f9e370af423dcd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da8c14517c157bdfdad20f20fdf66b50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_510b0a606aeda9afeeadde607c855717 = $(`<div id="html_510b0a606aeda9afeeadde607c855717" style="width: 100.0%; height: 100.0%;">                 <b>A24 - Berlin E-HDT Station 3</b><br>                 City: A24 - Berlin<br>                 Address: Highway A84, Exit 7<br>                 Power: 157 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_da8c14517c157bdfdad20f20fdf66b50.setContent(html_510b0a606aeda9afeeadde607c855717);
+            
+        
+
+        marker_226c4e9941718b490031fc2056563b8b.bindPopup(popup_da8c14517c157bdfdad20f20fdf66b50)
+        ;
+
+        
+    
+    
+                marker_226c4e9941718b490031fc2056563b8b.setIcon(icon_cf83938398175cc99f9e370af423dcd0);
+            
+    
+            var marker_91f6b0094ae0da18822d007f0af2b442 = L.marker(
+                [52.64076634031252, 13.012684893525162],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_82d942d548e737981b4b3cb1fccf0476 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eedf99b1c0d6cc7eda4013ab9d1ae617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf9a70404b54c972555115c77ff052ac = $(`<div id="html_cf9a70404b54c972555115c77ff052ac" style="width: 100.0%; height: 100.0%;">                 <b>A24 - Berlin E-HDT Station 3</b><br>                 City: A24 - Berlin<br>                 Address: Highway A84, Exit 7<br>                 Power: 207 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_eedf99b1c0d6cc7eda4013ab9d1ae617.setContent(html_cf9a70404b54c972555115c77ff052ac);
+            
+        
+
+        marker_91f6b0094ae0da18822d007f0af2b442.bindPopup(popup_eedf99b1c0d6cc7eda4013ab9d1ae617)
+        ;
+
+        
+    
+    
+                marker_91f6b0094ae0da18822d007f0af2b442.setIcon(icon_82d942d548e737981b4b3cb1fccf0476);
+            
+    
+            var marker_82f248538c8a49b30fcc7756d57b63f8 = L.marker(
+                [52.63279157275748, 13.02258288923575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_80ab48826a2df82867f52eea06667f64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cdf31b5defeb735528767b12f4a3503 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9fa80c1f6699246006f9725bdb2ee6b = $(`<div id="html_d9fa80c1f6699246006f9725bdb2ee6b" style="width: 100.0%; height: 100.0%;">                 <b>A24 - Berlin E-HDT Station 1</b><br>                 City: A24 - Berlin<br>                 Address: Highway A16, Exit 28<br>                 Power: 308 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_8cdf31b5defeb735528767b12f4a3503.setContent(html_d9fa80c1f6699246006f9725bdb2ee6b);
+            
+        
+
+        marker_82f248538c8a49b30fcc7756d57b63f8.bindPopup(popup_8cdf31b5defeb735528767b12f4a3503)
+        ;
+
+        
+    
+    
+                marker_82f248538c8a49b30fcc7756d57b63f8.setIcon(icon_80ab48826a2df82867f52eea06667f64);
+            
+    
+            var marker_920a23b65dc2704083c8785a14abbde0 = L.marker(
+                [52.63279157275748, 13.02258288923575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_630137c300ae39973e26f5dc8e046e7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c08b827523f07a7b6496f907a49bce15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_998ee3232281eee8bdfac1063e42ad92 = $(`<div id="html_998ee3232281eee8bdfac1063e42ad92" style="width: 100.0%; height: 100.0%;">                 <b>A24 - Berlin E-HDT Station 1</b><br>                 City: A24 - Berlin<br>                 Address: Highway A16, Exit 28<br>                 Power: 211 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_c08b827523f07a7b6496f907a49bce15.setContent(html_998ee3232281eee8bdfac1063e42ad92);
+            
+        
+
+        marker_920a23b65dc2704083c8785a14abbde0.bindPopup(popup_c08b827523f07a7b6496f907a49bce15)
+        ;
+
+        
+    
+    
+                marker_920a23b65dc2704083c8785a14abbde0.setIcon(icon_630137c300ae39973e26f5dc8e046e7e);
+            
+    
+            var marker_f7d619c38167902c89f398059bc48331 = L.marker(
+                [52.63279157275748, 13.02258288923575],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_3820647e20dd167fbd193c5baa1bb916 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81731d424a602a35ecb36d380ccfc37f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e7efb60872b48fdb602b148b5904044 = $(`<div id="html_8e7efb60872b48fdb602b148b5904044" style="width: 100.0%; height: 100.0%;">                 <b>A24 - Berlin E-HDT Station 1</b><br>                 City: A24 - Berlin<br>                 Address: Highway A16, Exit 28<br>                 Power: 259 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_81731d424a602a35ecb36d380ccfc37f.setContent(html_8e7efb60872b48fdb602b148b5904044);
+            
+        
+
+        marker_f7d619c38167902c89f398059bc48331.bindPopup(popup_81731d424a602a35ecb36d380ccfc37f)
+        ;
+
+        
+    
+    
+                marker_f7d619c38167902c89f398059bc48331.setIcon(icon_3820647e20dd167fbd193c5baa1bb916);
+            
+    
+            var marker_957d13c1b05ab8089c0ad0ce62a3c788 = L.marker(
+                [51.460050566308475, 7.013496576842145],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_822d6e1f0f47ce815dba8751c38f0bf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2988b844374f120b8fe6939ba2b23b13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e88a02be6fa503ffc10db02d9fff643 = $(`<div id="html_3e88a02be6fa503ffc10db02d9fff643" style="width: 100.0%; height: 100.0%;">                 <b>A40 - Essen E-HDT Station 5</b><br>                 City: A40 - Essen<br>                 Address: Highway A29, Exit 21<br>                 Power: 150 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_2988b844374f120b8fe6939ba2b23b13.setContent(html_3e88a02be6fa503ffc10db02d9fff643);
+            
+        
+
+        marker_957d13c1b05ab8089c0ad0ce62a3c788.bindPopup(popup_2988b844374f120b8fe6939ba2b23b13)
+        ;
+
+        
+    
+    
+                marker_957d13c1b05ab8089c0ad0ce62a3c788.setIcon(icon_822d6e1f0f47ce815dba8751c38f0bf3);
+            
+    
+            var marker_e2235b94611a68d82facaea72bb5e735 = L.marker(
+                [51.5111545215457, 7.406279444330799],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_ce3c3a56a1e22bcbda9761340d2a35f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffb513465b990c3a45431d25de5bd8bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef21d038eeaf767de2c4b0bae7d59f69 = $(`<div id="html_ef21d038eeaf767de2c4b0bae7d59f69" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 1</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A65, Exit 22<br>                 Power: 299 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_ffb513465b990c3a45431d25de5bd8bd.setContent(html_ef21d038eeaf767de2c4b0bae7d59f69);
+            
+        
+
+        marker_e2235b94611a68d82facaea72bb5e735.bindPopup(popup_ffb513465b990c3a45431d25de5bd8bd)
+        ;
+
+        
+    
+    
+                marker_e2235b94611a68d82facaea72bb5e735.setIcon(icon_ce3c3a56a1e22bcbda9761340d2a35f0);
+            
+    
+            var marker_7770d9257c384cf78f83c1f3bf26162d = L.marker(
+                [51.5111545215457, 7.406279444330799],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_62950d82d4654ddedb34d425f2526f84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de5691b6912fc379243c864f046e594b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce2740463aa6f5e79809f9914278a0e4 = $(`<div id="html_ce2740463aa6f5e79809f9914278a0e4" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 1</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A65, Exit 22<br>                 Power: 221 kW<br>                 Type: CCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_de5691b6912fc379243c864f046e594b.setContent(html_ce2740463aa6f5e79809f9914278a0e4);
+            
+        
+
+        marker_7770d9257c384cf78f83c1f3bf26162d.bindPopup(popup_de5691b6912fc379243c864f046e594b)
+        ;
+
+        
+    
+    
+                marker_7770d9257c384cf78f83c1f3bf26162d.setIcon(icon_62950d82d4654ddedb34d425f2526f84);
+            
+    
+            var marker_f4ae55a699fe85a42bfec15647ac1805 = L.marker(
+                [51.5111545215457, 7.406279444330799],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_705fe4186f8023f2dd2973cfd68aba65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_352c7e23fe13c99aee2aee32490874e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d6df9f0de0548b91abf165b053ae6e7 = $(`<div id="html_6d6df9f0de0548b91abf165b053ae6e7" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 1</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A65, Exit 22<br>                 Power: 226 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_352c7e23fe13c99aee2aee32490874e0.setContent(html_6d6df9f0de0548b91abf165b053ae6e7);
+            
+        
+
+        marker_f4ae55a699fe85a42bfec15647ac1805.bindPopup(popup_352c7e23fe13c99aee2aee32490874e0)
+        ;
+
+        
+    
+    
+                marker_f4ae55a699fe85a42bfec15647ac1805.setIcon(icon_705fe4186f8023f2dd2973cfd68aba65);
+            
+    
+            var marker_53d5bbbdcbd695bf9c3e9e88665df3de = L.marker(
+                [51.5111545215457, 7.406279444330799],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_287d3793b6d868ba161ee7dfa74e4f5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdfe567ed0aac8f65fed72e70f7b38cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_374f0b873c683c3af3c28a135a1830f4 = $(`<div id="html_374f0b873c683c3af3c28a135a1830f4" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 1</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A65, Exit 22<br>                 Power: 199 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_bdfe567ed0aac8f65fed72e70f7b38cf.setContent(html_374f0b873c683c3af3c28a135a1830f4);
+            
+        
+
+        marker_53d5bbbdcbd695bf9c3e9e88665df3de.bindPopup(popup_bdfe567ed0aac8f65fed72e70f7b38cf)
+        ;
+
+        
+    
+    
+                marker_53d5bbbdcbd695bf9c3e9e88665df3de.setIcon(icon_287d3793b6d868ba161ee7dfa74e4f5c);
+            
+    
+            var marker_8b228cbc7e2147f1525bafa54ad5dbec = L.marker(
+                [51.51358047758284, 7.399141764164364],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_cddeaa56643f20b4f3286dbf163c8940 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e6a8554e38d75eb2dbbd63437f153f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a244c9b2959f096449d9dbbce125a0a = $(`<div id="html_6a244c9b2959f096449d9dbbce125a0a" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 2</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A18, Exit 19<br>                 Power: 299 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_7e6a8554e38d75eb2dbbd63437f153f0.setContent(html_6a244c9b2959f096449d9dbbce125a0a);
+            
+        
+
+        marker_8b228cbc7e2147f1525bafa54ad5dbec.bindPopup(popup_7e6a8554e38d75eb2dbbd63437f153f0)
+        ;
+
+        
+    
+    
+                marker_8b228cbc7e2147f1525bafa54ad5dbec.setIcon(icon_cddeaa56643f20b4f3286dbf163c8940);
+            
+    
+            var marker_a6cf1955b7cac9724391ca4c583cc2cf = L.marker(
+                [51.51358047758284, 7.399141764164364],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_643130cfa56629a992277ace7ccd9802 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ffad699da5b31c3d4a2b32a889857f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6526308e2b497694590f4ac7fcbb136b = $(`<div id="html_6526308e2b497694590f4ac7fcbb136b" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 2</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A18, Exit 19<br>                 Power: 244 kW<br>                 Type: CCS2<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_0ffad699da5b31c3d4a2b32a889857f6.setContent(html_6526308e2b497694590f4ac7fcbb136b);
+            
+        
+
+        marker_a6cf1955b7cac9724391ca4c583cc2cf.bindPopup(popup_0ffad699da5b31c3d4a2b32a889857f6)
+        ;
+
+        
+    
+    
+                marker_a6cf1955b7cac9724391ca4c583cc2cf.setIcon(icon_643130cfa56629a992277ace7ccd9802);
+            
+    
+            var marker_11eabe7b63abadd88cdb9487415233ac = L.marker(
+                [51.51139285648151, 7.3995011017226044],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_18c355b8190e811a91f57306efe2405a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c73d82bebbe98be54ad3536410f24069 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a453d8622b052993ffef22f07da1f821 = $(`<div id="html_a453d8622b052993ffef22f07da1f821" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 2</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A75, Exit 5<br>                 Power: 235 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_c73d82bebbe98be54ad3536410f24069.setContent(html_a453d8622b052993ffef22f07da1f821);
+            
+        
+
+        marker_11eabe7b63abadd88cdb9487415233ac.bindPopup(popup_c73d82bebbe98be54ad3536410f24069)
+        ;
+
+        
+    
+    
+                marker_11eabe7b63abadd88cdb9487415233ac.setIcon(icon_18c355b8190e811a91f57306efe2405a);
+            
+    
+            var marker_eddadac2e20e0d1c8ff80978f184a716 = L.marker(
+                [51.51139285648151, 7.3995011017226044],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_6689d3af025582809dc03f20e26e89ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fbf004aa8e8443019f4bbfec4a3a606 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d11ec1779a1ecc146ca48a4d16d757b7 = $(`<div id="html_d11ec1779a1ecc146ca48a4d16d757b7" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 2</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A75, Exit 5<br>                 Power: 291 kW<br>                 Type: MCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_6fbf004aa8e8443019f4bbfec4a3a606.setContent(html_d11ec1779a1ecc146ca48a4d16d757b7);
+            
+        
+
+        marker_eddadac2e20e0d1c8ff80978f184a716.bindPopup(popup_6fbf004aa8e8443019f4bbfec4a3a606)
+        ;
+
+        
+    
+    
+                marker_eddadac2e20e0d1c8ff80978f184a716.setIcon(icon_6689d3af025582809dc03f20e26e89ed);
+            
+    
+            var marker_d8c2c89771a82a929b08b2d9e991aa97 = L.marker(
+                [51.51139285648151, 7.3995011017226044],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_57b5ea87df40cfd8b2dc94021b3c572d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41d4753100aca5a3f31cfa94f408bf5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa20fbb6d5cd66fcb9f80f51c9768537 = $(`<div id="html_aa20fbb6d5cd66fcb9f80f51c9768537" style="width: 100.0%; height: 100.0%;">                 <b>A45 - Dortmund E-HDT Station 2</b><br>                 City: A45 - Dortmund<br>                 Address: Highway A75, Exit 5<br>                 Power: 195 kW<br>                 Type: MCS<br>                 Status: OUTOFSERVICE             </div>`)[0];
+                popup_41d4753100aca5a3f31cfa94f408bf5e.setContent(html_aa20fbb6d5cd66fcb9f80f51c9768537);
+            
+        
+
+        marker_d8c2c89771a82a929b08b2d9e991aa97.bindPopup(popup_41d4753100aca5a3f31cfa94f408bf5e)
+        ;
+
+        
+    
+    
+                marker_d8c2c89771a82a929b08b2d9e991aa97.setIcon(icon_57b5ea87df40cfd8b2dc94021b3c572d);
+            
+    
+            var marker_082fd1573f0a120c6f4356dea6a93e17 = L.marker(
+                [50.34487057864883, 7.5864761906817915],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_98d93eb11b3e8190cbe364d74d5039a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79c09f36e1949e620979729f070d6df2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25a763d9abbc68b25b1dd2857aa719fb = $(`<div id="html_25a763d9abbc68b25b1dd2857aa719fb" style="width: 100.0%; height: 100.0%;">                 <b>A61 - Koblenz E-HDT Station 2</b><br>                 City: A61 - Koblenz<br>                 Address: Highway A47, Exit 18<br>                 Power: 167 kW<br>                 Type: MCS<br>                 Status: OCCUPIED             </div>`)[0];
+                popup_79c09f36e1949e620979729f070d6df2.setContent(html_25a763d9abbc68b25b1dd2857aa719fb);
+            
+        
+
+        marker_082fd1573f0a120c6f4356dea6a93e17.bindPopup(popup_79c09f36e1949e620979729f070d6df2)
+        ;
+
+        
+    
+    
+                marker_082fd1573f0a120c6f4356dea6a93e17.setIcon(icon_98d93eb11b3e8190cbe364d74d5039a6);
+            
+    
+            var marker_19a9442a379f9144bebcdb8a2c6d0382 = L.marker(
+                [50.34487057864883, 7.5864761906817915],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_8ab488a37fb005b6b184d7f406fdae26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45626b35ed157c15ad83752c562a06ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f260b991661fb25d834d35f18db917f = $(`<div id="html_7f260b991661fb25d834d35f18db917f" style="width: 100.0%; height: 100.0%;">                 <b>A61 - Koblenz E-HDT Station 2</b><br>                 City: A61 - Koblenz<br>                 Address: Highway A47, Exit 18<br>                 Power: 308 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_45626b35ed157c15ad83752c562a06ec.setContent(html_7f260b991661fb25d834d35f18db917f);
+            
+        
+
+        marker_19a9442a379f9144bebcdb8a2c6d0382.bindPopup(popup_45626b35ed157c15ad83752c562a06ec)
+        ;
+
+        
+    
+    
+                marker_19a9442a379f9144bebcdb8a2c6d0382.setIcon(icon_8ab488a37fb005b6b184d7f406fdae26);
+            
+    
+            var marker_a120e19d36d1314da693627245b217d7 = L.marker(
+                [50.34487057864883, 7.5864761906817915],
+                {
+}
+            ).addTo(marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143);
+        
+    
+            var icon_64250600a04e50f72fe5f2bacf442557 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_107ad9e1c88771fce7a5f4dbe7b4a96e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57278716b19a4b8703738d008bddf213 = $(`<div id="html_57278716b19a4b8703738d008bddf213" style="width: 100.0%; height: 100.0%;">                 <b>A61 - Koblenz E-HDT Station 2</b><br>                 City: A61 - Koblenz<br>                 Address: Highway A47, Exit 18<br>                 Power: 311 kW<br>                 Type: CCS<br>                 Status: AVAILABLE             </div>`)[0];
+                popup_107ad9e1c88771fce7a5f4dbe7b4a96e.setContent(html_57278716b19a4b8703738d008bddf213);
+            
+        
+
+        marker_a120e19d36d1314da693627245b217d7.bindPopup(popup_107ad9e1c88771fce7a5f4dbe7b4a96e)
+        ;
+
+        
+    
+    
+                marker_a120e19d36d1314da693627245b217d7.setIcon(icon_64250600a04e50f72fe5f2bacf442557);
+            
+    
+            marker_cluster_637ee9b5e8c12eba8a722fef5b9a0143.addTo(map_5ad77285b4203a7695a7bbf9b11a7328);
+        
+</script>
+</html>
